@@ -1,0 +1,415 @@
+\section{Voting Paradoxes and Problems} \label{se:VotingParadoxes}
+
+\begin{enumerate}
+  \item Of the four voting systems we've studied, which is best?  Why?
+        \fillwithlines{\stretch{1}}
+
+  %PLURALITY METHOD FAILS HEAD-TO-HEAD CRITERION
+  \item The Des Moines Running Club is electing a new team captain.
+        There are three candidates:  Irving, Joseph, and Karl.
+        The preference table is the following.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking    & 4 & 3 & 2 \\ \hline\hline
+            1st choice & J & I & K  \\
+            2nd choice & I & J & I  \\
+            3rd choice & K & K & J  \\ \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item If the club uses the plurality method,
+                who will win the election? \ifsolns\fbox J \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Irving and Joseph, who would win? \ifsolns\fbox I \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Irving and Karl, who would win? \ifsolns\fbox I \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Joseph and Karl, who would win? \ifsolns\fbox J \fi
+                \fillwithlines{\stretch{1}}
+          \item Why does the plurality method's result seem unfair in this election?
+                \ifsolns Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.\fi
+                \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+
+\clearpage
+
+  \item \boxedblank{\textbf{Head-to-Head Criterion:} \ifsolns \par\soln A candidate who beats all the other candidates head to head should win the election. \fi          \fillwithlines{\stretch{1}}} \index{criterion!head to head}
+
+  %BORDA COUNT FAILS MAJORITY CRITERION
+  \item The school board is voting whether to award the contract for building a new elementary school
+        to Aardvark Architects,
+        to Bob's Builders,
+        to the Confident Construction Company,
+        or to Davenfield Developers.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{4}{c|}{\# of Ballots} \\
+            Ranking    & 5 & 3 & 3 & 1   \\ \hline\hline
+            1st choice & B & B & C & A  \\
+            2nd choice & C & C & A & D   \\
+            3rd choice & D & A & D & C   \\
+            4th choice & A & D & B & B   \\ \hline
+          \end{tabular}
+        \end{center}
+      \begin{enumerate}
+        \item The school board votes using a Borda count.  \\
+              Which company will get the contract? %Company C
+              \ifsolns
+                \par\soln $\begin{array}{clcr}
+                             A & 4+9+6+5 &=& 24 \\
+                             B & 32+4    &=& 36 \\
+                             C & 24+12+2 &=& 38 \\
+                             D & 3+16+3  &=& 25 \\
+                           \end{array}$ 
+                \qquad so C wins
+              \fi
+              \fillwithlines{\stretch{2}}
+        \item Does this seem fair?  Why or why not?
+              \ifsolns
+                \par\soln No; two-thirds of the voters picked B as their first choice!
+              \else
+                \fillwithlines{\stretch{1}}
+              \fi
+      \end{enumerate}  
+
+\clearpage
+  \item \boxedblank{\textbf{Majority Criterion:} \ifsolns A candidate that wins a majority of first place votes should win the election. \fi} \index{criterion!majority}
+  %PLURALITY WITH ELIMINATION FAILS MONOTONICITY
+
+\ifodd\value{page}\clearpage\fi
+
+  \item The board of regents of
+        Western Iowa State at Sema
+        will be voting tomorrow for the University's new president
+        from four candidates: 
+           Zehnpfennig,     \def\A{Z}\def\AA{Zehnpfennig}%
+           Gersbach,        \def\B{G}\def\BB{Gersbach}%
+           Haider,          \def\C{H}\def\CC{Haider}%
+           and Rentmeester. \def\D{R}\def\DD{Rentmeester}%
+        As of this moment, the voters' preferences are as follows:
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{4}{c|}{\# of Ballots} \\
+            Ranking    & 7 & 5 & 4 & 1   \\ \hline\hline
+            1st choice & \A & \C & \B & \D  \\
+            2nd choice & \D & \A & \C & \B   \\
+            3rd choice & \B & \B & \D & \A   \\
+            4th choice & \C & \D & \A & \C   \\ \hline
+          \end{tabular}
+        \end{center}
+        The WIS regents use the plurality with elimination method.
+        \begin{enumerate}
+          \item If the vote were held today, who would be chosen as university president? 
+                \ifsolns
+                  \par\soln
+                  \[\begin{array}{cc}Z& 7 \\ R&1 \\ G&4 \\ H&5\end{array}
+                    \leadsto
+                    \begin{array}{cc}Z&7 \\ G&5 \\ H&5 \end{array}
+                    \leadsto Z\]
+                \else
+								\vfill
+                  \fillwithlines{\stretch{1}}
+                \fi
+        \clearpage
+          \item After thinking it over in bed tonight, 
+                the single voter in the last column decides 
+                that \AA\ really is the best candidate after all, and so his preferences change to \A,\D,\B,\C.
+                Thus when the election is held tomorrow, the preference table is
+                        \newlength{\mywidth}
+                        \def\no#1{\settowidth{\mywidth}{#1}%
+                                  %\makebox[0pt][l]{\raisebox{1.0ex}{\rule{\mywidth}{0.5pt}}}%
+                                  %\makebox[0pt][l]{\raisebox{0.8ex}{\rule{\mywidth}{0.5pt}}}%
+                                  \makebox[0pt][l]{\makebox[\mywidth][c]{$\times$}}%
+                                  %\makebox[0pt][l]{\raisebox{0.6ex}{\rule{\mywidth}{0.5pt}}}%
+                                  #1}
+                        \begin{center}
+                          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                                       & \multicolumn{4}{c|}{\# of Ballots} \\
+                            Ranking    & 7 & 5 & 4 & 1   \\ \hline\hline
+                            1st choice & \A & \C & \B & \no{\D}  \A \\
+                            2nd choice & \D & \A & \C & \no{\B}  \D \\
+                            3rd choice & \B & \B & \D & \no{\A}  \B \\
+                            4th choice & \C & \D & \A & \no{\C}  \C \\ \hline
+                          \end{tabular}
+                        \end{center}
+                Who will be elected president?
+                \ifsolns
+                  \par\soln
+                  $$\begin{array}{cc}Z& 8 \\ R&0 \\ G&4 \\ H&5\end{array}
+                    \leadsto
+                    \begin{array}{cc}Z& 8 \\ G&4 \\ H&5\end{array}
+                    \leadsto
+                    \begin{array}{cc}Z&8 \\ H&9 \end{array}
+                    \leadsto H$$
+                \else
+                  \fillwithlines{\stretch{2}}
+                \fi
+                
+          \item What is odd about your answers to (a) and (b)?
+                \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+\item \boxedblank{\textbf{Monotonicity Criterion:} \ifsolns If the only changes in voting are in favor of the winning candidate, that candidate should still win the election. \fi} \fillwithlines{\stretch{1}}\index{criterion!monotonicity}
+
+\clearpage
+%CONDORCET WINNER MAY NOT EXIST---IN FACT, NONTRANSITIVITY
+  \item Voters are trying to decide what to do with a \$50 million surplus in the state budget.
+        Their options are: 
+        \begin{itemize}
+          \item[(T)] Give the money back to taxpayers as property tax relief.
+          \item[(R)] Spend it on road construction and other infrastructure.
+          \item[(H)] Build a new state historical building.
+        \end{itemize}
+        Here is the preference table:
+                        \begin{center}
+                          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                                       & \multicolumn{3}{c|}{Number of Ballots} \\
+                            Ranking    &  70,000 & 50,000 & 40,000    \\ \hline\hline
+                            1st choice & T & R & H \\
+                            2nd choice & R & H & T \\
+                            3rd choice & H & T & R \\ \hline
+                          \end{tabular}
+                        \end{center}
+        \begin{enumerate}
+          \item The election is run by pairwise comparison.  What is the result?
+                \ifsolns
+                  \par\soln $R>H>T>R$.
+                \fi
+                \vfill\fillwithlines{\stretch{2}}
+          \item What is odd about your results from part (a)?
+					\ifsolns Try having candidate $R$ drop out of the race. \fi\fillwithlines{\stretch{1}}
+        \end{enumerate}
+        
+\clearpage
+
+  \item \boxedblank{\textbf{Irrelevant Alternatives Criterion:} \ifsolns \par\soln If a non-winning candidate leaves the election, the winner should not change, \fi\fillwithlines{\stretch{1}}} \index{criterion!irrelevant alternatives}
+
+  \item Approval Voting: \index{approval voting}
+
+
+	\ifsolns Vote for all candidates you approve of. \fi
+        \fillwithlines{\stretch{1}}
+
+  \item \boxedblank[2in]{\textbf{Arrow's Impossibility Theorem:} \ifsolns There is no way of counting votes that does not violate at least one of the criteria except for a Dictator. \fi\fillwithlines{\stretch{1}}} \index{Arrow's Impossibility Theorem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{enumerate}
+
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+\cleartooddpage
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+
+\begin{Venumerate}
+  \item Consider the following preference matrix:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{Number of Ballots} \\
+            Ranking     & 4 & 10 & 2 & 3 & 5     \\ \hline\hline  
+            1st choice  & \C & \D & \A & \C & \A \\ 
+            2nd choice  & \D & \C & \C & \B & \B \\ 
+            3rd choice  & \B & \A & \B & \A & \D \\ 
+            4th choice  & \A & \B & \D & \D & \C \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item Does the Borda Count violate the Majority Criterion for this particular preference matrix?
+                \solution*{
+                  The Borda count tally is
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 58 \\
+                    B & 46 \\
+                    C & 69 \\
+                    D & 67 \\ \hline
+                  \end{tabular}, \\
+                  while a plurality vote yields
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 7 \\
+                    B & 0 \\
+                    C & 7 \\
+                    D & 10 \\ \hline
+                    total & 24 \\ \hline
+                  \end{tabular}
+                  \par
+                  Thus \fbox{no,} the majority criterion is not violated since no candidate had a majority of the 24 votes.
+                  The majority criterion would only be violated if 
+                  \emph{both} (a) some candidate had a majority, and (b) the Borda count elected someone different.
+                } \vfill          \fillwithlines{\stretch{1}}
+          \item Does the Borda Count violate the Head-to-Head Criterion for this particular preference matrix?
+                \solution*{
+                  \fbox{Yes.} Candidate D would beat each of A, B, and C in head-to-head contests,
+                  but the Borda count elects someone else.
+                }\vfill           \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+\hwnewpage
+  \item Consider the following preference matrix:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{Number of Ballots} \\
+            Ranking     & 11 & 2 & 5 & 1 & 8 & 4     \\ \hline\hline  
+            1st choice  & \C & \D & \C & \D & \A & \B \\ 
+            2nd choice  & \A & \A & \A & \A & \D & \D \\ 
+            3rd choice  & \D & \C & \B & \B & \C & \C \\ 
+            4th choice  & \B & \B & \D & \C & \B & \A \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item Does the Borda Count violate the Majority Criterion for this particular preference matrix?
+                \ifsolns
+                  \par\soln The Borda count tally is
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 93 \\
+                    B & 49 \\
+                    C & 93 \\
+                    D & 75 \\ \hline
+                  \end{tabular}
+                  \\ while a plurality vote yields
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 8 \\
+                    B & 4 \\
+                    C & 16 \\
+                    D & 3 \\ \hline
+                    total & 31 \\ \hline
+                  \end{tabular}
+                  \par
+                  Thus \fbox{yes,} the majority criterion is violated, since candidate C has a majority of the 31 votes,
+                  but the Borda Count does not elect him; instead, the Borda count has C tying with A.
+                \else \vfill          \fillwithlines{\stretch{1}} \fi
+          \item Does the Borda Count violate the Head-to-Head Criterion for this particular preference matrix?
+                \ifsolns
+                  \par\soln
+                  \fbox{Yes,} since C beats A, B, and D in head-to-head contests but the Borda Count does not elect him.
+                \else \vfill           \fillwithlines{\stretch{1}}\fi
+        \end{enumerate}
+
+\hwnewpage
+  \item Consider the following preference matrix:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{4}{c|}{\# of Ballots} \\
+            Ranking     & 9 & 6 & 8 & 5      \\ \hline\hline  
+            1st choice  & \B & \B & \D & \D \\ 
+            2nd choice  & \D & \D & \B & \B \\ 
+            3rd choice  & \C & \A & \A & \C \\ 
+            4th choice  & \A & \C & \C & \A \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item How many points will each candidate receive in a Borda count?  Who will win?
+                \ifsolns
+                  \par\soln
+                  The point tallies are
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 42 \\
+                    B & 99 \\
+                    C & 42 \\
+                    D & 97 \\ \hline
+                  \end{tabular}
+                  so \fbox{B wins.}
+                \else \vfill          \fillwithlines{\stretch{1}}\fi
+          \item The five voters in the last column really do think \D\ is the best candidate and \B\ is the second-best.
+                However, they decide to be sneaky and lie on their Borda count ballots,
+                claiming they think \B\ is the worst candidate;
+                in other words, they say they prefer \D, \C, \A, and \B\ in that order.
+                Now how many points will each candidate receive in a Borda count?  Who will win?
+                \ifsolns
+                  \par\soln
+                  Now the point tallies become
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 47 \\
+                    B & 89 \\
+                    C & 47 \\
+                    D & 97 \\ \hline
+                  \end{tabular}
+                  so \fbox{D wins.}
+                \else \vfill           \fillwithlines{\stretch{1}}\fi
+          \item Explain in a few complete sentences how these voters manipulated the Borda count and why it is unfair.
+                \ifsolns
+                  \par\soln These voters filled out their ballots deceptively, downgrading the candidate they opposed 
+                  in order to make their own candidate do well by comparison.
+                  This is unfair because it gives dishonest voters more power than honest ones.
+                  (Graders, be generous with students' explanations!)
+                \else \vfill          \fillwithlines{\stretch{1}}\fi
+        \end{enumerate}
+				
+\hwnewpage
+  %COST-CONSCIOUS VOTERS, courtesy of Lisa Moats's REU work
+  \item Voters go to the polls to vote on three propositions simultaneously:
+        \begin{description}
+          \item[Proposition~1.] Spend \$200,000 to plant new flowers and trees at the zoo.
+          \item[Proposition~2.] Spend \$400,000 to build a children's playground at the zoo.
+          \item[Proposition~3.] Spend \$500,000 to add a panda exhibit to the zoo.
+        \end{description}
+        All the voters love the zoo, plants, children, and pandas.
+        They're all fiscally responsible, and only differ in how much money they want to spend.
+        \begin{enumerate}
+          \item Alice is one of a thousand voters who want to improve the zoo,
+                but don't want to spend more than \$1,000,000 total.
+                She wants to spend as close that limit as possible, without going over.
+                Which propositions will Alice and her bloc vote for?
+                \solution*{Alice et al.~will vote for \fbox{Propositions 2 and 3.}}
+          \item Zeke is one of a thousand voters who want to improve the zoo,
+                but don't want to spend more than \$800,000 total.
+                He wants to spend as close that limit as possible, without going over.
+                Which propositions will Zeke and his bloc vote for?
+                \solution*{Zeke et al.~will vote for \fbox{Propositions 1 and 3.}}
+          \item Shadrach is one of a thousand voters who want to improve the zoo,
+                but don't want to spend more than \$600,000 total.
+                He wants to spend as close that limit as possible, without going over.
+                Which propositions will Shadrach and his bloc vote for?
+                \solution*{Shadrach et al.~will vote for \fbox{Propositions 1 and 2.}}
+          \item Fill out the following table with the votes---either ``Yes'' or ``No.''\par
+                \def\myblank{\raisebox{0pt}[4ex][2ex]{\rule{1in}{0pt}}}
+                \ifsolns
+                  \def\myblank#1{{\textcolor{red}#1}}
+                \else
+                  \def\myblank#1{\phantom{X}}
+                \fi
+                \begin{tabular}{l||c|c|c|}
+                  Voters          & Alice et al. & Zeke et al. & Shadrach et al. \\
+                  Number of votes & 1000         & 1000        & 1000 \\ \hline\hline
+                  Proposition 1   & \myblank N   & \myblank Y  & \myblank Y \\ \hline
+                  Proposition 2   & \myblank Y   & \myblank N  & \myblank Y \\ \hline
+                  Proposition 3   & \myblank Y   & \myblank Y  & \myblank N \\ \hline
+                \end{tabular}
+          \item Which of the three propositions will pass?  (Only a majority vote is needed for each proposition.)
+                \solution*{\fbox{All three} propositions will pass with 2000 of the 3000 votes.}          \fillwithlines{\stretch{1}}
+          \item How many of the 3,000 voters are happy with the result?
+                \solution*{Since this will cost taxpayers \$1,100,000, \fbox{none of the voters} will be happy.}          \fillwithlines{\stretch{1}}
+          \item Explain in a few complete sentences what is odd or paradoxical about this situation.
+                \solution*{Each of the voters deliberately voted to limit spending, 
+                  yet they collectively ended up spending more than any of them wanted.
+                  \ifgradersolns
+                    (Graders, please be generous with their explanations.)
+                  \fi
+                }          \fillwithlines{\stretch{2}}
+        \end{enumerate}
+\end{Venumerate}
+
+
+\ENDHOMEWORK %</HOMEWORK>
+
+%<*WORKSHEETS>
+
+
+
+\cleartooddpage
+

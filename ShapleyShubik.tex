@@ -1,0 +1,252 @@
+\section{Shapley-Shubik Power Index} \index{power index!Shapley-Shubik} \label{se:ShapleyShubik}
+
+\begin{enumerate}
+
+    \item A \defnstyle{sequential coalition} is \ldots  \index{coalition!sequential}
+			\ifsolns
+				A coalition of all voters in a particular order.  The assumption is that coalitions are formed sequentially: Players join the coalition and cast their votes in an orderly sequence.
+			\else
+				\fillwithlines{\stretch{1}}
+			\fi
+    \item \begin{enumerate}
+            \item Consider a weighted voting system with three voters $P_1$, $P_2$, and $P_3$.
+                  List all the sequential coalitions.
+                  How many are there?
+									\ifsolns \par $\{P_1,P_2,P_3\}, \{P_1,P_3,P_2\},\{P_2,P_1,P_3\},\{P_3,P_2,P_1\},\{P_2,P_3,P_1\},\{P_3,P_1,P_2\}$,\fbox{6}\fi
+                  \vfill
+            \item Consider a weighted voting system with four voters $P_1$, $P_2$, $P_3$, and $P_4$.
+                  List all the sequential coalitions.
+                  How many are there? \ifsolns \fbox{24}\fi
+                  \vfill
+									\vfill
+            \item If a weighted voting system has $n$ voters $P_1$, $P_2$, \ldots, $P_n$,
+                  how many sequential coalitions are there? \ifsolns $n!$ \fi
+                  
+          \end{enumerate}
+\clearpage
+    \item A \defnstyle{pivotal player} is \ldots  \index{pivotal player}
+			\ifsolns the player who contributes the votes to turn a losing coalition into a winning coalition. \fi
+			\fillwithlines{\stretch{1}}
+			
+    \item List all the sequential coalitions in the weighted voting system $[4 | 3, 2, 1]$ and determine the pivotal player.
+          \vfill
+    \item In the weighted voting system $[4 | 3, 2, 1]$, 
+    			Is there a voter who is always pivotal?
+    			Is there a voter who is never pivotal?
+          \vfill
+	\ifsolns
+  	 To calculate the power of a voter, count the number of times the voter is pivotal. Then divide by the total number of sequential coalitions. Calculate the power of each voter in the weighted voting system $[4 | 3, 2, 1]$.  Just like in the previous power index, the sum of all the powers must equal one.
+		\fi
+
+\clearpage
+   \item Consider the voting system $[6|4,3,2,1]$.   % $[21|10,8,5,3,2]$.
+         \begin{enumerate}
+           \item List all the \emph{sequential} coalitions.
+                 \vfill
+           \item In each sequential coalition above, circle the \defnstyle{pivotal voters}.
+           \item Count the number of times each voter is a pivotal voter.
+                 This is called that voter's \defnstyle{Shapley-Shubik power}. \index{power index!Shapley-Shubik}
+                 \begin{center}
+                   \begin{tabular}{l|l}
+                     Voter & Shapley-Shubik power \\ \hline
+										\ifsolns
+                     $P_1$ & 10 \\ \hline
+                     $P_2$ & 6 \\ \hline
+                     $P_3$ & 6 \\ \hline
+                     $P_4$ & 2 \\ \hline
+										\else
+                     $P_1$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_2$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_3$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_4$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+										\fi
+                   \end{tabular}
+                 \end{center}
+           \item Add up all the voters' Shapley-Shubik powers; this sum is called the \defnstyle{total Shapley-Shubik power} of the voting system.
+                 \vspace{0.5in}
+           \item Finally, divide each voter's Shapley-Shubik power by the total Shapley-Shubik power.
+                 The percentage that results is called the voter's \defnstyle{Shapley-Shubik power \underline{index}}.
+                 \begin{center}
+                   \begin{tabular}{l|l}
+                     Voter & Shapley-Shubik power \emph{index}\\ \hline
+                     $P_1$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_2$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_3$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_4$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                   \end{tabular}
+                 \end{center}
+         \end{enumerate}
+
+\clearpage
+	\item Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system $[51| 32, 22, 12]$.
+          \vfill
+    \item Make up a weighted voting system with a dummy, and calculate the Shapley-Shubik Power Index for the dummy.
+          \vfill
+    \item Make up a weighted voting system with a dictator, and calculate the Shapley-Shubik Power Index for the dictator.
+          \vfill
+    \item Make up a weighted voting system in which several voters have veto power.
+          Calculate the Shapley-Shubik Power Index for the voters with veto power.  What do you notice?
+          \vfill
+
+\clearpage
+	\item In some cities the city Council operates under what is known as the, ``strong -- mayor''. Under this system the city Council can pass a motion under a simple majority, but the mayor has the power to veto the decision. The mayor's veto can then be overruled by a ``super majority''  \index{super majority} of the council members. As an example, consider the city of Ice-n-knock.  In Ice-n-knock, the city Council has four members plus a strong mayor who has a vote as well as the power to veto motion supported by a simple majority of the council members. On the other hand, the mayor cannot veto a motion supported by all four Council members. Thus, a motion can pass if the mayor +2 or more Council members supported or, alternatively, if the mayor is against it at the four council members support it. 
+	
+	It makes sense that under these rules, the four council members have the same amount of power, but the mayor has more. Compute the Shapley-Shubik Power Index of this weighted voting system to figure out exactly how much more.
+	
+	\ifsolns Focus on the last sentence. A motion can pass if the mayor +2 or more Council members supported or, alternatively, if the mayor is against it at the four council members support it. The Mayor is pivotal whenever they are in the third or fourth position in a sequential coalition.  There are 4! of each of these sequential coalitions. So -- there are a total of 5!=120 total sequential coalitions.  The Mayor is pivotal in $2\times 4! = 48$ of them. Each council member is pivotal in $\frac{120-48}{4}=18$ of them. The Mayor has power of 40\% and each Council member has a power of 15\%.
+	\fi
+	\vfill
+	
+	For purposes of comparison, calculate the Banzhaf power distribution of Ice-n-knock.
+	\ifsolns This will probably not happen.  But, there are winning coalitions of 3, 4, and 5 players.  The 5 member coalition has no critical members.  There are 5 4-member coalitions.  4 of them have the Mayor as a member and they are the only critical member of those coalitions.  The fifth, without the Mayor, each member is critical. There are 6 3-member winning coalitions that contain the Mayor.  All members are critical in each of these coalitions. So, the Mayor is critical in $4+6=10$ places.  The total number of critical council members is $4 + 6*2=16$ places.  Thus, our denominator is 26, the Mayor's numerator is 10 and each Council member's numerator is 4.  The Mayor has power of 38.5\% and each Council member has a power of 15.4\%. \fi
+\vfill
+\end{enumerate}
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+\begin{Venumerate}
+  \item List all the sequential coalitions in the weighted voting system $[16|9,8,7]$.
+        %\ifsolns \par
+				\solution*{
+        For convenience, we list them both by $P$-number and by their weights: 
+          \[\boxed{\begin{array}{ll}
+              \{P_1, P_2, P_3\} & \{9,8,7\} \\
+              \{P_1, P_3, P_2\} & \{9,7,8\} \\
+              \{P_2, P_1, P_3\} & \{8,9,7\} \\
+              \{P_2, P_3, P_1\} & \{8,7,9\} \\
+              \{P_3, P_1, P_2\} & \{7,9,8\} \\
+              \{P_3, P_2, P_1\} & \{7,8,9\} \\
+            \end{array}}\]
+						}
+        %\fi
+  \vfill \item List all the sequential coalitions in the weighted voting system $[51|40,30,20,10]$.
+        \solution{
+          For convenience, we list them both by $P$-number and by their weights:
+          \[\boxed{\begin{array}{ll}
+              \{P_1, P_2, P_3, P_4\} & \{40, 30, 20, 10\} \\
+							\{P_1, P_2, P_4, P_3\} & \{40, 30, 10, 20\} \\
+							\{P_1, P_3, P_2, P_4\} & \{40, 20, 30, 10\} \\
+							\{P_1, P_3, P_4, P_2\} & \{40, 20, 10, 30\} \\
+							\{P_1, P_4, P_2, P_3\} & \{40, 10, 20, 30\} \\
+							\{P_1, P_4, P_3, P_2\} & \{40, 10, 30, 20\} \\
+              \{P_2, P_1, P_3, P_4\} & \{30, 40, 20, 10\} \\
+							\{P_2, P_1, P_4, P_3\} & \{30, 40, 10, 20\} \\
+							\{P_2, P_3, P_1, P_4\} & \{30, 20, 40, 10\} \\
+							\{P_2, P_3, P_4, P_1\} & \{30, 20, 10, 40\} \\
+							\{P_2, P_4, P_1, P_3\} & \{30, 10, 20, 40\} \\
+							\{P_2, P_4, P_3, P_1\} & \{30, 10, 40, 20\} \\
+              \{P_3, P_1, P_2, P_4\} & \{20, 40, 30, 10\} \\
+							\{P_3, P_1, P_4, P_2\} & \{20, 40, 10, 30\} \\
+							\{P_3, P_2, P_1, P_4\} & \{20, 30, 40, 10\} \\
+							\{P_3, P_2, P_4, P_1\} & \{20, 30, 10, 40\} \\
+							\{P_3, P_4, P_1, P_2\} & \{20, 10, 40, 30\} \\
+							\{P_3, P_4, P_2, P_1\} & \{20, 10, 30, 40\} \\
+							\{P_4, P_1, P_2, P_3\} & \{10, 40, 30, 20\} \\
+							\{P_4, P_1, P_3, P_2\} & \{10, 40, 20, 30\} \\
+							\{P_4, P_2, P_1, P_3\} & \{10, 30, 40, 20\} \\
+							\{P_4, P_2, P_3, P_1\} & \{10, 30, 20, 40\} \\
+							\{P_4, P_3, P_1, P_2\} & \{10, 20, 40, 30\} \\
+							\{P_4, P_3, P_2, P_1\} & \{10, 20, 30, 40\} \\
+            \end{array}}\]
+        } \vfill
+%  \item In the weighted voting system $[38|22,20,17,9,5]$, consider the winning coalition
+%        $\{P_2, P_3, P_4, P_5\}$.
+%        Which voters are critical voters in this coalition?
+%        \solution*{$P_2$ and $P_3$ are critical voters (the 20 and the 17).}
+%  \item In the weighted voting system $[7|3,3,2,2,2,1]$, consider the winning coalition
+%        $\{P_1,P_3,P_4,P_6\}$.
+%        Which voters are critical voters in this coalition?
+%        \solution{$P_1$, $P_3$, and $P_4$ are critical voters (the 3, 2, and 2).}
+%  \item Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system $[34 | 12, 10, 7, 6]$.
+%        \ifsolns
+%          \solution*{All four voters have equal Shapley-Shubik power: \fbox{$0.25, 0.25, 0.25, 0.25$.}}
+%        \fi
+  \item Consider the voting system $[25|24,20,1]$.
+        \begin{enumerate}
+          \item Calculate the percentage of the total weight that each voter holds.
+                \solution*{53.3\%, \quad 44.4\%, \quad 2.2\%}
+          \vfill \item Calculate the Shapley-Shubik Power Index for each voter.
+                \solution*{0.667, \quad 0.167, \quad 0.167}
+          \vfill \item Comparing your answers to parts (a) and (b), explain in complete sentences
+                why the weight controlled by the voter is not the same thing as the power held by each voter.
+                \ifsolns
+                  \par\soln 
+                  There are several ways to answer this question.
+                  For example, voter $P_2$ has twenty times more weight than voter $P_3$,
+                  but they have exactly the same power.
+                  Another way to see it is that voter $P_1$ has fully three times as much power as voter $P_2$,
+                  even though the weights of 24 and 20 are not that different.
+                \fi
+        \end{enumerate}
+  \vfill 
+	\hwnewpage
+	\item Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system $[15|16,8,4,1]$.
+        \ifsolns
+          \par\soln \fbox{1,0,0}
+        \fi
+  \vfill \item Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system $[24|16,8,4,1]$.
+        \solution*{0.5,  0.5,  0,  0}
+  \vfill \item Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system $[28|16,8,4,1]$.
+			\solution*{0.33, 0.33, 0.33, 0}
+%        \solution{0.417,\quad 0.25\quad 0.25\quad 0.0833}
+%%   \item Nassau County, New York used to be governed by a Board of Supervisors.
+%%         The county had six districts, each of which one delegate to vote on county issues.
+%%         The delegates' votes were weighted proportionately to the districts' population in 1964:
+%%         \begin{center}
+%%           \begin{tabular}{l|r}
+%%             District & Weight \\ \hline
+%%             Hempstead \#1 & 31 \\
+%%             Hempstead \#2 & 31 \\
+%%             Oyster Bay    & 28 \\
+%%             North Hempstead & 21 \\
+%%             Long Beach    &  2 \\
+%%             Glen Cove     &  2
+%%           \end{tabular}
+%%         \end{center}
+%%         A simple majority was needed to pass a motion.
+%%         \begin{enumerate}
+%%           \item Express this weighted voting system in our usual notation.
+%%                 \ifsolns
+%%                   \par\soln \fbox{$[ 58 | 31, 31, 28, 21, 2, 2]$}
+%%                 \fi
+%%           \item Calculate the Banzhaf power of each district.
+%%                 \ifsolns
+%%                   \par\soln A motion will pass if and only if two of the three largest voters vote for it.  Thus the Banzhaf power is: \\
+%%                   \begin{tabular}[c]{l|rr}
+%%                     District        & Weight & Banzhaf Power\\ \hline
+%%                     Hempstead \#1   & 31     & 0.33 \\
+%%                     Hempstead \#2   & 31     & 0.33 \\
+%%                     Oyster Bay      & 28     & 0.33 \\
+%%                     North Hempstead & 21     & 0.00 \\
+%%                     Long Beach      &  2     & 0.00 \\
+%%                     Glen Cove       &  2     & 0.00 \\
+%%                   \end{tabular}
+%%                 \fi
+%%           \item What percentage of the county population lived in districts that are dummies?
+%%                 \ifsolns
+%%                   \par\soln Since the weights are proportionate to the population, and the total weight is 115,
+%%                   we conclude that $\dfrac{21+2+2}{31+31+28+21+2+2} = \dfrac{25}{115} = \boxed{21.7\%}$
+%%                   of the population had no say at all in county government.
+%%                 \fi
+%%           \item In 1965 John F.~Banzhaf~III argued in court that even though the weights were proportionate to population,
+%%                 this system of government was unfair.
+%%                 He won!
+%%                 \ifsolns
+%%                   \par\fbox{\emph{(No answer required.)}}
+%%                 \fi
+%%         \end{enumerate}
+\vfill
+\end{Venumerate}
+
+
+\ENDHOMEWORK %</HOMEWORK>
+
+%<*WORKSHEETS>
+
+\cleartooddpage

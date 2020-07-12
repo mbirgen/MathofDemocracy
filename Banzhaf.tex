@@ -1,0 +1,260 @@
+\section{Banzhaf Power Index} \index{power index!Banzhaf} \label{Banzhaf}
+
+\begin{enumerate}
+
+    \item A \defnstyle{coalition} is \ldots \index{coalition}
+		\ifsolns
+			any set of players that might join forces and vote the same way.  In principle, we can have a coalition with as few as \emph{one} player and as many as \emph{all} players.  The coalition consisting of all the players is called the \textbf{grand coalition}. Since coalitions are just sets of players, the most convenient way to describe coalitions mathematically is to use the \emph{set} notation.
+		\else
+			\vspace{1in}
+		\fi
+    \item \begin{enumerate}
+            \item Consider a weighted voting system with three voters $P_1$, $P_2$, and $P_3$.
+                  List all the coalitions.
+                  How many are there?
+                  \vfill
+            \item Consider a weighted voting system with four voters $P_1$, $P_2$, $P_3$, and $P_4$.
+                  List all the coalitions.
+                  How many are there?
+                  \vfill
+            \item If a weighted voting system has $n$ voters $P_1$, $P_2$, \ldots, $P_n$,
+                  how many coalitions are there?
+    \ifsolns
+				\fbox{$2^n-1$}
+		\else
+			\fillwithlines{\stretch{1}}
+		\fi
+          \end{enumerate}
+\clearpage
+    \item A \defnstyle{winning coalition} is \ldots \index{coalition!winning}
+				\ifsolns
+			one that has enough votes to win.  A single player coalition can be a winning coalition only when that player is a dictator, so under the assumption that there are no dictators in our weighted voting system (dictators are boring) a winning coalition must have at least two players.
+		\else
+			\fillwithlines{\stretch{1}}
+		\fi
+    \item List all the winning coalitions in the weighted voting system $[10 | 5, 4, 3, 2, 1]$.
+          \vfill
+    \item In the weighted voting system \[ [10 | 6, 4, 3, 2, 1],\] 
+          consider \textbf{the winning coalition} $\{P_1, P_2, P_3, P_4\}$.\\
+          Which voter(s) could change their minds and vote ``no'' without changing the outcome of the vote?
+          Which voter(s) \emph{need} to keep voting ``yes'' in order for the motion to pass?
+          \vfill
+    \item A \defnstyle{critical voter} in a winning coalition is \ldots \index{critical voter}
+			\ifsolns
+			the coalition must have that player's votes to win.
+		\else
+			\fillwithlines{\stretch{1}}
+		\fi
+
+\clearpage
+%\newcommand*\circled[1]{\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {#1}}}}
+
+		
+   \item Consider the voting system $[19|11,9,8,5]$.   % $[21|10,8,5,3,2]$.
+         \begin{enumerate}
+           \item List all the \emph{winning} coalitions.
+					
+					\ifsolns{
+					\centering
+					\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_1$}; \tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_2$}; \ \tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_1$};\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_3$};, \\
+					\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_1$};\tikz[inner sep=.25ex,baseline=-.75ex] \node {$P_2 P_3$};,\ 
+					\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_1$};\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle, draw] {$P_2$}; \tikz[inner sep=.25ex, baseline=-.75ex] \node {$P_4$};, \ 
+					\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_1$};\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle, draw] {$P_3$}; \tikz[inner sep=.25ex, baseline=-.75ex] \node {$P_4$};, \ 
+					\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle,draw] {$P_2$};\tikz[inner sep=.25ex,baseline=-.75ex] \node[circle, draw] {$P_3$}; \tikz[inner sep=.25ex, baseline=-.75ex] \node[circle, draw] {$P_4$};, \ 
+				\\
+					$P_1 P_2 P_3 P_4$,
+					
+					}\fi
+                 \vfill
+           \item In each winning coalition above, circle the \defnstyle{critical voters}.
+           \item Count the number of times each voter is a critical voter.
+                 This is called that voter's \defnstyle{Banzhaf power}. \index{power index!Banzhaf}
+                 \begin{center}
+                   \begin{tabular}{l|l}
+                     Voter & Banzhaf power \\ \hline
+										\ifsolns
+										 $P_1$ & 5 \\ \hline
+                     $P_2$ & 3 \\ \hline
+                     $P_3$ & 3 \\ \hline
+                     $P_4$ & 1 \\ \hline
+                   \else
+                     $P_1$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_2$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_3$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_4$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+										\fi
+                   \end{tabular}
+                 \end{center}
+           \item Add up all the voters' Banzhaf powers; this sum is called the \defnstyle{total Banzhaf power} of the voting system.
+                 \vspace{0.5in}
+           \item Finally, divide each voter's Banzhaf power by the total Banzhaf power.
+                 The percentage that results is called the voter's \defnstyle{Banzhaf power \underline{index}}.
+                 \begin{center}
+                   \begin{tabular}{l|l}
+                     Voter & Banzhaf power \emph{index}\\ \hline
+                     $P_1$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_2$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_3$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                     $P_4$ & \raisebox{0pt}[15pt][5pt]{} \\ \hline
+                   \end{tabular}
+                 \end{center}
+         \end{enumerate}
+
+\clearpage
+	\item Calculate the Banzhaf Power Index for each voter in the weighted voting system $[51| 32, 22, 12]$.
+          \vfill
+    \item Make up a weighted voting system with a dummy, and calculate the Banzhaf Power Index for the dummy.
+          \vfill
+    \item Make up a weighted voting system with a dictator, and calculate the Banzhaf Power Index for the dictator.
+          \vfill
+    \item Make up a weighted voting system in which several voters have veto power.
+          Calculate the Banzhaf Power Index for the voters with veto power.  What do you notice?
+          \vfill
+					\fillwithlines{\stretch{1}}
+\clearpage
+	\item The U.N. Security Council consists of 15 member countries--5 permanent members and 10 non-permanent members.  A motion can pass only if it has the vote of \emph{all five} of the permanent members plus at least four of the non-permanent members.
+	\begin{enumerate}
+		\item Describe the critical players in a winning coalition.  \label{UNSC1}
+		\ifsolns For coalitions with 9 players, every player is critical.  For coalitions with more than 9 players, only permanent members are critical. \vfill
+		\else \fillwithlines{\stretch{1}}\fi
+		\item Use your answer in (a),%\ref{UNSC1}, 
+		together with the fact that there are 210 nine-member winning coalitions and 638 winning coalitions with 10 or more members, to explain why the total number of times all players are critical is 5080. \label{UNSC2}
+		\ifsolns \[ 210 \times 9  + 638 \times 5 = 5080\] \vfill
+		\else \fillwithlines{\stretch{1}}\fi
+		\item Using the results of (a) and (b), %\ref{UNSC1} and \ref{UNSC2}, 
+		show that the Banzhaf power index of a permanent member is given by the ratio $848/5080$. \label{UNSC3} \ifsolns Since permanent members are critical in every winning coalition, each permanent member is critical \[210+638 = 848 \] times, \fi\vfill
+		\item Using the results of (a), (b) and (c), %\ref{UNSC1}, \ref{UNSC2} and \ref{UNSC3}, 
+		show that the Banzhaf power index of a non-permanent member is given by the ratio $84/5080$. 
+		\ifsolns The remaining times players are critical, but are not permanent is 
+		\[ 5080 - 5\times 848 = 840 \]
+		This needs to be shared amoung the 10 non-permanent members so each one is critical 84 times. \fi\vfill
+		\item Explain why the U.N. Security Council is equivalent to the weighed voting system in which each non-permanent member has 1 vote, each permanent member has 7 votes and the quota is 39 votes. \ifsolns 
+		It just works out.  Nearly all students will not have time to complete the calculations in class. \vfill\else \fillwithlines{\stretch{1}}\fi
+	\end{enumerate}
+\end{enumerate}
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+\begin{Venumerate}
+  \item List all the winning coalitions in the weighted voting system $[12|7,5,4,2]$.
+        \solution*{
+          For convenience, we list them both by $P$-number and by their weights:\par
+          \[\boxed{\begin{array}{ll}
+              \{P_1, P_2, P_3, P_4\} & \{7,5,4,2\} \\
+              \{P_1, P_2, P_3\} & \{7,5,4\} \\
+              \{P_1, P_2, P_4\} & \{7,5,2\} \\
+              \{P_1, P_3, P_4\} & \{7,4,2\} \\
+              \{P_1, P_2\} & \{7,5\} \\
+            \end{array}}\] }
+						\vfill\vfill
+  \item List all the winning coalitions in the weighted voting system $[11|6,4,3,3,1]$.
+        \solution{
+          For convenience, we list them both by $P$-number and by their weights:\par
+      \[\boxed{\begin{array}{ll}
+              \{P_1, P_2, P_3, P_4, P_5\} & \{6,4,3,3,1\} \\
+              \{P_1, P_2, P_3, P_4\} & \{6,4,3,3\} \\
+              \{P_1, P_2, P_3, P_5\} & \{6,4,3,1\} \\
+              \{P_1, P_2, P_4, P_5\} & \{6,4,3,1\} \\
+              \{P_1, P_3, P_4, P_5\} & \{6,3,3,1\} \\
+              \{P_2, P_3, P_4, P_5\} & \{4,3,3,1\} \\
+              \{P_1, P_2, P_3\} & \{6,4,3\} \\
+              \{P_1, P_2, P_4\} & \{6,4,3\} \\
+              \{P_1, P_2, P_5\} & \{6,4,1\} \\
+              \{P_1, P_3, P_4\} & \{6,3,3\} \\
+            \end{array}}\]
+        }\vfill\vfill
+\vfill  \item In the weighted voting system \[ [38|22,20,17,9,5], \] consider the winning coalition
+        $\{P_2, P_3, P_4, P_5\}$.
+        Which voters are critical voters in this coalition?
+        \solution*{$P_2$ and $P_3$ are critical voters (the 20 and the 17).}\vfill
+  \vfill\item In the weighted voting system \[ [7|3,3,2,2,2,1], \] consider the winning coalition
+        $\{P_1,P_3,P_4,P_6\}$.
+        Which voters are critical voters in this coalition?
+        \solution{$P_1$, $P_3$, and $P_4$ are critical voters (the 3, 2, and 2).}\vfill
+  \vfill\item Calculate the Banzhaf Power Index for each voter in the weighted voting system $[34 | 12, 10, 7, 6]$.
+        %\ifsolns
+          \solution*{All four voters have equal Banzhaf power: \fbox{$0.25, 0.25, 0.25, 0.25$.}}\vfill
+        %\fi
+  \vfill\item Consider the voting system $[25|24,20,1]$.
+        \begin{enumerate}
+          \item Calculate the percentage of the total weight that each voter holds.
+                \solution*{53.3\%, \quad 44.4\%, \quad 2.2\%}
+          \vfill\item Calculate the Banzhaf Power Index for each voter.
+                \solution*{0.60, \quad 0.20, \quad 0.20}
+          \vfill\item Comparing your answers to parts (a) and (b), explain in complete sentences
+                why the weight controlled by the voter is not the same thing as the power held by each voter.
+                \ifsolns
+                  \par\soln 
+                  There are several ways to answer this question.
+                  For example, voter $P_2$ has twenty times more weight than voter $P_3$,
+                  but they have exactly the same power.
+                  Another way to see it is that voter $P_1$ has fully three times as much power as voter $P_2$,
+                  even though the weights of 24 and 20 are not that different.
+                \fi
+        \end{enumerate}
+				
+\hwnewpage
+  \vfill\item Calculate the Banzhaf Power Index for each voter in the weighted voting system $[27 | 15, 7, 5]$.
+        \ifsolns
+          \par\soln \fbox{0.33, 0.33, 0.33}
+        \fi
+  \vfill\item Calculate the Banzhaf Power Index for each voter in the weighted voting system $[26 | 15, 13, 7]$.
+        \solution*{0.5, \quad 0.5, \quad 0}
+  \vfill\item Calculate the Banzhaf Power Index for each voter in the weighted voting system $[63|43,35,22,16]$.
+        \solution{0.417,\quad 0.25\quad 0.25\quad 0.0833}
+%%   \item Nassau County, New York used to be governed by a Board of Supervisors.
+%%         The county had six districts, each of which one delegate to vote on county issues.
+%%         The delegates' votes were weighted proportionately to the districts' population in 1964:
+%%         \begin{center}
+%%           \begin{tabular}{l|r}
+%%             District & Weight \\ \hline
+%%             Hempstead \#1 & 31 \\
+%%             Hempstead \#2 & 31 \\
+%%             Oyster Bay    & 28 \\
+%%             North Hempstead & 21 \\
+%%             Long Beach    &  2 \\
+%%             Glen Cove     &  2
+%%           \end{tabular}
+%%         \end{center}
+%%         A simple majority was needed to pass a motion.
+%%         \begin{enumerate}
+%%           \item Express this weighted voting system in our usual notation.
+%%                 \ifsolns
+%%                   \par\soln \fbox{$[ 58 | 31, 31, 28, 21, 2, 2]$}
+%%                 \fi
+%%           \item Calculate the Banzhaf power of each district.
+%%                 \ifsolns
+%%                   \par\soln A motion will pass if and only if two of the three largest voters vote for it.  Thus the Banzhaf power is: \\
+%%                   \begin{tabular}[c]{l|rr}
+%%                     District        & Weight & Banzhaf Power\\ \hline
+%%                     Hempstead \#1   & 31     & 0.33 \\
+%%                     Hempstead \#2   & 31     & 0.33 \\
+%%                     Oyster Bay      & 28     & 0.33 \\
+%%                     North Hempstead & 21     & 0.00 \\
+%%                     Long Beach      &  2     & 0.00 \\
+%%                     Glen Cove       &  2     & 0.00 \\
+%%                   \end{tabular}
+%%                 \fi
+%%           \item What percentage of the county population lived in districts that are dummies?
+%%                 \ifsolns
+%%                   \par\soln Since the weights are proportionate to the population, and the total weight is 115,
+%%                   we conclude that $\dfrac{21+2+2}{31+31+28+21+2+2} = \dfrac{25}{115} = \boxed{21.7\%}$
+%%                   of the population had no say at all in county government.
+%%                 \fi
+%%           \item In 1965 John F.~Banzhaf~III argued in court that even though the weights were proportionate to population,
+%%                 this system of government was unfair.
+%%                 He won!
+%%                 \ifsolns
+%%                   \par\fbox{\emph{(No answer required.)}}
+%%                 \fi
+%%         \end{enumerate}
+\vfill
+\end{Venumerate}
+
+\ENDHOMEWORK
