@@ -1,0 +1,201 @@
+\section{Apportionment} \label{sec:Apportionment}
+\index{apportionment}
+Another mathematical challenge in most Democratic systems is that of Apportionment.  Essentially the problem is one of representation.  Seats in the House of Representatives are given to the states based on population.  There are 435 seats for 2323.1 million people.  That works out to $323100000/435 = 742758.6207$ or about $742,759$ people per seat in the House.  However, even though North Dakota, Vermont, and Wyoming all have smaller populations than that they are guaranteed a seat in the House.  Also, if you look at the other states, it is very rare that their population is exactly an even multiple of $742,759$.  This section is all about how to fairly appoint seats in a house of representatives, as well as a variety of other tasks that turn out to be essentially the same thing.
+
+\begin{enumerate}
+		\item The Republic of Awoi is a small country consisting of four states North-West (population 69,000), South-West 	(population 267,000), South-East (population 133,000) and North-East (population 331,000).  Suppose that there are 160 seats in the Awoi Congress to be apportioned among the four states based on their representative populations.
+		\begin{enumerate}
+			\item On average, how many people per congress seat should there be?\ifsolns \par 5000 \else
+	\fillwithlines{\stretch{1}}
+\fi
+	
+
+			\item How would you give out the 160 seats to the four states and why?
+			\large
+			
+			\ifsolns
+			\begin{tabular}{c|c|c|c|c} \hline
+				& NW & SW & SE & NE \\\hline
+				Seats &14&53&27&66 \\\hline
+			\end{tabular}
+	\end{enumerate}\vfill
+	\else
+			\begin{tabular}{c|c|c|c|c} \hline
+				& NW & SW & SE & NE \\\hline
+				Seats &&&& \\\hline
+			\end{tabular}
+	\end{enumerate} 
+	\fillwithlines{\stretch{1}}\fi
+\normalsize
+\clearpage
+	
+	\item Notes on Apportionment
+	\vfill
+	 \boxedblank[2in]{\textbf{Standard Divisor (SD):}\solution{The whole population divided by the number of seats}\fillwithlines{\stretch{1}}} \index{divisor!standard}
+	 
+  \boxedblank[2in]{\textbf{Standard quotas ($q_1,q_2,\dots q_N$):}\solution{Population of each state divided by the standard divisor.}\fillwithlines{\stretch{1}}} \index{quota!standard}
+	  
+   \boxedblank[2in]{\textbf{Upper and lower quotas:}\solution{The upper quota is the standard quota rounded up and the lower quota is the standard quota rounded down.  A fair apportionment will lead to all states having either their upper or lower quota.}\fillwithlines{\stretch{1}}} \index{quota!upper} \index{quota!lower}
+	   \vfill
+
+	\clearpage
+\subsection{Hamilton's Method} \index{apportionment method!Hamilton}
+	\item 	   \boxedblank[2in]{\textbf{Hamilton's Method:}\solution{Assign all states their lower quota.  Then, to assign the extra seats, look at the state with the largest decimal part in its standard quota and assign it the upper quota.  Continue until all extra seats are assigned.}}
+	\vfill
+	\item Consider the Republic of Awoi:
+	\begin{enumerate}
+			\item Find the standard divisor. \solution{5,000}
+			\fillwithlines{\stretch{1}}
+			%\large
+		{\renewcommand{\arraystretch}{2}
+		
+\begin{tabular}{c|c|c|c|c|c} \hline
+	 & Population  & Standard quota  & LQ  & UQ  & App \\\hline
+\ifsolns NW  & 69,000 & 13.8 & 13 & 14 & 14\\\hline
+ SW  & 267,000 & 53.4 & 53 & 54 & 53\\\hline
+ SE  & 133,000 & 26.6 & 26 & 27 & 27\\\hline
+ NE  & 331,000 & 66.2 & 66 & 67 & 66\\\hline
+	\else
+ NW  & 69,000 &  &  &  & \\\hline
+ SW  & 267,000 &  &  &  & \\\hline
+ SE  & 133,000 &  &  &  & \\\hline
+ NE & 331,000 &  &   &   & \\\hline
+	\fi		\end{tabular}
+	}
+		\normalsize
+		
+		In the table above:
+		\item Find each state's standard quota.
+		\item Find each state's lower and upper quota.
+		\item Find the apportionment as described by Hamilton's Method.
+	\end{enumerate} \vfill
+	
+	\clearpage
+	\item The Republic of Bananarama is  a small country consisting of five states ($A, B, C, D,$ and $E$).  The total population of Bananarama is 23.8 million.  According to the Bananarama constitution, the seats in the legislature are apportioned to the states according to their populations.  The following table shows each state's standard quota:
+	
+	\begin{center}
+	\begin{tabular}{lcccccc}
+State & $A$ & $B$ & $C$ & $D$ & $E$ \\\hline
+Standard quota &40.50 & 29.70 & 23.65 & 14.60 & 10.55 \\\hline
+\end{tabular}
+\end{center}
+	
+	In the Table below:
+	\begin{enumerate}
+	
+	
+	\item Find the number of seats in the Bananarama legislature.
+	\item Find the Standard Divisor.
+	\item Find the population of each state.
+
+	\begin{center}
+	\begin{tabular}{l|c|c|c|c|c} \hline
+State	&	Pop. &Q. &	LQ&  Additional Seats	 	&  	 	Apportionment \\\hline
+\ifsolns	$A$ &8.1&40.5&40&&40\\\hline
+	$B$ &5.94&29.7&29&1&30\\\hline
+	$C$ &4.73&23.65&23&1&24\\\hline
+	$D$ &2.92&14.6&14&1&15\\\hline
+	$E$ &2.11&10.55&10&&10\\\hline
+	Totals &23.8&200,000&119&&116\\\hline
+	\else
+	$A$ &&&&&\\\hline
+	$B$ &&&&&\\\hline
+	$C$ &&&&&\\\hline
+	$D$ &&&&&\\\hline
+	$E$ &&&&&\\\hline
+	Totals &&&&&\\\hline \fi
+	\end{tabular}
+	
+	\end{center}
+
+	\item Find each state's standard lower quota.
+	\item Find the apportionment as described by Hamilton's method.
+\end{enumerate}
+
+
+\end{enumerate}
+%\clearpage
+\clearpage
+\input{Hamilton}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+
+Show all your work.
+
+\begin{Denumerate}
+
+	\item Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts: $A$ (7:00 AM to 1:00 PM), $B$ (1:00 PM to 7:00 PM), $C$ (7:00 PM to 1:00 AM), $D$ (1:00 AM to 7:00 AM).  The number of nurses apportioned to each shift is based on the average number of patients treated in that shift, given in the following table:
+
+	\begin{center}
+	%\large
+
+		\begin{tabular}{lr|c|c|c|c}
+	\hline
+	Shift &	Patients & Standard Quota & Lower Quota & Additional & Apportionment \\\hline
+\ifsolns$ A $ & 871 & 56.4537 & 56 &  & 56\\\hline 
+$ B $ & 1029 & 66.69444 & 66 & 1 & 67\\\hline 
+$ C$ & 610 & 39.53704 & 39 & 1 & 40\\\hline 
+$D $ & 190 & 12.31481 & 12 &  & 12\\\hline 
+Total  & 2700 & 175 & 173 &  & 175\\\hline \else
+	 $A$ &	871 &&&&\\\hline
+	 $B$ &	1029&&&&\\\hline
+	 $C$&	610&&&&\\\hline
+	$D$ &	190&&&&\\\hline
+	Total && 175 &&&\\\hline \fi
+	\end{tabular}
+	
+	\normalsize
+	\end{center}	
+	
+	\begin{enumerate}
+		\item Find the standard divisor. \solution*{15.42857143}
+		\item Explain what the standard divisor represents in this problem. \solution*{One nurse will be assigned for each 15.4 patients.}\vspace{2in}
+		\item Find the standard quotas.
+		\item Using Hamilton's Method, assign extra seats to the lower quotas, one at a time, until you have apportioned all your nurses.
+		\item Find the apportionment based on Hamilton's method. 
+		\solution*{\begin{tabular}{cc}
+		$ A $ & 56\\
+$ B $ & 67\\
+$ C$ & 40\\
+$D $ & 12\\
+		\end{tabular}}\vfill
+	\end{enumerate}
+
+\hwnewpage
+	\item Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM ($A$, $B$, $E$, $H$, and $S$ for short).  The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.  The following table shows each school's enrollments:
+
+	\begin{center}
+	%\large
+		\begin{tabular}{lr|c|c|c|c}
+	\hline School &	Enrollment & S Q & L Q & Additional & Apportionment \\\hline \ifsolns
+	$A$ & 3292 & 32.92 & 32 & 1 & 33\\\hline
+$B$ & 1524 & 15.24 & 15 &  & 15\\\hline
+$E$ & 4162 & 41.62 & 41 & 1 & 42\\\hline
+$H$ & 2132 & 21.32 & 21 &  & 21\\\hline
+$S$  & 13890 & 138.9 & 138 & 1 & 139\\\hline
+Total  & 25,000 & 250 & 247 & 3 & 250\\\hline
+\else
+	$A$&	3292&&&&\\\hline
+	$B$	&1524&&&&\\\hline
+	$E$	&4162&&&&\\\hline
+	$H$	&2132&&&&\\\hline
+	$S$ &	 13890 &&&&\\\hline
+	Total & 25,000 & 250 &&&\\\hline \fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+
+
+	\begin{enumerate}
+		\item
+		 Find the standard divisor. \solution{ 100}
+		\item Explain what the standard divisor represents in this problem. \solution{Each faculty member is responsible for 100 students, or the student to faculty ratio is 100.}\vspace{2in}
+		\item Find the standard quotas.
+		\item Find the apportionment based on Hamilton's method.
+	\end{enumerate}
+
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage

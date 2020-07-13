@@ -1,0 +1,201 @@
+\subsection{Paradoxes} \index{paradoxes!Apportionment} \label{sec:Paradoxes}
+\begin{enumerate}
+	\item The small country of Amabala consists of three states: Eno, Owt, and Eerht.  With a total population of 20,000 and 200 seats in the House of Representatives the apportionment of the 200 seats under Hamilton's method is shown below:
+
+	\begin{center}
+		\begin{tabular}{lrrrrr} \hline
+	State & Population & Quota & Lower quota & Additional & Apportionment \\\hline
+	Eno & 940 & 9.4 & 9 & 1 & 10 \\\hline
+	Owt & 9030 & 90.3 & 90 & 0 & 90 \\\hline
+	Eerht & 10,030 & 100.3 & 100 & 0 & 100 \\\hline\hline
+	Total & 20,000 & 200.0 & 199 & 1 & 200 \\\hline
+	\end{tabular}
+	\end{center}
+	What was the Standard Divisor that was used to apportion Amabala's seats? \ifsolns 100 \fi\hrulefill
+	
+	Now, imagine that the number of seats is suddenly \textbf{increased to 201}, but \textbf{nothing else changes}.  Since there is one more seat to give out, the apportionment has to be recomputed.
+	\begin{enumerate}
+		\item What is the new Standard Divisor?  It has to change because the number of seats has changed.  \ifsolns 99.50 \fi \hrulefill
+	
+	\begin{center}
+	\large
+		\begin{tabular}{l|r|r|r|r|r} \hline
+	State & Population & SQ & LQ & Additional & Apportionment \\\hline
+	\ifsolns
+	Eno  & 940 & 9.447 & 9 &  & 9\\\hline 
+Owt  & 9030 & 90.7515 & 90 & 1 & 91\\\hline 
+Eerht  & 10,030 & 100.8015 & 100 & 1 & 101 \\\hline \hline
+Total  & 20,000 & 201 & 199 & 2 & 201 \\\hline 
+\else
+	Eno & 940 &  &  &  &  \\\hline
+	Owt & 9030 &  &  &  &  \\\hline
+	Eerht & 10,030 &  &  &  &  \\\hline \hline
+	Total & 20,000 & 201 &  &  &  \\\hline \fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+	
+		\item Which state received an extra seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item Which state lost a seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item What do you find odd about this situation? \hrulefill
+		\fillwithlines{\stretch{1}}
+	\end{enumerate}
+
+	\item \boxedblank[2in]{\textbf{Alabama Paradox:}\fillwithlines{\stretch{1}}} \index{paradox!Alabama}
+\clearpage
+	\item Consider the following apportionment made using Hamilton's method.  Populations are given in millions:
+	
+	\begin{center}
+		\begin{tabular}{lrrrrr} \hline
+	State & Population & Quota & Lower quota & Additional & Apportionment \\\hline
+	Alpha & 150 & $8.\overline{3}$ & 8 & 0 & 8 \\\hline
+	Beta & 78 & $4.\overline{3}$ & 4 & 0 & 4 \\\hline
+	Gamma & 173 & $9.6\overline{1}$ & 9 & 1 & 10 \\\hline
+	Delta & 204 & $11.3\overline{3}$ & 11 &0 & 11 \\\hline
+	Epsilon & 295 & $16.3\overline{8}$ & 16 & 1 & 17 \\\hline\hline
+	
+	Total & 900 & 50 & 48 & 2 & 50 \\\hline
+	\end{tabular}
+	\end{center}
+	
+	Ten years later a new census was taken which showed only a few changes in state populations -- an 8 million increase in the population of Gamma and a 1 million increase in the population of Epsilon.  \emph{The populations of the other states remained unchanged.}  Use Hamilton's method to calculate the new apportionment.
+	\begin{enumerate}
+		\item What is the new Standard Divisor?  It has to change because your total population has changed. \ifsolns 18.18 people/seat \fi \hrulefill
+	
+	\begin{center}
+\ifsolns \else	\large\fi
+		\begin{tabular}{l|r|r|r|r|r} \hline
+	State & Population & Q & LQ & Additional & Apportionment \\\hline
+	\ifsolns
+	Alpha  & 150 & 8.250825083 & 8 &  & 8\\\hline 
+Beta  & 78 & 4.290429043 & 4 & 1 & 5\\\hline 
+Gamma  & 181 & 9.9559956 & 9 & 1 & 10\\\hline 
+Delta  & 204 & 11.22112211 & 11 &  & 11\\\hline 
+Epsilon  & 296 & 16.28162816 & 16 &  & 16\\\hline \hline
+Total  & 909 & 50 & 48 & 2 & 50 \\\hline 
+\else
+	Alpha & 150 &&&& \\\hline
+	Beta & 78 &&&& \\\hline
+	Gamma & 181 &&&& \\\hline
+	Delta & 204 &&&& \\\hline
+	Epsilon & 296 &&&& \\\hline \hline
+	Total & \textbf{909} & 50.00 &  &  & 50 \\\hline\fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+
+		\item Which state received an extra seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item Which state lost a seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item What do you find odd about this situation?\hrulefill\fillwithlines{\stretch{1}}
+	\end{enumerate}
+	\item \boxedblank[2in]{\textbf{Population Paradox:} } \index{paradox!population}
+
+\clearpage
+
+	\item The W-CF Garbage Company has a contract to provide garbage collection and recycling services to the two towns of Waterloo (with 89,550 homes) and Cedar Falls (with 10,450 homes).  The company runs 100 little garbage trucks, which are apportioned under Hamilton's method according to the number of homes in the district.  A quick calculation shows that the standard divisor is $SD=1000$ homes, a nice, round number which makes the rest of the calculations easy.  
+	
+		\begin{center}
+		\begin{tabular}{l|r|r|r} \hline
+	State & Population & Q  & Apportionment \\\hline
+	Waterloo & 89,550 &89.55&90 \\\hline
+	Cedar Falls & 10,450 &10.45&10 \\\hline\hline
+	Total & 100,000 & 100.00 & 100 \\\hline
+	\end{tabular}
+	\end{center}
+
+	Now, the W-CF Garbage Company is bidding to expand its territory by adding the town of Evansdale (5250 homes) to its service area.  In the bid, the company promises to buy five additional garbage trucks for the Evansdale run so that its service to the other two towns is not affected.  Calculate the new apportionment.
+		\begin{enumerate}
+		\item What is your new Standard Divisor?  It will probably change because you have changed both your total population and the number of seats. \ifsolns 1002.38 \fi \hrulefill
+	\large
+		\begin{center}
+		\begin{tabular}{l|r|r|r} \hline
+	State & Population & Q  & Apportionment \\\hline \ifsolns
+	Waterloo  & 89550 & 89.33729216   & 89\\\hline
+Cedar Falls  & 10450 & 10.42517815 & 11\\\hline
+Evansdale  & 5250 & 5.237529691  & 5\\\hline\hline
+\else
+	Waterloo & 89,550 && \\\hline
+	Cedar Falls & 10,450 && \\\hline
+	Evansdale & 5250 && \\\hline\hline\fi
+	Total & 105,250 & 105.00 & \\\hline
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+		\item Which city received an extra garbage truck?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item Which state lost a garbage truck?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item What do you find odd about this situation?\hrulefill\fillwithlines{\stretch{1}}
+	\end{enumerate}
+	\item \boxedblank[2in]{\textbf{New-States Paradox} \index{paradox!new-states}}
+\end{enumerate}
+%\end{enumerate}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+The following problems are based on the following story:  Your professor found a stash of fun, math toys in her office.  She decides to apportion the toys among her three first-year advisees according to the number of minutes each student spent doing homework during the week.
+\begin{Denumerate}
+\item \begin{enumerate}
+	\item Suppose that there were 11 toys in the office.  Given that Ben did homework for a total of 54 minutes, Paul did homework for a total of 243 minutes and Ryan did homework for a total of 703 minutes, apportion the 11 toys among the students using Hamilton's method.
+	\solution*{Ben - 0\\
+Paul - 3\\
+Ryan - 8}
+	\vfill \label{AppPar1}
+	\item Suppose that before the professor hands out the toys, each student decides to spend a ``little'' extra time on homework.  Ben puts in an extra 2 minutes (for a total of 56 minutes), Paul put in an extra 12 minutes (for a total of 255 minutes), and Ryan an extra 86 minutes (for a total of 789 minutes).  Using these new totals, apportion the 11 toys among the students using Hamilton's method.
+	\solution*{Ben - 1\\
+Paul - 2\\
+Ryan - 8
+}
+	\vfill
+	\item These results illustrate one of the paradoxes of Hamilton's method.  Which one?  Explain? \solution*{This is the Population Paradox.  Be sure to explain how you know.}
+	\vfill
+	\end{enumerate}
+	
+	\hwnewpage
+\item \begin{enumerate}
+	\item Suppose there were only 10 toys in the office Given that Ben did homework for a total of 54 minutes, Paul did homework for a total of 243 minutes and Ryan did homework for a total of 703 minutes, apportion the 10 toys among the students using Hamilton's method. \solution{Ben - 1, 
+Paul - 2, 
+Ryan - 7}
+
+	\vfill
+	\item Suppose that, just before she hands out the toys, the professor finds one additional math toy.  Using the same total minutes as above, apportion now the 11 math toys among the students using Hamilton's method.  [This is a repeat of Homework~\ref{AppPar1}.] \solution{Ben - 0, 
+Paul - 3, 
+Ryan - 8}
+	\vfill
+	\item These results illustrate one of the paradoxes of Hamilton's method.  Which one?  Explain? \solution{Alabama Paradox}
+	\vfill
+	\end{enumerate}
+	
+	\hwnewpage
+\item \begin{enumerate}
+	\item Suppose that there were 11 toys in the office.  Given that Ben did homework for a total of 54 minutes, Paul did homework for a total of 243 minutes and Ryan did homework for a total of 703 minutes, apportion the 11 toys among the students using Hamilton's method.  [This is a repeat of Homework~\ref{AppPar1}.] \solution{Ben - 0, 
+Paul - 3, 
+Ryan - 8}
+	\vfill 
+	\item Suppose that before the 11 toys are given out, a frantic student, Jon, shows up at the office with a new ``Declaration of Major'' form.  Jon wants to be included in the game.  Jon did homework for 580 minutes during the previous week.  To be fair, the professor goes to the next office and finds 6 more math toys to be added to the original 11.  Apportion now the 17 toys among the four students using Hamilton's method.\solution{Ben - 1, 
+Paul - 3, 
+Ryan - 7, 
+Jon - 6
+} \vfill
+		\item These results illustrate one of the paradoxes of Hamilton's method.  Which one?  Explain? \solution{New States}
+	\vfill
+	\end{enumerate}
+	\hwnewpage
+	
+	\item A professor wants to apportion 15 math toys among her three second-year advisees, Kathryn, Lacey, and Jill based on the number of minutes each student spent studying.  The only information we have is that the professor will use Hamilton's method and that Kathryn's standard quota is 6.53
+	\begin{enumerate}
+		\item Explain why it is impossible for all three students to end up with five toys each. \solution{Kathryn must have at least 6 toys, her lower quota.} \vfill
+		\item Explain why it is impossible for Kathryn to end up with nine toys. \solution{Kathryn must have no more than 7 toys, her upper quota.} \vfill
+		\item Explain why it is impossible for Lacey to end up with nine toys. \solution*{Consider closely who will have the largest fractional part.\ifgradersolns Because Kathryn's fractional part is .53, and all the standard quotas must sum to exactly 15, the other fractional parts must sum to .47.  Therefore, if there are any extra toys, Kathryn will get at least her upper quota because she has the largest fractional part \fi} \vfill
+\end{enumerate}
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
