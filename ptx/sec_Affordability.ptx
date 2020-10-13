@@ -1,0 +1,460 @@
+<section xml:id="sec_Affordability">
+  <title>Affordability</title>
+  <ol>
+    <li>
+      <p>
+        The amount banks generally require for a
+        <q>normal</q>
+        down payment is<ellipsis/>
+        <answer>
+          <p>
+            10%-20% \else
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Private mortgage insurance</term> (PMI) is <ellipsis/>
+        <answer>
+          <p>
+            insurance payable to a lender or trustee for a pool of securities that may be required when taking out a mortgage loan.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        PMI is always calculated as a percentage of the<ellipsis/> <idx><h>Private Mortgage Insurance (PMI)</h></idx>
+        <answer>
+          <p>
+            loan amount, not the purchase price
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        The credit union will let you get by with a 5% down payment if you pay 0.6% PMI per year.
+        You still have $11,000 in savings.
+        <ol>
+          <li>
+            <p>
+              What is the most expensive house you can buy if you only pay a 5% down payment?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              In this case,
+              how much will you pay for PMI during the first year?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much will you pay each month for PMI?
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        A <term>point</term> is <ellipsis/>
+          <idx><h>mortgage</h><h>points</h></idx>
+        <answer>
+          <p>
+            1% of the loan.\else
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Closing costs</term> are what you have to pay at the time you take out the loan.
+          <idx><h>closing costs</h></idx>
+      There are several types, including the following:
+        <ol>
+          <li>
+            <p>
+              A <term>down payment</term>.
+          <idx><h>mortgage</h><h>down payment</h></idx>
+      </p>
+          </li>
+          <li>
+            <p>
+              A <term>discount charge</term> is <idx><h>mortgage</h><h>discount charge</h></idx>
+            </p>
+          </li>
+          <li>
+            <p>
+              A <term>loan origination fee</term>
+              is <ellipsis/> <idx><h>mortgage</h><h>loan origination fee</h></idx>
+              <answer>
+                <p>
+                  An origination fee usually varies from 0.5%
+                  (half a point)
+                  to 2%
+                  (two points)
+                  of a given loan amount,
+                  depending on whether the loan was originated in the prime or the subprime market.
+                  For example,
+                  an origination fee of 2% on a $200,000 loan is $4,000.[2]\else
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Closing costs:</em>
+      </p>
+    </li>
+    <li>
+      <p>
+        You are buying a house for $165,000 with a $20,000 down payment,
+        and the bank charges you $253 in closing fees plus one point.
+        How much are your closing costs?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Your monthly housing expenses are often referred to as
+        <q>PITI.</q>
+        \mbox{ P} <idx><h>housing expenses</h><h>Principle</h></idx>
+        <answer>
+          <p>
+            Principle
+          </p>
+        </answer>
+        \mbox{ I} <idx><h>housing expenses</h><h>Interest</h></idx>
+        <answer>
+          <p>
+            Interest
+          </p>
+        </answer>
+        { T} <idx><h>housing expenses</h><h>Taxes</h></idx>
+        <answer>
+          <p>
+            Taxes
+          </p>
+        </answer>
+        { I} <idx><h>housing expenses</h><h>Insurance</h></idx>
+        <answer>
+          <p>
+            Insurance
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Josef takes out a 30 year mortgage loan of $50,000 with an APR of 6%.
+        <ol>
+          <li>
+            <p>
+              What is the monthly payment?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much does Josef owe on the mortgage after one month?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much of the first monthly payment went to paying off the loan (principle)?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much of the first monthly payment went to interest?
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Juan and Regina Hernandez are buying a house selling for $158,000.
+        They will put 12% down and get a 15-year mortgage at 3% interest compounded monthly,
+        but they will be charged 0.5% PMI per year.
+        Homeowner's insurance costs $948 per year and property taxes are $2370 per year.
+        <ol>
+          <li>
+            <p>
+              Determine their monthly mortgage payment
+              (principal and interest).
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine their monthly PMI payment.
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine their complete monthly payment
+              (principal, interest, taxes, and insurance).
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Matthias and Joanna Schmitz are interested in buying a house selling for $249,000.
+        The insurance and property taxes on the property are $1380 and $1980 per year,
+        respectively.
+        The Schmitzes' bank requires a 15% down payment and a payment of 2 points at closing.
+        <ol>
+          <li>
+            <p>
+              What would the Schmitzes' down payment be?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the mortgage amount?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the closing costs
+              (down payment and points).
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If the Schmitzes want a 30 year mortgage at 7% interest compounded monthly,
+              determine the monthly mortgage payment
+              (principal and interest).
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the Schmitzes' complete monthly payment
+              (principal, interest, taxes, and insurance).
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \HOMEWORK
+  </p>
+  <ol>
+    <li>
+      <p>
+        Frank and Lacey Capricorn are buying a $130,000 house.
+        They can afford an 8% down payment,
+        but the bank will charge them 0.7% PMI per year.
+        They will get a 20-year mortgage at 4.5% interest.
+        Home insurance will cost them $1260 annually,
+        and property taxes run $1986 per year.
+        How much will their total monthly housing payment (PITI) be?
+        <answer>
+          <p>
+            Their loan amount is $119,600,
+            so their mortgage payment (P&amp;I) will be $756.65 per month.
+            Taxes are $165.50 per month.
+            Homeowner's insurance is $105 per month,
+            and the PMI is $69.77 per month,
+            for a total monthly payment of $1096.92.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Erik and Kristin Halvorson want to buy a house for $148,000.
+        They want a standard 30-year, fixed-rate mortgage.
+        They can get an interest rate of 3.5% from their bank,
+        but they will have to pay two points to the bank.
+        They have saved up enough for a 10% down payment.
+        Home insurance will cost $1500 per year,
+        and property taxes are $1800 annually.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Calculate the Halvorsons' closing costs.
+            <answer>
+              <p>
+                The closing costs consist of down payments and points and fees.
+                The down payment is 10% of $148,000, namely $14,800.
+                Thus the loan amount is <m>\dollar148{,}000-\dollar14{,}800 = \dollar133{,}200</m>.
+                Two points are 2% of the loan amount, namely $2664.
+                Thus their closing costs are
+              </p>
+              <p>
+                {<m>\displaystyle \dollar14{,}800 + \dollar2{,}664 = \dollar17{,}464.00</m>.}
+              </p>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the Halvorsons' total monthly housing payment (PITI).
+            <answer>
+              <p>
+                Principal and Interest can be found from the present value formula.
+                We are looking for the <m>P</m> such that <m>\dollar133{,}200 = P \dfrac{1-(1+\frac{.035}{12})^{-12\cdot 30}}{\frac{.035}{12}}</m>.
+                Solving, we get <m>P=\dollar598.13</m> per month for Principal and Interest.
+              </p>
+              <p>
+                As for Taxes,
+                they are $1800 per year so <m>\dollar1800\div 12 = \dollar150</m> per month.
+                Likewise the Insurance costs <m>\dollar1500 \div 12 = \dollar125</m> per month.
+                We conclude that
+              </p>
+              <p>
+                {<m>\displaystyle PITI = \dollar598.13 + \dollar150 + \dollar125 = \dollar873.13\mbox{~per month.}</m>}
+              </p>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Marcus and Julia Quackenthorpe want to buy a $175,000 house.
+        They will put down a 20% down payment and get a 25-year fixed-rate mortgage.
+        The bank offers a 5% interest rate,
+        but if they pay one point, the bank will lower the interest rate to 4.5%.
+        <ol>
+          <li>
+            <p>
+              How much money will the Quackenthorpes borrow?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If they go with the 5% rate, how much will their monthly mortgage payment be?
+              <answer>
+              </answer>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Using that 5% rate,
+              how much will they pay for their house in total, over the 25 years?
+              <answer>
+                <p>
+                  <m>\dollar818.43 \cdot 12\cdot 25 + \dollar35,000 = \dollar280{,}529;</m> accept $245,529 for less credit
+                  (that's forgetting the down payment).
+                </p>
+              </answer>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If they pay one point and get a 4.5% interest rate,
+              how much will their monthly mortgage payment be?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Using that 4.5% rate,
+              how much will they pay for their house in total, over the 25 years,
+              <em>including the one point they paid for the discounted rate</em>?
+              <answer>
+                <p>
+                  <m>\dollar778.17 \cdot 12\cdot 25 + \dollar1400 + \dollar35,000 = \dollar269,851;</m> accept $234,851 for less credit
+                  (that's forgetting the down payment).
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Should the Quackenthorpes pay for the discount or not?
+              <answer>
+                <p>
+                  Yes, they should; it will save them over $10,000.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        You are shopping for a new house.
+        You have saved up $10,500 towards a down payment,
+        and you calculate that you can afford $1100 per month for housing total (PITI).
+        Real estate taxes for a house in your city will probably be about $2300 per year,
+        and insurance will be about $1600 annually.
+        You can get a 30-year mortgage with 4% interest, compounded monthly.
+        What is the most expensive house you could buy and still keep under your $1100/month budget?
+        <answer>
+          <p>
+            Your Taxes will be <m>\dollar2300\div 12 = \dollar191.67</m> per month,
+            and your Insurance will be <m>\dollar1600 \div 12 = \dollar133.33</m>.
+            That leaves
+          </p>
+          <p>
+            {<m>\displaystyle \dollar1100 - \dollar191.67 - \dollar133.33 = \dollar775.00</m>} per month for Principal and Interest.
+            Thus you can afford a loan of
+          </p>
+          <p>
+            {<m>\displaystyle PV = \dollar775 \dfrac{1-(1+\frac{.04}{12})^{-360}}{\frac{.04}{12}}=\dollar162{,}332.46</m>.} Adding in the $10,500 down payment you have saved,
+            you can afford a house costing <m>\dollar162{,}332.46 + \dollar10{,}500 = \dollar172{,}832.46</m>.
+          </p>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+</section>

@@ -1,0 +1,369 @@
+<section xml:id="sec_SimpleInterest">
+  <title>Simple Interest</title>
+  <p>
+        <idx><h>interest</h><h>simple</h></idx>
+    In this chapter, we retain the following conventions:
+  </p>
+  <tabular>
+    <row>
+      <cell>1 year</cell>
+      <cell>12 months</cell>
+    </row>
+    <row>
+      <cell>1 year</cell>
+      <cell>52 weeks</cell>
+    </row>
+    <row>
+      <cell>1 year</cell>
+      <cell>365 days</cell>
+    </row>
+    <row>
+      <cell>1 week</cell>
+      <cell>7 days</cell>
+    </row>
+    <row>
+      <cell>1 day</cell>
+      <cell>24 hours</cell>
+    </row>
+  </tabular>
+  <p>
+    All interest rates will be annual unless specified otherwise.
+  </p>
+  <ol>
+    <li>
+      <p>
+        You rent a post-hole digger from RentAll to build a fence.
+        The cost is $12.95 per day, and you keep it for three days.
+        How much will you pay?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        You're visiting Kentucky for work and need to rent a furnished apartment.
+        The rate is $100 per week.
+        You stay 18 days.
+        How much will you pay?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        You lease a car for $2500 per year.
+        How much will you pay if you keep the car for
+      </p>
+      <ol>
+        <li>
+          <p>
+            2 years?
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            5 months?
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            18 days?
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            6 weeks?
+            <answer>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Guido
+        <q>the Organist</q>
+        Landini is a small-time loan shark in downtown Metropolis.
+        He charges clients 43% simple interest per year.
+        What percentage interest does he charge on a loan of
+        <ol>
+          <li>
+            <p>
+              3 years?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              1 month?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              1 week?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              3 weeks?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              4 days?
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        The interest charged is<ellipsis/>
+          <idx><h>interest</h></idx>
+        <answer>
+          <p>
+            the interest rate as a decimal times the time
+            (in the appropriate units)
+            times the principle.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Loans:
+          <idx><h>loan</h></idx>
+        <answer>
+          <p>
+            Loan as renting money
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Calculations:
+        <answer>
+          <p>
+            Calculating simple interest
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Simple Interest Formula:</em>
+        <answer>
+          <p>
+            <m>F=P(1+rt)</m>
+          </p>
+        </answer>
+          <idx><h>interest</h><h>simple</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        Your cousin Ben borrows $1800 from you for 3 years,
+        at an annual simple interest rate of 7.0%. How much will he repay you?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Suppose you borrow $1000 for 4 months at an annual simple interest rate of 8.0%. Find the total amount that you will have to repay.
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Suppose Fred borrows $1500 from you for a period of 2 years,
+        at an annual simple interest rate of 6.0%. Find the amount of interest you will earn from Fred.
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Joe took out a loan for 6 months at an annual simple interest rate of 4.0%. The total amount he paid for the loan was $1890.46.
+        How much did he borrow?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Suppose $2000 is borrowed for 7 months,
+        at the end of which $2100 is repaid.
+        Find the annual simple interest rate <m>r</m>.
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Steve got a loan from the city to help repair the sidewalk in front of his home.
+        He borrowed $1800 at an annual simple interest rate of 5%. The amount he repaid was $2025.
+        How long was his loan?
+        <answer>
+          <p>
+            2.5 years, or 30 months
+          </p>
+        </answer>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \HOMEWORK
+  </p>
+  <ol>
+    <li>
+      <p>
+        Given the principal <m>P</m>,
+        the annual interest rate <m>r</m>,
+        and the time <m>t</m>, find the amount <m>F</m> that must be repaid.
+      </p>
+      <ol>
+        <li>
+          <p>
+            \prt{15,000}{6}{5 years}
+            <answer>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            \prt{5,300}{2}{3 months}
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            \prt{9,000}{4.5}{50 days}
+            <answer>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Of the four values <m>F</m>, <m>P</m>, <m>r</m>,
+        and <m>t</m> in the Simple Interest Formula, three are given to you.
+        Use the Simple Interest Formula to find the fourth one.
+        <ol>
+          <li>
+            <p>
+              <m>F={}</m>$12,000, <m>r=3\%</m>, <m>t={}</m>3 years
+              <answer>
+              </answer>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>F={}</m>$8,500, <m>t={}</m>6 months, <m>P={}</m>$8,200
+              <answer>
+              </answer>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>F={}</m>$4,250, <m>r=7\%</m>, <m>P={}</m>$3,500
+              <answer>
+                <p>
+                  3.06 years
+                </p>
+              </answer>
+              <answer>
+                <p>
+                  3.06 years
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        You borrow $2,000 from the city to pay for sidewalk repairs.
+        You promise to repay the loan in three years at 5% simple interest.
+        How much will you pay the city then?
+        <answer>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Istv&#xe1;n Nagy knows he will inherit $10,000 from his dying uncle within five months.
+        The bank will lend him money at 4% simple interest.
+        What is the largest amount of money he could borrow now,
+        if he plans to use his inheritance to repay it in five months?
+        <answer>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Steve's friend Pierre wants to borrow $220 from him for three months.
+        If Steve wants to earn $20 in interest on the loan,
+        what percent simple interest should he charge?
+        <answer>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Ali has borrowed $800 from his friend Jennifer,
+        who is charging him 2% simple interest.
+        Eventually Ali repaid the loan,
+        but it cost him $200 to do so.
+        For how long did Ali borrow Jennifer's money?
+        <answer>
+          <p>
+            12.5 years
+          </p>
+        </answer>
+        <answer>
+          <p>
+            12.5 years
+          </p>
+        </answer>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+</section>

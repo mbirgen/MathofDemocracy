@@ -1,0 +1,348 @@
+<section xml:id="sec_CompoundInterest">
+  <title>Compound Interest</title>
+  <p>
+        <idx><h>interest</h><h>compound</h></idx>
+  </p>
+  <answer>
+    <p>
+      Student page {105}
+    </p>
+  </answer>
+  <ol>
+    <li>
+      <p>
+        <em>Compound Interest Formula:</em>
+        <answer>
+          <p>
+            <m>F=P(1+\frac{r}{n})^{nt}</m>
+          </p>
+          <p>
+            If desired, let <m>i=\frac{r}{n}, m=nt</m>, then <m>F=P(1+i)^{m}</m>
+          </p>
+        </answer>
+          <idx><h>interest</h><h>compound</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        Notes on <term>nominal interest rate</term>
+        and <term>interest per period</term>:
+          <idx><h>interest</h><h>nominal</h></idx>
+          <idx><h>interest</h><h>per period</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        Suppose $1000 is deposited into an account that yields 9% annually.
+        Find the amount in the account at the end of the fifth year if the compounding is done
+        <ol>
+          <li>
+            <p>
+              annually
+          <idx><h>annually</h></idx>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              semiannually
+          <idx><h>semiannually</h></idx>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              quarterly
+          <idx><h>quarterly</h></idx>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              monthly
+          <idx><h>monthly</h></idx>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              weekly
+          <idx><h>weekly</h></idx>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              daily
+          <idx><h>daily</h></idx>
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        You take out a short-term business loan of $5000 for a period of 5 months.
+        The interest rate is 4%, compounded monthly.
+        How much will you have to repay at the end of the loan?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        You deposit $538 in a savings account that earns 3% interest,
+        compounded monthly.
+        How much interest will you earn in four years? (Your answer should be in dollars.)
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        \setcounter{tempyear}{\arabic{currentyear}-17} In January \arabic{tempyear} Zeke's uncle deposited some money into a college savings account for Zeke.
+        The account paid 5% interest, compounded quarterly.
+        In January \arabic{currentyear} there was $28,626.40 in the account.
+        How much did Zeke's uncle deposit back in \arabic{tempyear}?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Steve takes out a loan of $10,000.00 for four years.
+        At the end of the four years,
+        he pays back $11,273.30 to the bank.
+        If the interest was compounded monthly,
+        what was the interest rate?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Annual Effective Yield Formula<fn>
+        Sometimes this is referred to as Annual Percentage Rate (APR)
+        </fn>:</em>
+        <answer>
+          <p>
+            <m>APR= (1+\frac{r}{n})^n-1</m>
+          </p>
+          <p>
+            or <m>APR= (1+i)^n-1</m>
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        If you open a savings account at Muddy Lake Credit Union,
+        you will earn 3% interest compounded daily.
+        What is the annual effective yield?
+        <answer>
+          <p>
+            ANSWER: 3.0453%
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        If you open a CD at Muddy Ridge State Bank,
+        you will earn 3.2% interest compounded quarterly.
+        What is the annual effective yield?
+        <answer>
+          <p>
+            ANSWER: 3.2386%
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Your financial adviser offers you two investment funds.
+        If you invest in the AmerEquiShare Fund,
+        you can expect a return of 9% compounded semiannually
+        (twice a year).
+        If you invest in the PreferredSource Fund,
+        you can expect a return of 8.8% compounded monthly.
+        <ol>
+          <li>
+            <p>
+              What is the annual effective yield for the AmerEquiShare Fund?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the annual effective yield for the PreferredSource Fund?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Which investment offers the higher return?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \HOMEWORK
+  </p>
+  <ol>
+    <li>
+      <p>
+        Given the principal <m>P</m>,
+        the interest rate <m>r</m>, the time <m>t</m>,
+        and the frequency of compounding,
+        find the future amount <m>F</m>.
+      </p>
+      <ol>
+        <li>
+          <p>
+            \prct{15,000}{6.5}{quarterly}{2 years}
+            <answer>
+              <p>
+                $17,064.58 \else
+              </p>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            \prct{100,000}{3}{monthly}{30 years}
+            <answer>
+              <p>
+                $245,684.22 \else
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            \prct{1,500}{4}{daily}{60 days}
+            <answer>
+              <p>
+                $1,509.89 \else
+              </p>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            \prct{6,000}{5}{monthly}{6 months}
+            <answer>
+              <p>
+                $6,151.57 \else
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        When Susan Schroeckenthaler was born,
+        her parents deposited $4,000 into a bank account bearing 5% interest,
+        compounded monthly.
+        When she reached age 18, how much was in her account?
+        <answer>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Seventh National Bank is lending $10,000 to Frank Miller for three years.
+        The bank compounds interest quarterly.
+        If the bank needs to receive $2,300 in interest from Frank to cover its expenses,
+        what interest rate should it charge?
+        <answer>
+          <p>
+            6.96% interest.
+          </p>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Stephanie deposited some money in a bank account earning 3% interest,
+        compounded daily.
+        Twelve years later, there was $1,720 in the account.
+        How much money did Stephanie originally deposit?
+        <answer>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        How much money must Igor Savelyev deposit today in order to have $50,000 in twenty years,
+        if his account bears
+        <ol>
+          <li>
+            <p>
+              8% interest, compounded annually?
+              <answer>
+                <p>
+                  $10,727.41 \else
+                </p>
+              </answer>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              8% interest, compounded quarterly?
+              <answer>
+                <p>
+                  $10,255.49 \else
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              8% interest, compounded monthly?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              8% interest, compounded daily?
+              <answer>
+                <p>
+                  $10,096.60 \else
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+</section>

@@ -1,0 +1,396 @@
+<section xml:id="sec_ShapleyShubik">
+  <title>Shapley-Shubik Power Index</title>
+  <p>
+        <idx><h>power index</h><h>Shapley-Shubik</h></idx>
+  </p>
+  <ol>
+    <li>
+      <p>
+        A <term>sequential coalition</term>
+        is <ellipsis/> <idx><h>coalition</h><h>sequential</h></idx>
+        <answer>
+          <p>
+            A coalition of all voters in a particular order.
+            The assumption is that coalitions are formed sequentially: Players join the coalition and cast their votes in an orderly sequence. \else
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <ol>
+        <li>
+          <p>
+            Consider a weighted voting system with three voters <m>P_1</m>,
+            <m>P_2</m>, and <m>P_3</m>.
+            List all the sequential coalitions.
+            How many are there?
+            <answer>
+              <p>
+                <m>\{P_1,P_2,P_3\}, \{P_1,P_3,P_2\},\{P_2,P_1,P_3\},\{P_3,P_2,P_1\},\{P_2,P_3,P_1\},\{P_3,P_1,P_2\}</m>,\fbox{6}
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Consider a weighted voting system with four voters <m>P_1</m>,
+            <m>P_2</m>, <m>P_3</m>, and <m>P_4</m>.
+            List all the sequential coalitions.
+            How many are there?
+            <answer>
+              <p>
+                \fbox{24}
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            If a weighted voting system has <m>n</m> voters <m>P_1</m>,
+            <m>P_2</m>,
+            <ellipsis/>, <m>P_n</m>, how many sequential coalitions are there?
+            <answer>
+              <p>
+                <m>n!</m>
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        A <term>pivotal player</term> is <ellipsis/>
+          <idx><h>pivotal player</h></idx>
+        <answer>
+          <p>
+            the player who contributes the votes to turn a losing coalition into a winning coalition.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        List all the sequential coalitions in the weighted voting system
+        <m>[4 | 3, 2, 1]</m> and determine the pivotal player.
+      </p>
+    </li>
+    <li>
+      <p>
+        In the weighted voting system
+        <m>[4 | 3, 2, 1]</m>, Is there a voter who is always pivotal?
+        Is there a voter who is never pivotal?
+        <answer>
+          <p>
+            To calculate the power of a voter,
+            count the number of times the voter is pivotal.
+            Then divide by the total number of sequential coalitions.
+            Calculate the power of each voter in the weighted voting system <m>[4 | 3, 2, 1]</m>.
+            Just like in the previous power index,
+            the sum of all the powers must equal one.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the voting system <m>[6|4,3,2,1]</m>.
+        <ol>
+          <li>
+            <p>
+              List all the <em>sequential</em> coalitions.
+            </p>
+          </li>
+          <li>
+            <p>
+              In each sequential coalition above,
+              circle the <term>pivotal voters</term>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Count the number of times each voter is a pivotal voter.
+              This is called that voter's <term>Shapley-Shubik power</term>.
+          <idx><h>power index</h><h>Shapley-Shubik</h></idx>
+      <tabular>
+                <row>
+                  <cell>Voter</cell>
+                  <cell>Shapley-Shubik power</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><answer>
+                      <p>
+                        <m>P_1</m> &amp; 10
+                      </p>
+                      <p>
+                        \hline <m>P_2</m> &amp; 6
+                      </p>
+                      <p>
+                        \hline <m>P_3</m> &amp; 6
+                      </p>
+                      <p>
+                        \hline <m>P_4</m> &amp; 2
+                      </p>
+                      <p>
+                        \hline \else <m>P_1</m> &amp; [15pt][5pt]
+                      </p>
+                      <p>
+                        \hline <m>P_2</m> &amp; [15pt][5pt]
+                      </p>
+                      <p>
+                        \hline <m>P_3</m> &amp; [15pt][5pt]
+                      </p>
+                      <p>
+                        \hline <m>P_4</m> &amp; [15pt][5pt]
+                      </p>
+                      <p>
+                        \hline
+                      </p>
+                    </answer></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+          <li>
+            <p>
+              Add up all the voters' Shapley-Shubik powers;
+              this sum is called the <term>total Shapley-Shubik power</term> of the voting system.
+            </p>
+          </li>
+          <li>
+            <p>
+              Finally, divide each voter's Shapley-Shubik power by the total Shapley-Shubik power.
+              The percentage that results is called the voter's
+              <term>Shapley-Shubik power <em>index</em></term>.
+              <tabular>
+                <row>
+                  <cell>Voter</cell>
+                  <cell>Shapley-Shubik power <em>index</em></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>P_1</m></cell>
+                  <cell>[15pt][5pt]</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>P_2</m></cell>
+                  <cell>[15pt][5pt]</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>P_3</m></cell>
+                  <cell>[15pt][5pt]</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>P_4</m></cell>
+                  <cell>[15pt][5pt]</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system <m>[51| 32, 22, 12]</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Make up a weighted voting system with a dummy,
+        and calculate the Shapley-Shubik Power Index for the dummy.
+      </p>
+    </li>
+    <li>
+      <p>
+        Make up a weighted voting system with a dictator,
+        and calculate the Shapley-Shubik Power Index for the dictator.
+      </p>
+    </li>
+    <li>
+      <p>
+        Make up a weighted voting system in which several voters have veto power.
+        Calculate the Shapley-Shubik Power Index for the voters with veto power.
+        What do you notice?
+      </p>
+    </li>
+    <li>
+      <p>
+        In some cities the city Council operates under what is known as the,
+        <q>strong <mdash/> mayor</q>. Under this system the city Council can pass a motion under a simple majority,
+        but the mayor has the power to veto the decision.
+        The mayor's veto can then be overruled by a
+        <q>super majority</q>
+          <idx><h>super majority</h></idx>
+        of the council members.
+        As an example, consider the city of Ice-n-knock.
+        In Ice-n-knock,
+        the city Council has four members plus a strong mayor who has a vote as well as the power to veto motion supported by a simple majority of the council members.
+        On the other hand,
+        the mayor cannot veto a motion supported by all four Council members.
+        Thus, a motion can pass if the mayor +2 or more Council members supported or,
+        alternatively,
+        if the mayor is against it at the four council members support it.
+        It makes sense that under these rules,
+        the four council members have the same amount of power,
+        but the mayor has more.
+        Compute the Shapley-Shubik Power Index of this weighted voting system to figure out exactly how much more.
+        <answer>
+          <p>
+            Focus on the last sentence.
+            A motion can pass if the mayor +2 or more Council members supported or,
+            alternatively,
+            if the mayor is against it at the four council members support it.
+            The Mayor is pivotal whenever they are in the third or fourth position in a sequential coalition.
+            There are 4! of each of these sequential coalitions.
+            So <mdash/> there are a total of 5!=120 total sequential coalitions.
+            The Mayor is pivotal in <m>2\times 4! = 48</m> of them.
+            Each council member is pivotal in <m>\frac{120-48}{4}=18</m> of them.
+            The Mayor has power of 40% and each Council member has a power of 15%.
+          </p>
+        </answer>
+        For purposes of comparison,
+        calculate the Banzhaf power distribution of Ice-n-knock.
+        <answer>
+          <p>
+            This will probably not happen.
+            But, there are winning coalitions of 3, 4, and 5 players.
+            The 5 member coalition has no critical members.
+            There are 5 4-member coalitions. 4 of them have the Mayor as a member and they are the only critical member of those coalitions.
+            The fifth, without the Mayor, each member is critical.
+            There are 6 3-member winning coalitions that contain the Mayor.
+            All members are critical in each of these coalitions.
+            So, the Mayor is critical in <m>4+6=10</m> places.
+            The total number of critical council members is <m>4 + 6*2=16</m> places.
+            Thus, our denominator is 26,
+            the Mayor's numerator is 10 and each Council member's numerator is 4.
+            The Mayor has power of 38.5% and each Council member has a power of 15.4%.
+          </p>
+        </answer>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \HOMEWORK
+  </p>
+  <ol>
+    <li>
+      <p>
+        List all the sequential coalitions in the weighted voting system <m>[16|9,8,7]</m>.
+        <answer>
+          <p>
+            For convenience,
+            we list them both by <m>P</m>-number and by their weights:
+            <me>
+              \begin{array}{ll} \{P_1, P_2, P_3\} \amp  \{9,8,7\} \\ \{P_1, P_3, P_2\} \amp  \{9,7,8\} \\ \{P_2, P_1, P_3\} \amp  \{8,9,7\} \\ \{P_2, P_3, P_1\} \amp  \{8,7,9\} \\ \{P_3, P_1, P_2\} \amp  \{7,9,8\} \\ \{P_3, P_2, P_1\} \amp  \{7,8,9\} \end{array}
+            </me>
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        List all the sequential coalitions in the weighted voting system <m>[51|40,30,20,10]</m>.
+        <answer>
+          <p>
+            For convenience,
+            we list them both by <m>P</m>-number and by their weights:
+            <me>
+              \begin{array}{ll} \{P_1, P_2, P_3, P_4\} \amp  \{40, 30, 20, 10\} \\ \{P_1, P_2, P_4, P_3\} \amp  \{40, 30, 10, 20\} \\ \{P_1, P_3, P_2, P_4\} \amp  \{40, 20, 30, 10\} \\ \{P_1, P_3, P_4, P_2\} \amp  \{40, 20, 10, 30\} \\ \{P_1, P_4, P_2, P_3\} \amp  \{40, 10, 20, 30\} \\ \{P_1, P_4, P_3, P_2\} \amp  \{40, 10, 30, 20\} \\ \{P_2, P_1, P_3, P_4\} \amp  \{30, 40, 20, 10\} \\ \{P_2, P_1, P_4, P_3\} \amp  \{30, 40, 10, 20\} \\ \{P_2, P_3, P_1, P_4\} \amp  \{30, 20, 40, 10\} \\ \{P_2, P_3, P_4, P_1\} \amp  \{30, 20, 10, 40\} \\ \{P_2, P_4, P_1, P_3\} \amp  \{30, 10, 20, 40\} \\ \{P_2, P_4, P_3, P_1\} \amp  \{30, 10, 40, 20\} \\ \{P_3, P_1, P_2, P_4\} \amp  \{20, 40, 30, 10\} \\ \{P_3, P_1, P_4, P_2\} \amp  \{20, 40, 10, 30\} \\ \{P_3, P_2, P_1, P_4\} \amp  \{20, 30, 40, 10\} \\ \{P_3, P_2, P_4, P_1\} \amp  \{20, 30, 10, 40\} \\ \{P_3, P_4, P_1, P_2\} \amp  \{20, 10, 40, 30\} \\ \{P_3, P_4, P_2, P_1\} \amp  \{20, 10, 30, 40\} \\ \{P_4, P_1, P_2, P_3\} \amp  \{10, 40, 30, 20\} \\ \{P_4, P_1, P_3, P_2\} \amp  \{10, 40, 20, 30\} \\ \{P_4, P_2, P_1, P_3\} \amp  \{10, 30, 40, 20\} \\ \{P_4, P_2, P_3, P_1\} \amp  \{10, 30, 20, 40\} \\ \{P_4, P_3, P_1, P_2\} \amp  \{10, 20, 40, 30\} \\ \{P_4, P_3, P_2, P_1\} \amp  \{10, 20, 30, 40\} \end{array}
+            </me>
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the voting system <m>[25|24,20,1]</m>.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Calculate the percentage of the total weight that each voter holds.
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the Shapley-Shubik Power Index for each voter.
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Comparing your answers to parts (a) and (b),
+            explain in complete sentences why the weight controlled by the voter is not the same thing as the power held by each voter.
+            <answer>
+              <p>
+                There are several ways to answer this question.
+                For example,
+                voter <m>P_2</m> has twenty times more weight than voter <m>P_3</m>,
+                but they have exactly the same power.
+                Another way to see it is that voter <m>P_1</m> has fully three times as much power as voter <m>P_2</m>,
+                even though the weights of 24 and 20 are not that different.
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system <m>[15|16,8,4,1]</m>.
+        <answer>
+          <p>
+            \fbox{1,0,0}
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system <m>[24|16,8,4,1]</m>.
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Calculate the Shapley-Shubik Power Index for each voter in the weighted voting system <m>[28|16,8,4,1]</m>.
+        <answer>
+        </answer>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+  <p>
+    \cleartooddpage
+  </p>
+</section>

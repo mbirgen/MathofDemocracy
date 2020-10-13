@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="ch_infinity">
+  <title>Beyond Numbers</title>
+  <xi:include  href="sec_Stories.ptx"/>
+  <xi:include  href="sec_correspondence.ptx"/>
+  <xi:include  href="Infinite.ptx"/>
+  <xi:include  href="RationalNumbers.ptx"/>
+  <xi:include  href="sec_MissingMember.ptx"/>
+</chapter>

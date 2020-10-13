@@ -1,0 +1,16 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="ch_CalculatorTips">
+  <title>Calculator Tips</title>
+  <introduction>
+    <p>
+      <xref ref="ch_finance">Chapter</xref>
+      requires the use of a calculator to evaluate some rather complicated formulas.
+      This appendix contains some advice on how to avoid pitfalls that sometimes afflict students.
+      Most of the advice applies to all calculators,
+      but some is geared specifically to Texas Instruments calculators like the TI-84 and TI-30.
+    </p>
+  </introduction>
+  <xi:include  href="sec_paren.ptx"/>
+  <xi:include  href="sec_rounding.ptx"/>
+  <xi:include  href="sec_minus-negative.ptx"/>
+  <xi:include  href="sec_correcting_mistakes.ptx"/>
+</chapter>

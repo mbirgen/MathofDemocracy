@@ -1,0 +1,1597 @@
+<section xml:id="sec_FairDivision">
+  <title>Fair Division</title>
+  <introduction>
+    <p>
+      \begin{enumerate}
+    </p>
+    <p>
+      \item My friend and I decide have pizza for dinner.
+      We order pizza which is half red sauce with pepperoni and half garlic sauce with ham and pineapple.
+      To my friend, pizza is pizza.
+      He has no preference for one type of pizza over another.
+      On the other hand, I have an allergy to oregano and cannot eat any red sauce.
+      It gives me a horrible stomach ache and I'm grumpy for about eight hours.
+      <ol>
+        <li>
+          <p>
+            What is a fair way to divide this pizza so that my friend and I both believe we are getting a value of at least 50% of the pizza.
+          </p>
+        </li>
+        <li>
+          <p>
+            My friend never remembers that I do not eat red sauce.
+            Therefore, he divides the pizza so that each half has exactly half red sauce and half garlic sauce.
+            Am I able to choose a slice where I receive 50% of the value of the pizza?
+            <answer>
+              <p>
+                Yes
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose instead, I slice the pizza.
+            When I do so,
+            because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce.
+            Have I divided the pizza in such a way that each slice is worth 50% to me?
+            <answer>
+              <p>
+                No, because one slice is worth 100% and the other 0% to me.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Is there a way that I could divide the pizza in order to have each slice worth 50% to me and have all the red sauce on one of the slices?
+            <answer>
+              <p>
+                Yes.
+                One slice would have all red plus 1/2 of the garlic.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            In the case above, which of the slices with my friend choose?
+            <answer>
+              <p>
+                The larger one.
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The basic issue at all fair division problems can be stated in a reasonably simple terms: How can something that must be shared by a set of competing parties be divided among them in a way that ensures that each party receives a fair share?
+      Of course, part of the answer to this question will involve defining what we mean by a fair share.
+    </p>
+    <p>
+      We are going to start with the most common method for fair division,
+      that of the divider-chooser.
+          <idx><h>divider-chooser</h></idx>
+      This is the problem where there are two people and one thing to divide.
+      One person has chosen to do the cutting,
+      and then the other person gets to choose which part they want.
+      <ul>
+        <li>
+          <title>Rationality</title>
+          <p>
+            <answer>
+              <p>
+                Each of the players is a thinking,
+                rational agent seeking to maximize his or her share of the booty <m>S</m>.
+                We further assume that in pursuit of this goal,
+                a player's moves are based on reason alone.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <title>Cooperation</title>
+          <p>
+            <answer>
+              <p>
+                The players are willing participants and accept the rules of the game as binding.
+                The rules are such that after a <em>finite</em>
+                number of moves by the players the game terminates with a division of <m>S</m>.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <title>Privacy</title>
+          <p>
+            <answer>
+              <p>
+                Players have no useful information on the other players' value systems,
+                and thus if what kinds of moves they are going to make in the game.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <title>Symmetry</title>
+          <p>
+            <answer>
+              <p>
+                Players have <em>equal</em> rights in sharing the set <m>S</m>.
+                A consequence of this assumption is that at a minimum,
+                each player is entitled to a <em>proportional</em> share of <m>S</m>,
+                that is <m>\frac{S}{N}</m> when there are <m>N</m> players.
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      \item <em>Fair Share:</em>
+    </p>
+    <answer>
+      <p>
+        Suppose that <m>s</m> denotes a share of the booty <m>S</m> and <m>P</m> is one of the players in a fair division game with <m>N</m> players.
+        We say that <m>s</m> is a <em>fair share to player <m>P</m></em>
+        if <m>s</m> is worth <em>at least</em>
+        <m>1/N</m>th of the total value of <m>S</m>
+        <em>in the opinion of <m>P</m></em>.
+      </p>
+    </answer>
+    <p>
+          <idx><h>fair share</h></idx>
+    </p>
+  </introduction>
+  <subsection>
+    <title>Divider-Chooser</title>
+    <p>
+      \item <em>Divider-Chooser:</em>
+    </p>
+    <p>
+      \item Sometimes it is easier to work with fair division problems when we put a monetary value on the object being divided because then we can quantify how much each piece is worth to each player.
+      Suppose the cost of the pizza which is half red sauce and half white sauce is $10.
+      <ol>
+        <li>
+          <p>
+            My friend never remembers that I do not eat red sauce.
+            Therefore, he divide the pizza so that each half has exactly half red sauce and half garlic sauce.
+            How much is each slice of pizza worth to my friend?
+            How much is each slice of pizza worth to me?
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose instead, I slice the pizza.
+            When I do so,
+            because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce.
+            How much is each slice of pizza worth to me?
+            How much of each slice of pizza worth to my friend?
+            If I do the division, why is this not a fair division of the pizza?
+            What happens if my friend is the one doing the division?
+            Is it fair?
+          </p>
+        </li>
+        <li>
+          <p>
+            Now, divide the pizza in such a way that all the red sauce is in one slice yet both slices are worth five dollars to me.
+            How much is each slice of the pizza worth to my friend?
+            If I do the division, why is this a fair division of the pizza?
+            What happens if my friend is the one doing the division?
+            Is it fair?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection xml:id="sec_LoneDivider">
+    <title>Lone Divider</title>
+    <p>
+      \item Three players (Anna, Ben,
+      and Cara) must divide cake among themselves.
+      Suppose the cake is divided into three slices
+      (<m>s_1</m>, <m>s_2</m>, and <m>s_3</m>).
+      The values of the entire cake and at each of the three slices in the eyes of each of the players are shown in the following table.
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell>Whole cake</cell>
+        <cell><m>s_1</m></cell>
+        <cell><m>s_2</m></cell>
+        <cell><m>s_3</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Anna</cell>
+        <cell>$12.00</cell>
+        <cell>$3.00</cell>
+        <cell>$5.00</cell>
+        <cell>$4.00</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Ben</cell>
+        <cell>$15.00</cell>
+        <cell>$4.00</cell>
+        <cell>$4.50</cell>
+        <cell>$6.50</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Cara</cell>
+        <cell>$13.50</cell>
+        <cell>$4.50</cell>
+        <cell>$4.50</cell>
+        <cell>$4.50</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <ol>
+      <li>
+        <p>
+          Indicate which of the three slices are fair shares to Anna.
+        </p>
+      </li>
+      <li>
+        <p>
+          Indicate which of the three slices are fair shares to Ben.
+        </p>
+      </li>
+      <li>
+        <p>
+          Indicate which of the three slices are fair shares Cara.
+        </p>
+      </li>
+      <li>
+        <p>
+          How do you know which player divided the cake into three equal pieces?
+        </p>
+      </li>
+      <li>
+        <p>
+          Describe a fair division of the cake.
+        </p>
+      </li>
+    </ol>
+    <p>
+      \item <em>Lone Divider:</em>
+    </p>
+    <answer>
+      <p>
+        One of the players is assigned to be the divider.
+        The player divides the booty into equal shares
+        (according to him).
+        The other players are called the choosers.
+        They indicate which of the shares are fair according to them.
+        The booty is split by giving each of the choosers one of the shares they have indicated and the divider gets the remaining share.\else
+      </p>
+    </answer>
+    <p>
+          <idx><h>lone divider</h></idx>
+    </p>
+    <p>
+      \item Three partners (David, Carol,
+      and Charlotte) are dividing the plot of land among themselves using the loan divider method.
+      Using a map,
+      the divider (David) divides the property into three parcels <m>s_1</m>,
+      <m>s_2</m>, and <m>s_3</m>.
+      When the choosers bid lists are open, Carol's bid list is
+      <m>\{s_1,s_2,s_3\}</m> and Charlotte's bid list is <m>\{s_1\}</m>.
+      <ol>
+        <li>
+          <p>
+            Describe the fair division where David's fair share is <m>s_2</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Describe the fair division where David's fair share is <m>s_3</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      \item What should you do if both Carol and Charlotte bid <m>\{s_1,s_2\}</m>?
+    </p>
+    <p>
+      \item How would you run a fair division if there were four people trying to divide an item?
+    </p>
+    <p>
+      \item We have one divider, Demon and three choosers, Chuck, Charlie,
+      and Charles.
+      Demon divides the cake into four shares,
+      <m>s_1, s_2, s_3</m> and <m>s_4</m>.
+      The following table shows how each of the players values each of the four shares.
+      Remember that this information is private and not known to the other players.
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>s_1</m></cell>
+        <cell><m>s_2</m></cell>
+        <cell><m>s_3</m></cell>
+        <cell><m>s_4</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Demon</cell>
+        <cell>25%</cell>
+        <cell>25%</cell>
+        <cell>25%</cell>
+        <cell>25%</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Chuck</cell>
+        <cell>30%</cell>
+        <cell>20%</cell>
+        <cell>35%</cell>
+        <cell>15%</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Charlie</cell>
+        <cell>20%</cell>
+        <cell>20%</cell>
+        <cell>40%</cell>
+        <cell>20%</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Charles</cell>
+        <cell>25%</cell>
+        <cell>20%</cell>
+        <cell>20%</cell>
+        <cell>35%</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <ol>
+      <li>
+        <p>
+          What are each player's bidding lists?
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    Demon &amp; <m>s_1,s_2, s_3, s_4</m> \hline Chuck &amp;
+                    <m>s_1, s_3</m> \hline Charlie &amp;
+                    <m>s_3</m> \hline Charles &amp;
+                    <m>s_1, s_4</m> \hline \else Demon &amp; \hline Chuck &amp; \hline Charlie &amp; \hline Charles &amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+        </p>
+      </li>
+      <li>
+        <p>
+          What is the distribution Demon Chuck Charlie Charles
+        </p>
+      </li>
+    </ol>
+    <p>
+      \end{enumerate}
+    </p>
+    <p>
+      \HOMEWORK
+    </p>
+    <ol>
+      <li>
+        <p>
+          Three partners (David, Carol,
+          and Charlotte) are dividing the plot of land among themselves using the loan divider method.
+          Using a map,
+          the divider (David) divides the property into three parcels <m>s_1</m>,
+          <m>s_2</m>, and <m>s_3</m>.
+          When the choosers bid lists are open, Carol's bid list
+          <m>\{s_2,s_3\}</m> and Charlotte's bid list is <m>\{s_1, s_3\}</m>.
+        </p>
+        <ol>
+          <li>
+            <p>
+              Describe the fair division where David's fair share is <m>s_1</m>.
+              <answer>
+                <p>
+                  David - <m>s_1</m>, Carol - <m>s_2</m>, Charlotte - <m>s_3</m> Because David has a fair share of <m>s_1</m>,
+                  the only other option for Charlotte is <m>s_3</m>.
+                  Since Carol will take <m>s_2</m> or <m>s_3</m>,
+                  and <m>s_3</m> is taken, Carol gets <m>s_2</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Describe the fair division where David's fair share is <m>s_2</m>.
+              <answer>
+                <p>
+                  David - <m>s_2</m>, Carol - <m>s_3</m>, Charlotte - <m>s_1</m> Because David has a fair share of <m>s_1</m>,
+                  the only other option for Charlotte is <m>s_3</m>.
+                  Since Carol will take <m>s_2</m> or <m>s_3</m>,
+                  and <m>s_3</m> is taken, Carol gets <m>s_2</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Describe the fair division where David's fair share is <m>s_3</m>.
+              <answer>
+                <p>
+                  David - <m>s_3</m>, Carol - <m>s_2</m>, Charlotte - <m>s_1</m>
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Four partners (Evan, Fiona, Greg,
+          and Harry) are dividing a piece of land valued at $480,000 among themselves using the lone-divider method.
+          Using a map,
+          the divider divides the property into four parcels,
+          <m>s_1,s_2,s_3</m> and <m>s_4</m>.
+          The following table shows the value of each of the four parcels in the eyes of each partner,
+          but some of the information in the table is missing.
+          <tabular>
+            <row>
+              <cell></cell>
+              <cell><m>s_1</m></cell>
+              <cell><m>s_2</m></cell>
+              <cell><m>s_3</m></cell>
+              <cell><m>s_4</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    Evan &amp; $80,000 &amp; $85,000 &amp;
+                    <em>$120,000</em> &amp; $195,000 \hline Fiona &amp;
+                    <em>$125,000</em> &amp; $100,000 &amp; $135,000 &amp; $120,000 \hline Greg &amp; $120,000 &amp;
+                    <em>$120,000</em> &amp; $120,000 &amp;
+                    <em>$120,000</em> \hline Harry &amp; $95,000 &amp; $100,000 &amp;
+                    <em>$175,000</em> &amp; $110,000 \hline \else Evan &amp; $80,000 &amp; $85,000 &amp; &amp; $195,000 \hline Fiona &amp; &amp; $100,000 &amp; $135,000 &amp; $120,000 \hline Greg &amp; $120,000 &amp; &amp; $120,000 &amp; \hline Harry &amp; $95,000 &amp; $100,000 &amp; &amp; $110,000 \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Who was the divider?
+                Explain.
+                <answer>
+                  <p>
+                    Greg because he has the same amount for every piece.
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Describe the choosers' respective bid lists.
+                <answer>
+                  <tabular>
+                    <row>
+                      <cell>Evan</cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell><m>s_3</m></cell>
+                      <cell><m>s_4</m></cell>
+                    </row>
+                    <row>
+                      <cell>Fiona</cell>
+                      <cell><m>s_1</m></cell>
+                      <cell></cell>
+                      <cell><m>s_3</m></cell>
+                      <cell><m>s_4</m></cell>
+                    </row>
+                    <row>
+                      <cell>Greg</cell>
+                      <cell><m>s_1</m></cell>
+                      <cell><m>s_2</m></cell>
+                      <cell><m>s_3</m></cell>
+                      <cell><m>s_4</m></cell>
+                    </row>
+                    <row>
+                      <cell>Harry</cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell><m>s_3</m></cell>
+                      <cell></cell>
+                    </row>
+                  </tabular>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Described a fair division of property.
+                <answer>
+                  <p>
+                    Evan <m>s_4</m> Fiona <m>s_1</m> Greg <m>s_2</m> Harry <m>s_3</m>
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain why your answer above is the only possible fair division of the property.
+                <answer>
+                  <p>
+                    Basically, because Harry only bids on one property,
+                  </p>
+                  <p>
+                    he starts the ball rolling.
+                  </p>
+                </answer>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK
+    </p>
+  </subsection>
+  <subsection>
+    <title>Lone-Divider Case 2</title>
+    <p>
+      There is one complication that can happen with the lone-divider method we have not yet discussed.
+      It happens when two players want one and only one of the shares.
+      This can be solved, but requires a little more analysis.
+    </p>
+    <ol>
+      <li>
+        <p>
+          Dale divides the cake into three pieces <m>s_1</m>,
+          <m>s_2</m>, and <m>s_3</m>.
+          The table below shows the value of the three pieces in the eyes of each of the players.
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell><m>s_1</m></cell>
+              <cell><m>s_2</m></cell>
+              <cell><m>s_3</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Dale</cell>
+              <cell><m>33\frac13</m>%</cell>
+              <cell><m>33\frac13</m>%</cell>
+              <cell><m>33\frac13</m>%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Cindy</cell>
+              <cell>20%</cell>
+              <cell>30 %</cell>
+              <cell>50%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Cher</cell>
+              <cell>10%</cell>
+              <cell>20%</cell>
+              <cell>70%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </p>
+        <ol>
+          <li>
+            <p>
+              Describe the choosers' respective bid lists.
+              <answer>
+                <p>
+                  Dale <m>\qquad s_1,s_2, s_3</m>
+                </p>
+                <p>
+                  Cindy <m>\qquad s_3</m>
+                </p>
+                <p>
+                  Cher <m>\qquad s_3</m>
+                </p>
+                <p>
+                  \else
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              What problem do you run into when you try to divide the cake?
+              <answer>
+                <p>
+                  Both Cindy and Cher only want the last piece. \else
+                </p>
+              </answer>
+              What we are going to do is to give Dale one of the pieces that Cindy and Cher do not want,
+              say slice <m>s_2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              How much are <m>s_1</m> and <m>s_3</m> worth together to Cindy? to Cher?
+              <answer>
+                <p>
+                  70% and 80%
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              What you are going to to is combine <m>s_1</m> and <m>s_3</m> and give them to Cindy and Cher to perform a Divider-Chooser.
+              Explain why this will result in both Cindy and Cher receiving at least
+              <m>33\frac13</m>% of the cake in their eyes.
+            </p>
+          </li>
+          <li>
+            <p>
+              In fact, what is the minimum percentage Cindy will receive?
+              What is the minimum percentage Cher will receive?
+              <answer>
+                <p>
+                  35% and 40%\else
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Three partners (David, Carol,
+          and Charlotte) are dividing the plot of land among themselves using the loan divider method.
+          Using a map,
+          the divider (David) divides the property into three parcels <m>s_1</m>,
+          <m>s_2</m>, and <m>s_3</m>.
+          When the choosers bid lists are open, Carol's bid list <m>\{s_1\}</m> and Charlotte's bid list is <m>\{s_1\}</m>.
+          <ol>
+            <li>
+              <p>
+                Considering that Carol only bid on the first parcel,
+                explain how we know that parcel 2 is worth less than <m>1/3</m> of the value of the land to Carol.
+                Explain how we know that parcel 3 is worth less than <m>1/3</m> of the value of the land to Carol.
+                <answer>
+                  <p>
+                    Because if they were worth at least <m>1/3</m> of the value,
+                    they would be on the bid list.\else
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Using the above information,
+                explain how the combination of the first two parcels is worth more than <m>2/3</m> of the value of the land to Carol.
+                <answer>
+                  <p>
+                    Because what is left over is worth less than <m>1/3</m>.\else
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Using similar logic,
+                explain how the combination of the first two parcels is worth more than <m>2/3</m> of the value of the land to Charlotte.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \HOMEWORK
+    </p>
+    <ol>
+      <li>
+        <p>
+          Six players (D,<m>C_1,C_2,C_3,C_4</m> and <m>C_5</m>) are dividing a cake among themselves using the lone-divider method.
+          D cuts the cake into six slices <m>s_1,s_2,s_3,s_4,s_5</m>,
+          and <m>s_6</m>.
+          When the choosers' bid lists are opened,
+          <m>C_1</m>'s bid list is <m>\{s_1\}</m>,
+          <m>C_2</m>'s bid list is <m>\{s_2,s_3\}</m>,
+          <m>C_3</m>'s bid list is <m>\{s_4,s_5\}</m>,
+          <m>C_4</m>'s bid list is <m>\{s_4,s_5\}</m>,
+          and <m>C_5</m>'s bid list is <m>\{s_1\}</m>.
+          Describe how to proceed to obtain a fair division of the cake.
+          <answer>
+            <p>
+              There are many correct solutions.
+              They all include <m>C_2</m> getting either <m>s_2</m> or <m>s_3</m>.
+              <m>C_3</m> and <m>C_4</m> getting either <m>s_4</m> or <m>s_5</m> and the other one going to the other,
+              and <m>C_1</m> and <m>C_5</m> splitting the combination of <m>s_1</m> and another piece which are then split using divider-chooser.
+            </p>
+          </answer>
+        </p>
+      </li>
+      <li>
+        <p>
+          We have one divider, Demon and three choosers, Chuck, Charlie,
+          and Charles.
+          Demon divides the cake into four shares,
+          <m>s_1, s_2, s_3</m> and <m>s_4</m>.
+          The following table shows how each of the players values each of the four shares.
+          Remember that this information is private and not known to the other players.
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell><m>s_1</m></cell>
+              <cell><m>s_2</m></cell>
+              <cell><m>s_3</m></cell>
+              <cell><m>s_4</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Demon</cell>
+              <cell>25%</cell>
+              <cell>25%</cell>
+              <cell>25%</cell>
+              <cell>25%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Chuck</cell>
+              <cell>15%</cell>
+              <cell>20%</cell>
+              <cell>50%</cell>
+              <cell>15%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Charlie</cell>
+              <cell>20%</cell>
+              <cell>20%</cell>
+              <cell>40%</cell>
+              <cell>20%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Charles</cell>
+              <cell>25%</cell>
+              <cell>20%</cell>
+              <cell>20%</cell>
+              <cell>35%</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </p>
+        <ol>
+          <li>
+            <p>
+              What are each player's bidding lists?
+              <answer>
+                <tabular>
+                  <row>
+                    <cell>Demon</cell>
+                    <cell><m>s_1</m></cell>
+                    <cell><m>s_2</m></cell>
+                    <cell><m>s_3</m></cell>
+                    <cell><m>s_4</m></cell>
+                  </row>
+                  <row>
+                    <cell>Chuck</cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell><m>s_3</m></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>Charlie</cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell><m>s_3</m></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>Charles</cell>
+                    <cell><m>s_1</m></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell><m>s_4</m></cell>
+                  </row>
+                </tabular>
+                <p>
+                  \else
+                </p>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>Demon</cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>Chuck</cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>Charlie</cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>Charles</cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How are you going to make a fair division?
+              <answer>
+                <p>
+                  Similar to the previous problem, Charles gets <m>s_1</m> or <m>s_4</m>, Demon gets something,
+                  and Chuck and Charlie will take the combination of <m>s_3</m> and another slice and perform divider-chooser.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK
+    </p>
+  </subsection>
+  <subsection xml:id="sec_SealedBids">
+    <title>Method of Sealed Bids</title>
+    <p>
+          <idx><h>sealed bids</h></idx>
+      Sometimes you want to split up items without physically cutting them apart.
+      For example,
+      suppose Sally is living with two roommates and everyone is graduating.
+      Over the years,
+      they have purchased some appliances together and now they need to fairly divide the appliances.
+    </p>
+    <p>
+      In the method of sealed bids,
+      each roommate is going to write down what they believe is a fair value for each appliance and seal the
+      <q>bids</q>
+      in an envelope.
+      When the envelopes are opened,
+      we get the following results:
+    </p>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell>Rachel</cell>
+        <cell>Sally</cell>
+        <cell>Theresa</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>T.V.</cell>
+        <cell>$75</cell>
+        <cell>$100</cell>
+        <cell>$120</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Microwave</cell>
+        <cell>$35</cell>
+        <cell>$30</cell>
+        <cell>$40</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Crock Pot</cell>
+        <cell>$5</cell>
+        <cell>$10</cell>
+        <cell>$7</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Toaster Oven</cell>
+        <cell>$7</cell>
+        <cell>$10</cell>
+        <cell>$5</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Blender</cell>
+        <cell>$20</cell>
+        <cell>$25</cell>
+        <cell>$20</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><answer>
+            <p>
+              Total &amp;$142 &amp;$175 &amp;$192 \hline Fair Share &amp;$ 47.33 &amp;$ 58.33&amp;$ 64.00 \hline \else Total &amp;$ &amp;$ &amp;$ \hline Fair Share &amp;$ &amp;$ &amp;$ \hline
+            </p>
+          </answer></cell>
+      </row>
+    </tabular>
+    <ol>
+      <li>
+        <p>
+          How much does each person think the whole property to be split is worth?
+          What would be their fair share?
+          <answer>
+            <p>
+              $47.33 $58.33 $64.00 \else
+            </p>
+          </answer>
+        </p>
+      </li>
+      <li>
+        <p>
+          How would you propose splitting up the property?
+        </p>
+      </li>
+      <li>
+        <p>
+          Method of Sealed Bids
+          <ol>
+            <li>
+              <p>
+                Assign each item to the highest bidder.
+                Who gets what?
+                <tabular>
+                  <row>
+                    <cell>Roommate</cell>
+                    <cell>Items</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          Rachel &amp; \hline Sally &amp; Crock Pot, Toaster Oven, Blender \hline Theresa &amp; T.V., Microwave \hline \else Rachel &amp; \hline Sally &amp; \hline Theresa &amp; \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the total value of the items to the winners?
+                Use the prices they have assigned themselves.
+                <tabular>
+                  <row>
+                    <cell>Roommate</cell>
+                    <cell>Value</cell>
+                    <cell>Fair Share</cell>
+                    <cell>Cash Paid</cell>
+                    <cell>Cash Received</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          Rachel &amp; &amp; $47.33 &amp; &amp; $47.33 \hline Sally &amp; $45.00 &amp; $58.33 &amp; &amp; $13.33 \hline Theresa &amp; $160.00 &amp; $64.00 &amp; $96.00 &amp; \hline \else Rachel &amp; $ \hline Sally &amp; $ \hline Theresa &amp; $ \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li xml:id="sb1">
+              <p>
+                Which of the roommates have received more than their fair share of the property?
+                How much more did they receive?
+              </p>
+            </li>
+            <li xml:id="sb2">
+              <p>
+                Which of the roommates have received less than their fair share of the property?
+                How much less did they receive?
+              </p>
+            </li>
+            <li>
+              <p>
+                Have the roommates who received too much pay cash for the extra value of the property over and above their fair share.
+                Pay the roommates who did not receive enough the shortfall between what they see as a fair share and the value of the property they have received.
+              </p>
+            </li>
+            <li>
+              <p>
+                How much cash do you have left?
+                <answer>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Divide the extra cash by 3 and give each roommate one third of the extra cash.
+                <answer>
+                  <tabular>
+                    <row>
+                      <cell>Roommate</cell>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell>Rachel</cell>
+                      <cell>$59.11</cell>
+                    </row>
+                    <row>
+                      <cell>Sally</cell>
+                      <cell>$25.11</cell>
+                      <cell>Crock Pot, Toaster Oven, Blender</cell>
+                    </row>
+                    <row>
+                      <cell>Theresa</cell>
+                      <cell>$(84.22)</cell>
+                      <cell>T.V., Microwave</cell>
+                    </row>
+                  </tabular>
+                  <p>
+                    \else
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain how each roommate has received a fair share.
+              </p>
+            </li>
+            <li>
+              <p>
+                What are some of the drawbacks of the method of sealed bids?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          Five heirs (<m>A,B,C, D</m>,
+          and <m>E</m>) are dividing an estate consisting of six items using the method of sealed bids.
+          The heirs bids on each of the times are given in the following table.
+          <tabular>
+            <row>
+              <cell></cell>
+              <cell><m>A</m></cell>
+              <cell><m>B</m></cell>
+              <cell><m>C</m></cell>
+              <cell><m>D</m></cell>
+              <cell><m>E</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    Item 1 &amp; $352.00 &amp; $295.00 &amp; $395.00 &amp; $368.00 &amp; $324.00 \hline Item 2 &amp; $98.00 &amp; $102.00 &amp; $98.00 &amp; $95.00 &amp; $105.00 \hline Item 3 &amp; $460.00 &amp; $449.00 &amp; $510.00 &amp; $501.00 &amp; $476.00 \hline Item 4 &amp; $852.00 &amp; $825.00 &amp; $832.00 &amp; $817.00 &amp; $843.00 \hline Item 5 &amp; $513.00 &amp; $501.00 &amp; $505.00 &amp; $505.00 &amp; $491.00 \hline Item 6 &amp; $725.00 &amp; $738.00 &amp; $750.00 &amp; $744.00 &amp; $761.00 \hline\hline Total &amp; $3,000.00 &amp; $2,910.00 &amp; $3,090.00 &amp; $3,030.00 &amp; $3,000.00 \hline \else Item 1 &amp; $352 &amp; $295 &amp; $395 &amp; $368 &amp; $324 \hline Item 2 &amp; $98 &amp; $102 &amp; $98 &amp; $95 &amp; $105 \hline Item 3 &amp; $460 &amp; $449 &amp; $510 &amp; $501 &amp; $476 \hline Item 4 &amp; $852 &amp; $825 &amp; $832 &amp; $817 &amp; $843 \hline Item 5 &amp; $513 &amp; $501 &amp; $505 &amp; $505 &amp; $491 \hline Item 6 &amp; $725 &amp; $738 &amp; $750 &amp; $744 &amp; $761 \hline\hline Total &amp; &amp; &amp; &amp; &amp; \hline Fair Share &amp; &amp; &amp; &amp; &amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Describe the first settlement of this estate and compute the surplus cash.
+                <answer>
+                  <tabular>
+                    <row>
+                      <cell></cell>
+                      <cell>Items</cell>
+                      <cell>Fair Share</cell>
+                      <cell>Initial Cash</cell>
+                      <cell>Final Cash</cell>
+                    </row>
+                    <row bottom="minor">
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><m>A</m></cell>
+                      <cell>4,5</cell>
+                      <cell>$600.00</cell>
+                      <cell>$(765.00)</cell>
+                      <cell>($739.00)</cell>
+                    </row>
+                    <row bottom="minor">
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><m>B</m></cell>
+                      <cell></cell>
+                      <cell>$582.00</cell>
+                      <cell>$582.00</cell>
+                      <cell>$608.00</cell>
+                    </row>
+                    <row bottom="minor">
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><m>C</m></cell>
+                      <cell>1,3</cell>
+                      <cell>$618.00</cell>
+                      <cell>$(287.00)</cell>
+                      <cell>($261.00)</cell>
+                    </row>
+                    <row bottom="minor">
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><m>D</m></cell>
+                      <cell></cell>
+                      <cell>$606.00</cell>
+                      <cell>$606.00</cell>
+                      <cell>$632.00</cell>
+                    </row>
+                    <row bottom="minor">
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><m>E</m></cell>
+                      <cell>2,6</cell>
+                      <cell>$600.00</cell>
+                      <cell>$(266.00)</cell>
+                      <cell>($240.00)</cell>
+                    </row>
+                    <row bottom="minor">
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                      <cell></cell>
+                    </row>
+                  </tabular>
+                  <p>
+                    \else
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Describe the final settlement of this estate.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \HOMEWORK
+    </p>
+    <ol>
+      <li>
+        <p>
+          Aden, Ben, and Charles are dividing four pieces of furniture using the method of sealed bids.
+          Their bids on each of the items are given in the following table.
+          <tabular>
+            <row>
+              <cell></cell>
+              <cell>Aden</cell>
+              <cell>Ben</cell>
+              <cell>Charles</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Dresser</cell>
+              <cell>$150</cell>
+              <cell>$300</cell>
+              <cell>$275</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Desk</cell>
+              <cell>$180</cell>
+              <cell>$150</cell>
+              <cell>$165</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>TV Cabinet</cell>
+              <cell>$170</cell>
+              <cell>$200</cell>
+              <cell>$260</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Tapestry</cell>
+              <cell>$400</cell>
+              <cell>$250</cell>
+              <cell>$500</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </p>
+        <ol>
+          <li>
+            <p>
+              Describe the first settlement of the items and compute the Surplus.
+              <answer>
+                <p>
+                  Aden gets the Desk and $120, Ben gets the Dresser, Charles gets the TV Cabinet and the Tapestry,
+                  but pays in $360.
+                  There is a surplus of $240.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Describe the final settlement of the items.
+              <answer>
+                <p>
+                  Aden gets the Desk and $200, Ben gets the Dresser and $80, Charles gets the TV Cabinet and the Tapestry,
+                  but pays $280.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Kathy, Susie, and Judy are equal partners in a small bookstore.
+          They can't get along anymore,
+          but they don't want to sell the bookstore to an outsider so they decide to settle the matter using the method of sealed bids.
+          Kathy bids $240,000 for the business, Susie bids $210,000, and Judy bids $225,000.
+          Describe the final settlement of this bookstore.
+          <answer>
+            <p>
+              As the highest bidder, Kathy receives the store and owes $155,000, Susie receives $ 75,000 and Judy receives $ 80,000.
+            </p>
+          </answer>
+        </p>
+      </li>
+      <li>
+        <p>
+          Three women (Carrie, Jeri,
+          and Violet) share an apartment and wish to divide the chores:
+          bathrooms, cooking, dishes, laundry, and vacuuming.
+          For each chore,
+          they privately write the least they are willing to receive monthly
+          (their negative valuation)
+          in return for doing that chore.
+          The results are shown in the following table.
+          <tabular>
+            <row>
+              <cell></cell>
+              <cell>Carrie</cell>
+              <cell>Jeri</cell>
+              <cell>Violet</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Clean bathrooms</cell>
+              <cell>$-20</cell>
+              <cell>$-30</cell>
+              <cell>$-40</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Do cooking</cell>
+              <cell>$-50</cell>
+              <cell>$-10</cell>
+              <cell>$-25</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Wash dishes</cell>
+              <cell>$-30</cell>
+              <cell>$-20</cell>
+              <cell>$-15</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Mow the lawn</cell>
+              <cell>$-30</cell>
+              <cell>$-20</cell>
+              <cell>$-10</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Vacuum and dust</cell>
+              <cell>$-20</cell>
+              <cell>$-40</cell>
+              <cell>$-15</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          Divide the chores using the method of sealed bids.
+          Who does which chores?
+          Who gets paid, and how much?
+          Who pays, and how much?
+          <answer>
+            <p>
+              Carrie cleans the bathrooms and pays $12.
+              Jeri does the cooking and pays $12.
+              Violet washes the dishes, mows the lawn,
+              vacuums and dusts and gets paid $23
+              (or $24 with rounding).
+            </p>
+          </answer>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK
+    </p>
+  </subsection>
+</section>

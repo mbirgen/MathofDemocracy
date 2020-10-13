@@ -1,0 +1,21 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="ch_Answers">
+  <title>Answers to Selected Exercises</title>
+  <p>
+    { \oddsidemargin 0in \evensidemargin -0.5in \textwidth 7.0in \linewidth 7.0in \hsize 7.0in \columnsep 0.5in strue \studentsolnstrue \gradersolnsfalse
+  </p>
+  <p>
+    \ifnum\arabic{numstudentsolns}>0\relax
+    <ol>
+      \foreach \k in {1,...,\arabic{numstudentsolns}} {
+      <li>
+        <title>\csname studentsoln-label-\romannumeral\k\endcsname.</title>
+        <p>
+          \csname studentsoln-\romannumeral\k\endcsname }
+        </p>
+      </li>
+    </ol>
+  </p>
+  <p>
+    \fi
+  </p>
+</chapter>

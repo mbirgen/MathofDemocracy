@@ -1,0 +1,2631 @@
+<section xml:id="sec_VotingSystems">
+  <title>Voting Systems</title>
+  <ol>
+    <li>
+      <p>
+        The Bellevue Taxicab Union is preparing to elect its president.
+        Three members are considering running for president: Alice, Bob,
+        and Charles.
+        Each of the five voters has a first, second,
+        and third choice, as listed in the following table:
+        <tabular>
+          <row>
+            <cell>Voter:</cell>
+            <cell>Voter 1</cell>
+            <cell>Voter 2</cell>
+            <cell>Voter 3</cell>
+            <cell>Voter 4</cell>
+            <cell>Voter 5</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice:</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>2nd choice:</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>3rd choice:</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+          </row>
+        </tabular>
+        Depending on who decides to run,
+        the ballot the voters see in the booth will look different.
+        For each of the following ballots,
+        how many votes will each candidate receive?
+        Who will win?
+        <tabular>
+        <row>
+        <cell>(a)
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Who should be</cell>
+          </row>
+          <row>
+            <cell>president?</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Alice</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Bob</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Charles</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <answer>
+          <p>
+            Bob
+          </p>
+        </answer></cell>
+        <cell>(c)
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Who should be</cell>
+          </row>
+          <row>
+            <cell>president?</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Alice</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Charles</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <answer>
+          <p>
+            Alice
+          </p>
+        </answer></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+        <cell>(b)
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Who should be</cell>
+          </row>
+          <row>
+            <cell>president?</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Alice</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Bob</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <answer>
+          <p>
+            Alice
+          </p>
+        </answer></cell>
+        <cell>(d)
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Who should be</cell>
+          </row>
+          <row>
+            <cell>president?</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Bob</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Charles</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <answer>
+          <p>
+            Bob
+          </p>
+        </answer></cell>
+        </row>
+        </tabular>
+      </p>
+    </li>
+    <li>
+      <p>
+        The Shell Rock Gardening Club is electing a new Master of the Greensward.
+        Four candidates are running for the position: Danielle, Edgar, Frederika,
+        and Gustav.
+      </p>
+    </li>
+    <li>
+      <p>
+        Here is the ballot:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Who should be Master</cell>
+          </row>
+          <row>
+            <cell>of the Greensward?</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Danielle</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Edgar</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Frederika</cell>
+          </row>
+          <row>
+            <cell><m>\square</m></cell>
+            <cell>Gustav</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        The members cast the following ballots:
+        <tabular>
+          <row>
+            <cell>Ranking</cell>
+            <cell>1st choice</cell>
+            <cell>2nd choice</cell>
+            <cell>3rd choice</cell>
+            <cell>4th choice</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 1</cell>
+            <cell>Danielle</cell>
+            <cell>Gustav</cell>
+            <cell>Edgar</cell>
+            <cell>Frederika</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 2</cell>
+            <cell>Danielle</cell>
+            <cell>Gustav</cell>
+            <cell>Frederika</cell>
+            <cell>Edgar</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 3</cell>
+            <cell>Edgar</cell>
+            <cell>Gustav</cell>
+            <cell>Frederika</cell>
+            <cell>Danielle</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 4</cell>
+            <cell>Frederika</cell>
+            <cell>Gustav</cell>
+            <cell>Danielle</cell>
+            <cell>Edgar</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 5</cell>
+            <cell>Gustav</cell>
+            <cell>Edgar</cell>
+            <cell>Frederika</cell>
+            <cell>Danielle</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 6</cell>
+            <cell>Danielle</cell>
+            <cell>Gustav</cell>
+            <cell>Edgar</cell>
+            <cell>Frederika</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 7</cell>
+            <cell>Danielle</cell>
+            <cell>Gustav</cell>
+            <cell>Frederika</cell>
+            <cell>Edgar</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 8</cell>
+            <cell>Edgar</cell>
+            <cell>Gustav</cell>
+            <cell>Frederika</cell>
+            <cell>Danielle</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 9</cell>
+            <cell>Frederika</cell>
+            <cell>Gustav</cell>
+            <cell>Danielle</cell>
+            <cell>Edgar</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 10</cell>
+            <cell>Gustav</cell>
+            <cell>Edgar</cell>
+            <cell>Frederika</cell>
+            <cell>Danielle</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 11</cell>
+            <cell>Danielle</cell>
+            <cell>Gustav</cell>
+            <cell>Edgar</cell>
+            <cell>Frederika</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 12</cell>
+            <cell>Edgar</cell>
+            <cell>Gustav</cell>
+            <cell>Frederika</cell>
+            <cell>Danielle</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 13</cell>
+            <cell>Frederika</cell>
+            <cell>Gustav</cell>
+            <cell>Danielle</cell>
+            <cell>Edgar</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Voter 14</cell>
+            <cell>Edgar</cell>
+            <cell>Gustav</cell>
+            <cell>Frederika</cell>
+            <cell>Danielle</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Create a preference table for this election by counting the number of voters who have the same preference and putting that number above the appropriate ballot in the table.
+              You may use tally marks if you prefer. \gardenmatrix
+              <answer>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell></cell>
+                    <cell>Number of Ballots</cell>
+                  </row>
+                  <row>
+                    <cell>Ranking</cell>
+                    <cell>3</cell>
+                    <cell>2</cell>
+                    <cell>4</cell>
+                    <cell>3</cell>
+                    <cell>2</cell>
+                  </row>
+                  <row bottom="medium">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell ></cell>
+                  </row>
+                </tabular>
+              </answer>
+            </p>
+          </li>
+          <li xml:id="Ch1Prob3b">
+            <p>
+              Who will be elected Master?
+              What percent of the vote will he or she have?
+              <answer>
+                <p>
+                  D, with <m>\frac{5}{14}\approx 35.7\%</m>
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li xml:id="Ch1Prob3c">
+            <p>
+              As you look at the voters' preferences,
+              who seems like the best choice to make the most voters happy?
+              <answer>
+                <p>
+                  G
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If your answers to <xref ref="Ch1Prob3b">parts</xref>
+              and <xref ref="Ch1Prob3c"></xref>
+              are different, can you explain why?
+            </p>
+          </li>
+          <li>
+            <p>
+              Write down how you would tell someone else how to create a preference table.
+            </p>
+          </li>
+          <li>
+            <p>
+              Can you think of a different voting system that would help the voters elect your choice from part (b)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Plurality voting: </em>
+        <answer>
+          <p>
+            When the candidate with the most first place votes wins.
+          </p>
+        </answer>
+          <idx><h>Plurality</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>A <term>majority</term> is<ellipsis/></em>
+        <answer>
+          <p>
+            more than 50% of the votes.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Borda count:</em>
+        <answer>
+          <p>
+            If you have <m>n</m> candidates in the election,
+            you give <m>n</m> points for every first place votes,
+            <m>n-1</m> points for every second place vote,
+            etc., and 1 point for every last place vote.
+            Add up the points for each candidate and the winner is the candidate with the most points.
+          </p>
+        </answer>
+          <idx><h>Borda count</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        If the Shell Rock Gardening Club runs their election as a Borda count,
+        who will win?
+        <answer>
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell></cell>
+              <cell>Number of Ballots</cell>
+            </row>
+            <row>
+              <cell>Ranking</cell>
+              <cell>3</cell>
+              <cell>2</cell>
+              <cell>4</cell>
+              <cell>3</cell>
+              <cell>2</cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell ></cell>
+            </row>
+          </tabular>
+        </answer>
+        \gardenmatrix
+        <answer>
+          <p>
+            <m>\begin{array}{rlcr} D: \amp 5\cdot 4+3\cdot 2+6\cdot 1 \amp =\amp 32 \\ E: \amp 4\cdot 4 + 2\cdot 3+3\cdot 2+5\cdot 1 \amp =\amp 33 \\ F: \amp 3\cdot 4 + 8\cdot 2+3\cdot 1 \amp =\amp 31\\ G: \amp 2\cdot 4 + 12\cdot 3 \amp =\amp 44 \end{array}</m>
+          </p>
+        </answer>
+        \HOMEWORK Show all your work.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Consider the following election ballots:
+            <tabular>
+              <row>
+                <cell>Voter 1</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 2</cell>
+                <cell>C</cell>
+                <cell>B</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 3</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 4</cell>
+                <cell>C</cell>
+                <cell>B</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 5</cell>
+                <cell>C</cell>
+                <cell>B</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 6</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 7</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 8</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 9</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 10</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 11</cell>
+                <cell>C</cell>
+                <cell>B</cell>
+                <cell>A</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Voter 12</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+          <ol>
+            <li>
+              <p>
+                Construct a preference table for the above ballots.
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell></cell>
+                    <cell># Ballots</cell>
+                  </row>
+                  <row>
+                    <cell>Ranking</cell>
+                    <cell>\makebox[.6cm]</cell>
+                    <cell>\makebox[.6cm]</cell>
+                    <cell>\makebox[.6cm]</cell>
+                  </row>
+                  <row bottom="medium">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell >1st choice</cell>
+                    <cell>A</cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>2nd choice</cell>
+                    <cell>B</cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>3rd choice</cell>
+                    <cell>C</cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                How many votes would be required to win a
+                <em>majority</em> in this election?
+                Find the winner of an election held using each of the following voting schemes.
+                (If it is a tie, say who tied.)
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    Using plurality vote.
+                    <answer>
+                      <p>
+                        A.
+                      </p>
+                    </answer>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Using Borda Count.
+                    <answer>
+                      <p>
+                        B.
+                      </p>
+                    </answer>
+                  </p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <p>
+            Consider the following preference matrix:
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell>Number of Ballots</cell>
+              </row>
+              <row>
+                <cell>Ranking</cell>
+                <cell>8</cell>
+                <cell>6</cell>
+                <cell>8</cell>
+                <cell>5</cell>
+                <cell>1</cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell >1st choice</cell>
+                <cell>\B</cell>
+                <cell>\C</cell>
+                <cell>\D</cell>
+                <cell>\B</cell>
+                <cell>\A</cell>
+              </row>
+              <row>
+                <cell>2nd choice</cell>
+                <cell>\D</cell>
+                <cell>\A</cell>
+                <cell>\C</cell>
+                <cell>\C</cell>
+                <cell>\B</cell>
+              </row>
+              <row>
+                <cell>3rd choice</cell>
+                <cell>\C</cell>
+                <cell>\D</cell>
+                <cell>\A</cell>
+                <cell>\A</cell>
+                <cell>\C</cell>
+              </row>
+              <row>
+                <cell>4th choice</cell>
+                <cell>\A</cell>
+                <cell>\B</cell>
+                <cell>\B</cell>
+                <cell>\D</cell>
+                <cell>\D</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+            Find the winner of an election held using each of the following voting schemes.
+            (If it is a tie, say who tied.)
+            <ol>
+              <li>
+                <p>
+                  Using plurality vote.
+                  <answer>
+                    <p>
+                      B.
+                    </p>
+                  </answer>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Using Borda Count.
+                  <answer>
+                    <p>
+                      C.
+                    </p>
+                  </answer>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Consider the following preference matrix:
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell>Number of Ballots</cell>
+              </row>
+              <row>
+                <cell>Ranking</cell>
+                <cell>3</cell>
+                <cell>7</cell>
+                <cell>4</cell>
+                <cell>1</cell>
+                <cell>7</cell>
+                <cell>8</cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell >1st choice</cell>
+                <cell>\B</cell>
+                <cell>\B</cell>
+                <cell>\C</cell>
+                <cell>\A</cell>
+                <cell>\C</cell>
+                <cell>\A</cell>
+              </row>
+              <row>
+                <cell>2nd choice</cell>
+                <cell>\C</cell>
+                <cell>\A</cell>
+                <cell>\B</cell>
+                <cell>\C</cell>
+                <cell>\A</cell>
+                <cell>\B</cell>
+              </row>
+              <row>
+                <cell>3rd choice</cell>
+                <cell>\A</cell>
+                <cell>\C</cell>
+                <cell>\A</cell>
+                <cell>\B</cell>
+                <cell>\B</cell>
+                <cell>\C</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+            Find the winner of an election held using each of the following voting schemes.
+            (If it is a tie, say who tied.)
+            <ol>
+              <li>
+                <p>
+                  Using plurality vote.
+                  <answer>
+                    <p>
+                      C.
+                    </p>
+                  </answer>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Using Borda Count.
+                  <answer>
+                    <p>
+                      Tied between A and B.
+                    </p>
+                  </answer>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Consider the following preference matrix:
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell># of Ballots</cell>
+              </row>
+              <row>
+                <cell>Ranking</cell>
+                <cell>3</cell>
+                <cell>5</cell>
+                <cell>4</cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell >1st choice</cell>
+                <cell>\C</cell>
+                <cell>\B</cell>
+                <cell>\D</cell>
+              </row>
+              <row>
+                <cell>2nd choice</cell>
+                <cell>\E</cell>
+                <cell>\E</cell>
+                <cell>\C</cell>
+              </row>
+              <row>
+                <cell>3rd choice</cell>
+                <cell>\A</cell>
+                <cell>\A</cell>
+                <cell>\E</cell>
+              </row>
+              <row>
+                <cell>4th choice</cell>
+                <cell>\D</cell>
+                <cell>\C</cell>
+                <cell>\A</cell>
+              </row>
+              <row>
+                <cell>5th choice</cell>
+                <cell>\B</cell>
+                <cell>\D</cell>
+                <cell>\B</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+            Find the winner of an election held using each of the following voting schemes.
+            (If it is a tie, say who tied.)
+            <ol>
+              <li>
+                <p>
+                  Using plurality vote.
+                  <answer>
+                    <p>
+                      B.
+                    </p>
+                  </answer>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Using Borda Count.
+                  <answer>
+                    <p>
+                      E.
+                    </p>
+                  </answer>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+      \ENDHOMEWORK
+    </li>
+    <li>
+      <p>
+        The Ashwaubenon Classical League is voting for its new proconsul,
+        and the candidates are Publius, Quintus, Rufus, and Sextus.
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell># of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>3</cell>
+            <cell>10</cell>
+            <cell>9</cell>
+            <cell>8</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell  >1st choice</cell>
+            <cell>S</cell>
+            <cell>P</cell>
+            <cell>Q</cell>
+            <cell>R</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>R</cell>
+            <cell>R</cell>
+            <cell>S</cell>
+            <cell>Q</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>P</cell>
+            <cell>S</cell>
+            <cell>R</cell>
+            <cell>S</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>Q</cell>
+            <cell>Q</cell>
+            <cell>P</cell>
+            <cell>P</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Each League member votes for his favorite candidate.
+              What percentage of votes did the first-place candidate receive?
+              <answer>
+                <p>
+                  P won with <m>33\%</m> of the vote.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Rather than elect a candidate who didn't receive a majority vote,
+              the League holds a run-off election between the top two candidates.
+              Who will win the run-off election?
+              <answer>
+                <p>
+                  Q wins with 17 votes over P's 13 votes.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Was anyone eliminated from the run-off who perhaps shouldn't have been?
+              <answer>
+                <p>
+                  R was neck-and-neck with P and Q.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Can you think of a better runoff system for the League than a runoff between just the top two candidates?
+              What result does it give?
+              <answer>
+                <p>
+                  Eliminate the worst each time.
+                  <me>
+                    \begin{array}{rc} P \amp  10 \\ Q \amp  9 \\ R \amp  8 \\ S \amp  3 \end{array} \leadsto \begin{array}{rc} P \amp  10 \\ Q \amp  9 \\ R \amp  11 \end{array} \leadsto \begin{array}{rc} P \amp  10 \\ R \amp  20 \end{array} \leadsto R
+                  </me>
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Plurality with elimination:</em>
+        <answer>
+          <p>
+            If no candidate has a majority of first place votes,
+            eliminate the candidate, or candidates with the fewest first place votes.
+            Repeat until a candidate has a majority of first place votes.
+          </p>
+        </answer>
+          <idx><h>Plurality with elimination</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        The Federal Engineering Board is trying to decide on a flood prevention project for the metro area of Oak Rapids.
+        The options are
+        <ul>
+          <li>
+            <title>(D)</title>
+            <p>
+              A diversion through Marionville
+            </p>
+          </li>
+          <li>
+            <title>(L)</title>
+            <p>
+              A lock-and-dam system along the Oak River
+            </p>
+          </li>
+          <li>
+            <title>(F)</title>
+            <p>
+              Building floodwalls to <m>50'</m> throughout the city
+            </p>
+          </li>
+          <li>
+            <title>(C)</title>
+            <p>
+              Relocating the community to higher ground in, say, Colorado
+            </p>
+          </li>
+          <li>
+            <title>(G)</title>
+            <p>
+              Annual goat sacrifices to Poseidon, God of Waters
+            </p>
+          </li>
+        </ul>
+      </p>
+      The eighteen members of the Board have the following preferences:
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Number of Ballots</cell>
+        </row>
+        <row>
+          <cell>Ranking</cell>
+          <cell>5</cell>
+          <cell>4</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>1</cell>
+          <cell>3</cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell >1st choice</cell>
+          <cell>F</cell>
+          <cell>G</cell>
+          <cell>L</cell>
+          <cell>D</cell>
+          <cell>C</cell>
+          <cell>L</cell>
+        </row>
+        <row>
+          <cell>2nd choice</cell>
+          <cell>D</cell>
+          <cell>D</cell>
+          <cell>F</cell>
+          <cell>G</cell>
+          <cell>D</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>3rd choice</cell>
+          <cell>L</cell>
+          <cell>L</cell>
+          <cell>C</cell>
+          <cell>L</cell>
+          <cell>F</cell>
+          <cell>D</cell>
+        </row>
+        <row>
+          <cell>4th choice</cell>
+          <cell>G</cell>
+          <cell>C</cell>
+          <cell>D</cell>
+          <cell>F</cell>
+          <cell>G</cell>
+          <cell>G</cell>
+        </row>
+        <row>
+          <cell>5th choice</cell>
+          <cell>C</cell>
+          <cell>F</cell>
+          <cell>G</cell>
+          <cell>C</cell>
+          <cell>L</cell>
+          <cell>C</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      The Board's voting rules employ
+      <em>plurality with elimination</em>.
+      <ol>
+        <li>
+          <p>
+            What will the vote tallies be after the first round of voting?
+            Is there a winner yet?
+            If not, who should be eliminated?
+            <answer>
+              <p>
+                <m>\begin{array}{rr}D\amp 3\\L\amp 5\\F\amp 5\\C\amp 1\\G\amp 4 \end{array}</m>,
+                eliminate C. \else
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            What will the vote tallies be after the second round of voting?
+            Is there a winner yet?
+            If not, who should be eliminated?
+            <answer>
+              <p>
+                <m>\begin{array}{rr}D\amp 4\\L\amp 5\\F\amp 5\\G\amp 4 \end{array}</m>,
+                eliminate D and G. \else
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            What will the vote tallies be after the third round of voting?
+            Is there a winner yet?
+            If not, who should be eliminated?
+            <answer>
+              <p>
+                <m>\begin{array}{rr}L\amp 12\\F\amp 6 \end{array}</m>,
+                eliminate F, L wins. \else
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        If there are <m>n</m> candidates in an election conducted by plurality with elimination,
+        what is the most rounds of voting that could be required?
+        <answer>
+          <p>
+            <m>n-1</m> or <m>n-2</m> \else
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        The Wartburg College Science Fiction Club is voting on who is the Best Starship Captain Ever.
+        The candidates are:
+        <ul>
+          <li>
+            <p>
+              Han Solo, <em>Millennium Falcon</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              James T. Kirk, <em>USS Enterprise</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Malcolm Reynolds, <em>Serenity</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Zaphod Beeblebrox, <em>Heart of Gold</em>
+            </p>
+          </li>
+        </ul>
+      </p>
+      The preference table is the following:
+          <idx><h>preference table</h></idx>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Number of Ballots</cell>
+        </row>
+        <row>
+          <cell>Ranking</cell>
+          <cell>4</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell >1st choice</cell>
+          <cell>\C</cell>
+          <cell>\D</cell>
+          <cell>\B</cell>
+          <cell>\A</cell>
+          <cell>\A</cell>
+        </row>
+        <row>
+          <cell>2nd choice</cell>
+          <cell>\A</cell>
+          <cell>\A</cell>
+          <cell>\C</cell>
+          <cell>\B</cell>
+          <cell>\C</cell>
+        </row>
+        <row>
+          <cell>3rd choice</cell>
+          <cell>\B</cell>
+          <cell>\B</cell>
+          <cell>\D</cell>
+          <cell>\C</cell>
+          <cell>\D</cell>
+        </row>
+        <row>
+          <cell>4th choice</cell>
+          <cell>\D</cell>
+          <cell>\C</cell>
+          <cell>\A</cell>
+          <cell>\D</cell>
+          <cell>\B</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Who would win in a head-to-head race between \AA<nbsp/>and \BB?
+            <answer>
+              <tabular>
+                <row>
+                  <cell>&#197;</cell>
+                  <cell>11</cell>
+                </row>
+                <row>
+                  <cell>\BB</cell>
+                  <cell>3</cell>
+                </row>
+              </tabular>
+              <p>
+                \else
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Who would win in a head-to-head race between \AA<nbsp/>and \CC?
+            <answer>
+              <tabular>
+                <row>
+                  <cell>&#197;</cell>
+                  <cell>7</cell>
+                </row>
+                <row>
+                  <cell>\CC</cell>
+                  <cell>7</cell>
+                </row>
+              </tabular>
+              <p>
+                \else
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Fill in the following table of who would win head-to-head races;
+            if there are any ties, put both names in the box.
+            <tabular>
+              <row>
+                <cell></cell>
+                <cell>\DD</cell>
+                <cell>\CC</cell>
+                <cell>\BB</cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell >&#197;</cell>
+                <cell>S</cell>
+                <cell>{S-R}</cell>
+                <cell>S</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>{\BB}</cell>
+                <cell>K</cell>
+                <cell>{K-R}</cell>
+              </row>
+              <row>
+                <cell>{\CC}</cell>
+                <cell>R</cell>
+              </row>
+              <row>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+        </li>
+        <li>
+          <p>
+            Who won the most head-to-head races? (Count any ties as
+            <m>\frac{1}{2}</m> a win for each contender.)
+            <answer>
+              <tabular>
+                <row>
+                  <cell>S</cell>
+                  <cell>2.5</cell>
+                </row>
+                <row>
+                  <cell>K</cell>
+                  <cell>1.5</cell>
+                </row>
+                <row>
+                  <cell>R</cell>
+                  <cell>2</cell>
+                </row>
+                <row>
+                  <cell>B</cell>
+                  <cell>0</cell>
+                </row>
+              </tabular>
+              <p>
+                \else
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        <em>Pairwise Comparison:</em>
+        <answer>
+          <p>
+            Place every candidate head to head against every other candidate.
+            Give one point for wins and 1/2 point for ties.
+            Candidate with most points wins.\else
+          </p>
+        </answer>
+          <idx><h>pairwise comparison</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        A tip for setting up the head-to-head races:
+        <answer>
+          <p>
+            Put the first <m>n-1</m> candidates vertically.
+            Then, starting with the missing candidate and working backwards list <m>n-1</m> candidates horizontally. \else
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        Our MA 106 classes are voting on where to take a math field trip.
+        The options are:
+        <ul>
+          <li>
+            <title>(E)</title>
+            <p>
+              The mudflats of Egypt, birthplace of geometry
+            </p>
+          </li>
+          <li>
+            <title>(A)</title>
+            <p>
+              Athens, cradle of logical thought
+            </p>
+          </li>
+          <li>
+            <title>(M)</title>
+            <p>
+              Moose Lake Credit Union, dispenser of mortgages
+            </p>
+          </li>
+          <li>
+            <title>(K)</title>
+            <p>
+              K&#xf6;nigsberg, for a walking tour of the bridges
+            </p>
+          </li>
+          <li>
+            <title>(P)</title>
+            <p>
+              Papa John's Pizza, home of yummy garlic sauce
+            </p>
+          </li>
+        </ul>
+      </p>
+      The preference table is the following.
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Number of Ballots</cell>
+        </row>
+        <row>
+          <cell>Ranking</cell>
+          <cell>5</cell>
+          <cell>4</cell>
+          <cell>4</cell>
+          <cell>3</cell>
+          <cell>2</cell>
+          <cell>1</cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell >1st choice</cell>
+          <cell>K</cell>
+          <cell>M</cell>
+          <cell>M</cell>
+          <cell>E</cell>
+          <cell>P</cell>
+          <cell>K</cell>
+        </row>
+        <row>
+          <cell>2nd choice</cell>
+          <cell>E</cell>
+          <cell>K</cell>
+          <cell>E</cell>
+          <cell>P</cell>
+          <cell>K</cell>
+          <cell>A</cell>
+        </row>
+        <row>
+          <cell>3rd choice</cell>
+          <cell>A</cell>
+          <cell>A</cell>
+          <cell>A</cell>
+          <cell>K</cell>
+          <cell>E</cell>
+          <cell>M</cell>
+        </row>
+        <row>
+          <cell>4th choice</cell>
+          <cell>P</cell>
+          <cell>E</cell>
+          <cell>K</cell>
+          <cell>M</cell>
+          <cell>M</cell>
+          <cell>P</cell>
+        </row>
+        <row>
+          <cell>5th choice</cell>
+          <cell>M</cell>
+          <cell>P</cell>
+          <cell>P</cell>
+          <cell>A</cell>
+          <cell>A</cell>
+          <cell>E</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      We decide to use the pairwise comparison method to decide.
+      Where will we go?
+      <answer>
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell>E</cell>
+            <cell>A</cell>
+            <cell>M</cell>
+            <cell>K</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>P</cell>
+            <cell>E</cell>
+            <cell>A</cell>
+            <cell>P</cell>
+            <cell>K</cell>
+          </row>
+          <row>
+            <cell>K</cell>
+            <cell>K</cell>
+            <cell>K</cell>
+            <cell>K</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>M</cell>
+            <cell>E</cell>
+            <cell>M</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>A</cell>
+            <cell>E</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <tabular>
+          <row>
+            <cell>E</cell>
+            <cell>3</cell>
+          </row>
+          <row>
+            <cell>A</cell>
+            <cell>1</cell>
+          </row>
+          <row>
+            <cell>M</cell>
+            <cell>1</cell>
+          </row>
+          <row>
+            <cell>K</cell>
+            <cell>4</cell>
+          </row>
+          <row>
+            <cell>P</cell>
+            <cell>1</cell>
+          </row>
+        </tabular>
+        <p>
+          K wins \else
+        </p>
+      </answer>
+    </li>
+    <li>
+      <p>
+        If you use the pairwise comparison method with <m>n</m> candidates,
+        how many head-to-head races are there?
+        <answer>
+          <p>
+            <m>\binom{n}{2} = \frac{n(n-1)}{2}</m>
+          </p>
+        </answer>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \HOMEWORK
+  </p>
+  <p>
+    Show all your work.
+    In particular, for plurality with elimination,
+    show the results of each round of voting;
+    for pairwise comparison, show the result of each head-to-head vote.
+  </p>
+  <ol>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Number of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>5</cell>
+            <cell>4</cell>
+            <cell>3</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </p>
+      <ol>
+        <li>
+          <p>
+            How many votes would be required to win a
+            <em>majority</em> in this election?
+            Find the winner of an election held using each of the following voting schemes.
+            (If it is a tie, say who tied.)
+          </p>
+          <ol>
+            <li>
+              <p>
+                Find the winner using plurality with elimination.
+                <answer>
+                  <p>
+                    C.
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the winner using pairwise comparison.
+                <answer>
+                  <p>
+                    B.
+                  </p>
+                </answer>
+              </p>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Number of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+            <cell>4</cell>
+            <cell>9</cell>
+            <cell>3</cell>
+            <cell>6</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\D</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\E</cell>
+            <cell>\B</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\C</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\E</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\E</cell>
+            <cell>\E</cell>
+            <cell>\E</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\B</cell>
+            <cell>\A</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\D</cell>
+          </row>
+          <row>
+            <cell>5th choice</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+            <cell>\E</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        This race is being decided by plurality vote.
+        <ol>
+          <li>
+            <p>
+              How many voters are voting in this election?
+              <answer>
+                <p>
+                  <m>3+4+4+9+3+6=29</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How many votes would be required to win a
+              <em>majority</em> in this election?
+              <answer>
+                <p>
+                  <m>29/2 = 14.5</m>, so it takes 15 votes.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Who will win this election?
+              How many votes will that person get?
+              Does that candidate have a majority?
+              <answer>
+                <p>
+                  Candidate Z<nbsp/>wins with 10 votes,
+                  but that is not a majority.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose candidate \B<nbsp/>drops out of the race.
+              Who would win the election?
+              <answer>
+                <p>
+                  Now candidate \E<nbsp/>wins
+                  (with 12 votes).
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose everyone drops out of the race except Z<nbsp/>and H. Who will win the election?
+              <answer>
+                <p>
+                  Z<nbsp/>gets 13 votes and H<nbsp/>gets 16 votes, so H<nbsp/>wins.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Number of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>8</cell>
+            <cell>6</cell>
+            <cell>8</cell>
+            <cell>5</cell>
+            <cell>1</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\B</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\D</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </p>
+    </li>
+    <li>
+      <p>
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        <ol>
+          <li>
+            <p>
+              Find the winner using plurality with elimination.
+              <answer>
+                <p>
+                  Tied between B and D.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the winner using pairwise comparison.
+              <answer>
+                <p>
+                  D.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Number of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>3</cell>
+            <cell>7</cell>
+            <cell>4</cell>
+            <cell>1</cell>
+            <cell>7</cell>
+            <cell>8</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        <ol>
+          <li>
+            <p>
+              Find the winner using plurality with elimination.
+              <answer>
+                <p>
+                  B.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the winner using pairwise comparison.
+              <answer>
+                <p>
+                  A.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell># of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>3</cell>
+            <cell>5</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\E</cell>
+            <cell>\E</cell>
+            <cell>\C</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\E</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>5th choice</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\B</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        <ol>
+          <li>
+            <p>
+              Find the winner using plurality with elimination.
+              <answer>
+                <p>
+                  D.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the winner using pairwise comparison.
+              <answer>
+                <p>
+                  C.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        The AP college football poll is a ranking of the top 25 college football teams in the country and is one of the key polls used for the BCS<fn>
+        Bowl Championship Series
+        </fn>.
+        The voters in the AP poll are a group of sportswriters and broadcasters chosen from across the country.
+        The top 25 teams are ranked using a Borda count:
+        each first-place vote is worth 25 points,
+        each second-place vote is worth 24 points,
+        each third-place vote is worth 23 points, and so on.
+        The following table shows the ranking and total points for each of the top three teams at the end of the 2006 regular season.
+        (The remaining 22 teams are not shown here because they are irrelevant to this exercise.)
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Team</cell>
+            <cell>Points</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>1. Ohio State</cell>
+            <cell>1625</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>2. Florida</cell>
+            <cell>1529</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>3. Michigan</cell>
+            <cell>1526</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Given that Ohio State was the unanimous first-place choice of all the voters,
+              find the number of voters that participated in the poll.
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the number of second and third-place votes for Florida.
+              <answer>
+                <p>
+                  Hint: Since Ohio State was the unanimous first-place choice and we are told the other 22 teams are irrelevant,
+                  then we can assume that all the second and third place votes went either to Ohio State or Michigan.
+                  This also means that the voters who didn't put Ohio State second placed them third.
+                  This is all the information you need to solve the problem.
+                </p>
+              </answer>
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the number of second and third-place votes for Michigan.
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+</section>

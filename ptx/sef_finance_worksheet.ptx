@@ -1,0 +1,246 @@
+<section xml:id="sef_finance_worksheet">
+  <title>Review Worksheet</title>
+  <ol>
+    <li>
+      <p>
+        You take out a subsidized student loan at 4.66% compounded monthly.
+        You have a monthly discretionary income  of $ P/month of which you can put up to 20% towards paying off your loan.
+        To calculate P, take your current age divided by 3 times 100.
+        What is the largest loan you can get under each plan?
+        <em>Standard Repayment</em> With the standard plan,
+        you'll pay a fixed amount each month until your loans are paid in full.
+        Your monthly payments will be at least $50,
+        and you'll have up to 10 years to repay your loans.
+        The standard plan is good for you if you can handle higher monthly payments because you'll repay your loans more quickly.
+        Your monthly payment under the standard plan may be higher than it would be under the other plans because your loans will be repaid in the shortest time.
+        For the same reason <mdash/> the 10-year limit on repayment <mdash/> you may pay the least interest.
+        <em>Extended Repayment</em> To be eligible for the extended plan,
+        you must have more than $30,000 in Direct Loan debt and you must not have an outstanding balance on a Direct Loan as of October 7, 1998.
+        Under the extended plan you have 25 years for repayment.
+      </p>
+    </li>
+    <li xml:id="EPpart2">
+      <p>
+        Typically, most lenders suggest that you spend no more than 28% of your monthly income on a mortgage.
+        Today, home loans for a 30 year fixed-rate mortgage are running at approximately 4%. What is the largest loan you can afford on your monthly income of $P?
+      </p>
+    </li>
+    <li>
+      <p>
+        You want to take 5 years to save up a 20% down payment for your house.
+        What is the value of the house if you take out the loan you found in <xref ref="EPpart2">part</xref> with a 20% down payment?
+        How much would you have to put aside monthly to save up that amount?
+        What percentage of your monthly income of $P is that?
+      </p>
+    </li>
+    <li>
+      <p>
+        If you are also spending 28% of your monthly income on rent,
+        how much money do you have to live on during the time you are paying off your loan and saving up for your house?
+      </p>
+    </li>
+  </ol>
+  <tabular>
+    <row>
+      <cell>Age</cell>
+      <cell>18</cell>
+      <cell>19</cell>
+      <cell>20</cell>
+      <cell>21</cell>
+      <cell>22</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>income</cell>
+      <cell>$600.00</cell>
+      <cell>$633.33</cell>
+      <cell>$666.67</cell>
+      <cell>$700.00</cell>
+      <cell>$733.33</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>10 year</cell>
+      <cell>$11,493.00</cell>
+      <cell>$12,131.50</cell>
+      <cell>$12,770.00</cell>
+      <cell>$13,408.50</cell>
+      <cell>$14,047.00</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>25 year</cell>
+      <cell>$21,240.70</cell>
+      <cell>$22,420.74</cell>
+      <cell>$23,600.78</cell>
+      <cell>$24,780.82</cell>
+      <cell>$25,960.86</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>mortgage payment</cell>
+      <cell>$168.00</cell>
+      <cell>$177.33</cell>
+      <cell>$186.67</cell>
+      <cell>$196.00</cell>
+      <cell>$205.33</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Mortgage</cell>
+      <cell>$35,189.49</cell>
+      <cell>$37,144.46</cell>
+      <cell>$39,099.43</cell>
+      <cell>$41,054.40</cell>
+      <cell>$43,009.37</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>House Value</cell>
+      <cell>$43,986.86</cell>
+      <cell>$46,430.57</cell>
+      <cell>$48,874.29</cell>
+      <cell>$51,318.00</cell>
+      <cell>$53,761.72</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>20 percent</cell>
+      <cell>$8,797.37</cell>
+      <cell>$9,286.11</cell>
+      <cell>$9,774.86</cell>
+      <cell>$10,263.60</cell>
+      <cell>$10,752.34</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>monthly savings</cell>
+      <cell>$132.69</cell>
+      <cell>$140.06</cell>
+      <cell>$147.44</cell>
+      <cell>$154.81</cell>
+      <cell>$162.18</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>percentage</cell>
+      <cell>22%</cell>
+      <cell>22%</cell>
+      <cell>22%</cell>
+      <cell>22%</cell>
+      <cell>22%</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Live on</cell>
+      <cell>$179.31</cell>
+      <cell>$189.27</cell>
+      <cell>$199.23</cell>
+      <cell>$209.19</cell>
+      <cell>$219.15</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>percentage</cell>
+      <cell>30%</cell>
+      <cell>30%</cell>
+      <cell>30%</cell>
+      <cell>30%</cell>
+      <cell>30%</cell>
+    </row>
+    <row bottom="minor">
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+  </tabular>
+  <p>
+    \end{answer}
+  </p>
+  <p>
+    \declareproblemlettering{R}
+  </p>
+  <p>
+    \cleartooddpage
+  </p>
+</section>

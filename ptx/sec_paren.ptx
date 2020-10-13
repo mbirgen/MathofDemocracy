@@ -1,0 +1,125 @@
+<section xml:id="sec_paren">
+  <title>Parentheses</title>
+  <p>
+    One of the greatest challenges to students is using parentheses correctly to help a calculator interpret a formula correctly.
+    For example, consider the expression
+    <me>
+      \frac{1+7}{2}
+    </me>.
+  </p>
+  <p>
+    We know from elementary school that you compute the whole numerator of the fraction before dividing by the denominator,
+    so this expression equals <m>4</m>.
+    If you type it into the calculator without parentheses,
+    however, we get \calcscreen{1+7/2
+  </p>
+  <p>
+    \ca 4.5} That's because the calculator,
+    following the order of operations we learned as children,
+    first does the division and then the addition:
+    <m>\texttt{7/2} = 3.5</m>, so <m>\texttt{1+7/2}=4.5</m>.
+  </p>
+  <p>
+    We human beings can tell,
+    by looking at <m>\frac{1+7}{2}</m>,
+    that the <m>1+7</m> has to be done first,
+    but the calculator doesn't know that unless we tell it.
+    So we should really type \calcscreen{(1+7)/2
+  </p>
+  <p>
+    \ca 4} One way to make this process easier,
+    especially in long complicated formulas,
+    is to draw in the extra parentheses on your paper before you begin typing into the calculator.
+    <me>
+      \mbox{Given~} \frac{1+7}{2},\mbox{~draw in~} \frac{\textcolor{red}{(}1+7\textcolor{red}{)}}{2}\mbox{~and then type~} \texttt{(1+7)/2}
+    </me>.
+  </p>
+  <p>
+    Here are some locations that typically need extra parentheses:
+    <ul>
+      <li>
+        <p>
+          The numerator of a fraction:
+          <m>\dfrac{1+7}{2}</m> becomes <m>\dfrac{\textcolor{red}{(}1+7\textcolor{red}{)}}{2}</m>.
+          <tabular>
+            <row>
+              <cell><em>Incorrect:</em></cell>
+              <cell><em>Correct:</em>
+                <sidebyside>
+                  1+7/2 \ca 4.5
+                </sidebyside></cell>
+              <cell><sidebyside>
+                  (1+7)/2 \ca 4
+                </sidebyside></cell>
+            </row>
+          </tabular>
+        </p>
+      </li>
+      <li>
+        <p>
+          The denominator of a fraction:
+          <m>\dfrac{\quad8}{\frac{6}{3}}</m> becomes <m>\dfrac{\quad8}{\textcolor{red}{(}\frac{6}{3}\textcolor{red}{)}}</m>.
+          <tabular>
+            <row>
+              <cell><em>Incorrect:</em></cell>
+              <cell><em>Correct:</em>
+                <sidebyside>
+                  8/6/3 \ca 0.444444
+                </sidebyside></cell>
+              <cell><sidebyside>
+                  8/(6/3) \ca 4
+                </sidebyside></cell>
+            </row>
+          </tabular>
+        </p>
+      </li>
+      <li>
+        <p>
+          Exponents:<fn>
+          Some more recent Texas Instrument calculators help you out by making exponents actually look like exponents.
+          On such a calculator,
+          if you press the keys <kbd>5</kbd> <kbd>\caret</kbd> <kbd>6</kbd> <kbd>-</kbd> <kbd>4</kbd> , it will display as \calcscreen{<m>5^{6-4}</m> \ca 25} On this kind of calculator,
+          if you need to type more <em>after</em> the exponent,
+          press the right arrow key \rightkey<nbsp/>to get
+          <q>back down</q>
+          to the main line.
+          For example, to evaluate <m>5^{6-4}+7</m> on such a calculator,
+          you would press the buttons <kbd>5</kbd> <kbd>\caret</kbd> <kbd>6</kbd> <kbd>-</kbd> <kbd>4</kbd> \rightkey <kbd>+</kbd> <kbd>7</kbd> to get \calcscreen{<m>5^{6-4}+7</m> \ca 32}
+          </fn> <m>5^{6-4}</m> becomes <m>5^{\textcolor{red}{(}6-4\textcolor{red}{)}}</m>.
+          <tabular>
+            <row>
+              <cell><em>Incorrect:</em></cell>
+              <cell><em>Correct:</em>
+                <sidebyside>
+                  5\caret6-4 \ca 15621
+                </sidebyside></cell>
+              <cell><sidebyside>
+                  5\caret(6-4) \ca 25
+                </sidebyside></cell>
+            </row>
+          </tabular>
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    Of course, one complicated expression may need all of these!
+    <m>500\dfrac{\left(1+\frac{.07}{52}\right)^{8\cdot52}-1}{\frac{.07}{52}}</m> becomes <m>500\dfrac{\textcolor{red}{\Big(}\left(1+\frac{.07}{52}\right)^{\textcolor{red}{(}8\cdot52\textcolor{red}{)}}-1\textcolor{red}{\Big)}}{\textcolor{red}{(}\frac{.07}{52}\textcolor{red}{)}}</m>.
+  </p>
+  <tabular>
+    <row>
+      <cell><em>Incorrect:</em></cell>
+      <cell><em>Correct:</em>
+        <sidebyside>
+          500*(1+.07/52)\caret8*52-1/
+          .07/52
+          \ca 26281.04806
+        </sidebyside></cell>
+      <cell><sidebyside>
+          500*((1+.07/52)\caret(8*52)
+          -1)/(.07/52)
+          \ca 278576.3860
+        </sidebyside></cell>
+    </row>
+  </tabular>
+</section>

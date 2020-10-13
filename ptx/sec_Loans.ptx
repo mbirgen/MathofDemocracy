@@ -1,0 +1,420 @@
+<section xml:id="sec_Loans">
+  <title>Loans</title>
+  <p>
+        <idx><h>present value</h></idx>
+  </p>
+  <ol>
+    <li>
+      <p>
+        <em>Present Value of an Annuity:</em>
+        <me>
+          P = R\frac{1-(1+\frac rn)^{-nt}}{\frac rn}
+        </me>
+        or
+        <me>
+          P = R\frac{1-(1+i)^{-m}}{i}
+        </me>
+      </p>
+    </li>
+    <li>
+      <p>
+        The Present Value formula states how much a series of payments is worth
+        <em>as one lump sum at the beginning</em>.
+        This can show up in several different ways; here are four.
+      </p>
+      <ol>
+        <li>
+          <p>
+            <em>How much money do you need now to fund a series of future payments?</em>
+            Example: You are planning to retire at age 68.
+            You will need a $50,000 payment each year to live on,
+            and you plan to be retired for 20 years.
+            The interest rate is 6%. How much money do you need in your retirement account when you retire?
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>What is a fair price to charge now in exchange for paying someone regularly in the future?</em>
+            Example: You run a retirement home,
+            and an elderly man named George wants to pay you a fixed sum now to have you take care of him for the rest of his life.
+            It will cost you $2000 per month to take care of George,
+            and he will probably live another 15 years.
+            You can get interest rates of 5% compounded monthly.
+            How much should you charge George?
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>What is a fair price to pay for something that will pay you regularly in the future?</em>
+            Example: You are an investor looking at buying a copper mine.
+            The mine will produce an annual profit of $1,200,000 per year for its owner for the next 20 years,
+            but then the ore will run out.
+            Interest rates are sitting at 4%. How much would be a fair price to pay for the mine?
+            <answer>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>How does a loan amount relate to the regular loan payment?</em>
+            Example: You put a $2000 down payment on a $12,000 car,
+            financing the rest with a 5-year loan at 6% interest, compounded monthly.
+          </p>
+          <ol>
+            <li>
+              <p>
+                How much will your monthly payments be?
+                <answer>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                How much cash did you pay, total, for your $12,000 car?
+                <answer>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                How many dollars of interest did you pay for this car?
+                <answer>
+                </answer>
+              </p>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        You have a student loan of $9,000 to be paid back over 12 years at 4% interest compounded monthly.
+        <ol>
+          <li>
+            <p>
+              How much will the monthly payment be?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              What will be the total amount you pay for your $9,000 loan?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much interest did you pay for this loan?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If you want to pay it off in just 5 years,
+              how much should you pay each month?
+              <answer>
+              </answer>
+              How much interest will that save you?
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        You want to buy a car.
+        You have $1,500 saved up for a down payment,
+        and you can get a 5-year car loan at 3% interest, compounded monthly.
+        <ol>
+          <li>
+            <p>
+              If you can afford a $200 monthly car payment,
+              what is the most expensive car you can buy?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If you want to buy an $18,000 vehicle,
+              what will the monthly payment be?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If you buy that $18,000 vehicle,
+              how much will you pay in interest over the life of the loan?
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \HOMEWORK
+  </p>
+  <ol>
+    <li>
+      <p>
+        Find the present value of each of the following ordinary annuities.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Payments of $500 made at the end of each quarter for 8 years,
+            where 10% annual interest is compounded quarterly.
+            <answer>
+              <p>
+                <m>\dollar500 \dfrac{1-(1+\frac{.10}{4})^{-4\cdot 8}}{\frac{.10}{4}} = \dollar10924.59</m>.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Payments of $100 made at the end of each month for 10 years,
+            where 6% annual interest is compounded monthly.
+            <answer>
+              <p>
+                <m>\dollar100 \dfrac{1-(1+\frac{.06}{12})^{-12\cdot 10}}{\frac{.06}{12}} = \dollar9007.35</m>.
+              </p>
+            </answer>
+            <answer>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Suppose you borrow $16,000 from a bank to purchase a car.
+        The bank charges 4% annual interest, compounded monthly.
+        You are to make equal monthly payments at the end of each of the next 48 months to amortize your loan.
+        How much are your monthly payments?
+        <answer>
+          <p>
+            We are looking for a payment <m>P</m> such that
+          </p>
+          <p>
+            {<m>\displaystyle \dollar16{,}000 = P \dfrac{1-(1+\frac{.04}{12})^{-48}}{\frac{.04}{12}}</m>.} Solving we obtain <m>P=\dollar361.26</m>.
+          </p>
+        </answer>
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        You want to retire at age 65 with an $80,000 annual income.
+        You come from a long-lived family,
+        so you want to be prepared in case you live to age 97.
+        Interest rates are at 8%.
+        <ol>
+          <li>
+            <p>
+              How much money will you need in your retirement accounts when you retire,
+              in order to fund annual payments of $80,000?
+              <answer>
+                <p>
+                  You need <m>97-65=32</m> years of retirement income,
+                  so you need <m>80000 \dfrac{1-(1+\frac{0.08}{1})^{-1\cdot 32}}{\frac{0.08}{1}} = \dollar914{,}799.95</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If you start working at age 22,
+              how much money should you deposit into your retirement account each month in order to have saved up the amount from part (a) by the time you retire at age 65?
+              <answer>
+                <p>
+                  You have <m>65-22 = 43</m> working years,
+                  so you need <m>P</m> such that<m>\displaystyle \dollar914{,}799.95 = P \dfrac{(1+\frac{0.08}{12})^{12\cdot 43}-1}{\frac{0.08}{12}}</m>.
+                  (This is the <em>future value</em> formula,
+                  because you are <em>saving</em> money.)
+                  Solving, you find <m>P=\dollar204.43</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        You have to take out $20,000 in student loans to get through college.
+        The interest rate is 6.8% annually, compounded monthly,
+        and you will make monthly payments for the next ten years.
+        (No interest is charged or payments required until you leave school.)
+        <ol>
+          <li>
+            <p>
+              How much will your monthly payment be?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much interest will you pay over those ten years? (Your answer should be in dollars.)
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose you try to pay off the loan in just 5 years.
+              How much will you have to pay each month to do so?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If you do pay off the loan in 5 years,
+              how much interest will you pay total?
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How much money do you save by paying off the loan in 5 years instead of 10 years?
+              <answer>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Some time ago Steve Smith took out a mortgage from First National State Local Bank;
+        his payment was $900 per month.
+        FNSLB is strapped for cash these days, so it's considering
+        <q>selling the mortgage</q>
+        to Seventh National Bank;
+        in other words, SNB will pay FNSLB a certain sum of money,
+        and in return SNB will get all Steve Smith's remaining mortgage payments.
+        There are 187 payments remaining on the mortgage,
+        and interest rates are at 4% per year.
+        How much should FNSLB charge Seventh National Bank to buy the mortgage?
+        <answer>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        You win a
+        <q>one million dollar</q>
+        lottery prize.
+        Hooray!
+        <ol>
+          <li>
+            <p>
+              Suppose the lottery rules stipulate that you will be paid $50{,}000 at the end of each of the next 20 years,
+              for a total of $1{,}000{,}000 paid out.
+              Assuming that annual interest rates will stay at 5%, what is the present value of this prize?
+              In other words,
+              how much is this prize really worth <em>today</em>?
+              <answer>
+                <p>
+                  You get an annuity of $50,000 per year for 20 years.
+                  The annuity is worth <m>\displaystyle \dollar50{,}000 \dfrac{1-(1+\frac{.05}{1})^{-20\cdot 1}}{\frac{.05}{1}} = \dollar623{,}110.52</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose instead the lottery rules stipulate that you will be paid $50{,}000 today,
+              and then $50{,}000 at the end of each year for the next 19 years.
+              Assuming 5% interest rates,
+              how much is <em>this</em> prize really worth <em>today</em>?
+              <answer>
+                <p>
+                  You get $50,000 today, plus an annuity of $50,000 per year for 19 years.
+                  The annuity is worth <m>\displaystyle \dollar50{,}000 \dfrac{1-(1+\frac{.05}{1})^{-19\cdot 1}}{\frac{.05}{1}} = \dollar604{,}266.04</m>,
+                  so adding in the $50,000 you get paid now,
+                  the answer is <m>\displaystyle \dollar50{,}000 + \dollar604{,}266.04 = \dollar654{,}266.04</m>.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Two oil wells are for sale.
+        The well in Varmint, TX promises to yield payments of $6{,}000 at the end of each year for the next 10 years.
+        The well in Mule's Ear, TX will yield payments of $4{,}000 at the end of each year for the next 20 years. (Notice that the lengths of time are different!)
+        <ol>
+          <li xml:id="partFa">
+            <p>
+              Assuming that annual interest rates will hold steady at 8% for the next 20 years,
+              find the present value of each oil well.
+              Which oil well is more valuable?
+              <answer>
+                <p>
+                  The present value in Varmint is <m>\dollar6000 \dfrac{1-(1+\frac{.08}{1})^{-1\cdot 10}}{\frac{.08}{1}} = \dollar40260.49</m>.
+                  The present value in Mule's Ear is <m>\dollar4000 \dfrac{1-(1+\frac{.08}{1})^{-1\cdot 20}}{\frac{.08}{1}} = \dollar39272.59</m>.
+                </p>
+                <p>
+                  Thus Varmint has the higher present value.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li xml:id="partFb">
+            <p>
+              Assuming that annual interest rates will stay at 6% for the next 20 years,
+              find the present value of each oil well.
+              Which oil well is more valuable?
+              <answer>
+                <p>
+                  The present value in Varmint is <m>\dollar6000 \dfrac{1-(1+\frac{.06}{1})^{-1\cdot 10}}{\frac{.06}{1}} = \dollar44160.52</m>.
+                  The present value in Mule's Ear is <m>\dollar4000 \dfrac{1-(1+\frac{.06}{1})^{-1\cdot 20}}{\frac{.06}{1}} = \dollar45879.68</m>.
+                </p>
+                <p>
+                  Thus Mule's Ear has the higher present value.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Why did the present values of the oil wells go up when the interest rates went down from part <xref ref="partFa">F</xref>
+              to part <xref ref="partFb">F</xref>?
+              <answer>
+                <p>
+                  If interest rates are lower,
+                  you would need to invest more money today to earn enough interest to make payments equivalent to what the oil wells will produce.
+                </p>
+                <p>
+                  <em>(Note to grader: please don't grade this part of the problem.)</em>
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+</section>

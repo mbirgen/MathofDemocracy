@@ -1,0 +1,34 @@
+<section xml:id="sec_correcting_mistakes">
+  <title>Correcting Mistakes</title>
+  <p>
+    At some point in this course you will probably type in a long,
+    complex expression wrong, and you'll have to fix it.
+    Instead of retyping the whole thing,
+    you might be able to just edit your earlier attempt!
+    One of the following may work on your calculator:
+    <ul>
+      <li>
+        <p>
+          pressing the up arrow key <m>\blacktriangle</m> to scroll up to the earlier line
+        </p>
+      </li>
+      <li>
+        <p>
+          pressing 2ND ENTER to access the latest
+          <q><c>ENTRY</c></q>
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    If you do this, you might need to insert new symbols,
+    such as parentheses, into your earlier wrong entry.
+    Be sure to change into insert mode (
+    <q><c> INS</c></q>
+    ) by pressing 2ND DEL ; this will let you insert new characters.
+    Unfortunately, the calculator will switch back to normal
+    <q>overtype</q>
+    mode as soon as you press an arrow key to move to another location,
+    so you'll need to press 2ND DEL again.
+  </p>
+</section>

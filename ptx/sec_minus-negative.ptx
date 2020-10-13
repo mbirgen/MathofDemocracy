@@ -1,0 +1,20 @@
+<section xml:id="sec_minus-negative">
+  <title>Subtraction versus Negatives</title>
+  <p>
+    On Texas Instruments calculators,
+    there are two keys with horizontal lines.
+    The main <kbd>-</kbd> key is for
+    <em>subtraction</em>, like <m>5-4</m>.
+    When you type in a <em>negative number</em> like <m>-6</m>,
+    however, you must use the smaller <kbd>(-)</kbd> key,
+    usually located in the bottom row of your calculator.
+    If you use the wrong button,
+    you will probably see a screen like this: \calcscreen{ERR:SYNTAX
+  </p>
+  <p>
+    \makebox[0pt][l]{\rule{12pt}{11pt}}1:Quit
+  </p>
+  <p>
+    2:Goto}
+  </p>
+</section>

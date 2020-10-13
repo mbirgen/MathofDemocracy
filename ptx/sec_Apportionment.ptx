@@ -1,0 +1,2438 @@
+<section xml:id="sec_Apportionment">
+  <title>Apportionment</title>
+  <introduction>
+    <p>
+          <idx><h>apportionment</h></idx>
+      Another mathematical challenge in most Democratic systems is that of Apportionment.
+      Essentially the problem is one of representation.
+      Seats in the House of Representatives are given to the states based on population.
+      There are 435 seats for 2323.1 million people.
+      That works out to <m>323100000/435 = 742758.6207</m> or about <m>742,759</m> people per seat in the House.
+      However, even though North Dakota, Vermont,
+      and Wyoming all have smaller populations than that they are guaranteed a seat in the House.
+      Also, if you look at the other states,
+      it is very rare that their population is exactly an even multiple of <m>742,759</m>.
+      This section is all about how to fairly appoint seats in a house of representatives,
+      as well as a variety of other tasks that turn out to be essentially the same thing.
+    </p>
+    <ol>
+      <li>
+        <p>
+          The Republic of Awoi is a small country consisting of four states North-West (population 69,000), South-West (population 267,000), South-East (population 133,000) and North-East
+          (population 331,000).
+          Suppose that there are 160 seats in the Awoi Congress to be apportioned among the four states based on their representative populations.
+        </p>
+        <ol>
+          <li>
+            <p>
+              On average, how many people per congress seat should there be?
+              <answer>
+                <p>
+                  5000 \else
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              How would you give out the 160 seats to the four states and why? \begin{answer}
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell>NW</cell>
+                  <cell>SW</cell>
+                  <cell>SE</cell>
+                  <cell>NE</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Seats</cell>
+                  <cell>14</cell>
+                  <cell>53</cell>
+                  <cell>27</cell>
+                  <cell>66</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+        </ol>
+        \else
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>NW</cell>
+            <cell>SW</cell>
+            <cell>SE</cell>
+            <cell>NE</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Seats</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </li>
+    </ol>
+    <p>
+      \end{answer}
+    </p>
+    <p>
+      \item Notes on Apportionment <em>Standard Divisor (SD):</em>
+    </p>
+    <answer>
+      <p>
+        The whole population divided by the number of seats
+      </p>
+    </answer>
+    <p>
+          <idx><h>divisor</h><h>standard</h></idx>
+    </p>
+    <p>
+      <em>Standard quotas (<m>q_1,q_2,\dots q_N</m>):</em>
+    </p>
+    <answer>
+      <p>
+        Population of each state divided by the standard divisor.
+      </p>
+    </answer>
+    <p>
+          <idx><h>quota</h><h>standard</h></idx>
+    </p>
+    <p>
+      <em>Upper and lower quotas:</em>
+    </p>
+    <answer>
+      <p>
+        The upper quota is the standard quota rounded up and the lower quota is the standard quota rounded down.
+        A fair apportionment will lead to all states having either their upper or lower quota.
+      </p>
+    </answer>
+    <p>
+          <idx><h>quota</h><h>upper</h></idx>
+          <idx><h>quota</h><h>lower</h></idx>
+    </p>
+  </introduction>
+  <subsection>
+    <title>Hamilton's Method</title>
+    <p>
+          <idx><h>apportionment method</h><h>Hamilton</h></idx> \item <em>Hamilton's Method:</em>
+    </p>
+    <answer>
+      <p>
+        Assign all states their lower quota.
+        Then, to assign the extra seats,
+        look at the state with the largest decimal part in its standard quota and assign it the upper quota.
+        Continue until all extra seats are assigned.
+      </p>
+    </answer>
+    <p>
+      \item Consider the Republic of Awoi:
+      <ol>
+        <li>
+          <p>
+            Find the standard divisor.
+            <answer>
+            </answer>
+            {
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell></cell>
+                <cell>Population</cell>
+                <cell>Standard quota</cell>
+                <cell>LQ</cell>
+                <cell>UQ</cell>
+                <cell>App</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><answer>
+                    <p>
+                      NW &amp; 69,000 &amp; 13.8 &amp; 13 &amp; 14 &amp; 14 \hline SW &amp; 267,000 &amp; 53.4 &amp; 53 &amp; 54 &amp; 53 \hline SE &amp; 133,000 &amp; 26.6 &amp; 26 &amp; 27 &amp; 27 \hline NE &amp; 331,000 &amp; 66.2 &amp; 66 &amp; 67 &amp; 66 \hline \else NW &amp; 69,000 &amp; &amp; &amp; &amp; \hline SW &amp; 267,000 &amp; &amp; &amp; &amp; \hline SE &amp; 133,000 &amp; &amp; &amp; &amp; \hline NE &amp; 331,000 &amp; &amp; &amp; &amp; \hline
+                    </p>
+                  </answer></cell>
+              </row>
+            </tabular>
+            } In the table above:
+          </p>
+        </li>
+        <li>
+          <p>
+            Find each state's standard quota.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find each state's lower and upper quota.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the apportionment as described by Hamilton's Method.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      \item The Republic of Bananarama is a small country consisting of five states
+      (<m>A, B, C, D</m>, and <m>E</m>).
+      The total population of Bananarama is 23.8 million.
+      According to the Bananarama constitution,
+      the seats in the legislature are apportioned to the states according to their populations.
+      The following table shows each state's standard quota:
+    </p>
+    <tabular>
+      <row>
+        <cell>State</cell>
+        <cell><m>A</m></cell>
+        <cell><m>B</m></cell>
+        <cell><m>C</m></cell>
+        <cell><m>D</m></cell>
+        <cell><m>E</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Standard quota</cell>
+        <cell>40.50</cell>
+        <cell>29.70</cell>
+        <cell>23.65</cell>
+        <cell>14.60</cell>
+        <cell>10.55</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <p>
+      In the Table below:
+      <ol>
+        <li>
+          <p>
+            Find the number of seats in the Bananarama legislature.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the Standard Divisor.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the population of each state.
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>State</cell>
+                <cell>Pop.</cell>
+                <cell>Q.</cell>
+                <cell>LQ</cell>
+                <cell>Additional Seats</cell>
+                <cell>Apportionment</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><answer>
+                    <p>
+                      <m>A</m> &amp;8.1&amp;40.5&amp;40&amp;&amp;40 \hline <m>B</m> &amp;5.94&amp;29.7&amp;29&amp;1&amp;30 \hline <m>C</m> &amp;4.73&amp;23.65&amp;23&amp;1&amp;24 \hline <m>D</m> &amp;2.92&amp;14.6&amp;14&amp;1&amp;15 \hline <m>E</m> &amp;2.11&amp;10.55&amp;10&amp;&amp;10 \hline Totals &amp;23.8&amp;200,000&amp;119&amp;&amp;116 \hline \else <m>A</m> &amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;&amp;&amp;&amp;&amp; \hline <m>C</m> &amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;&amp;&amp;&amp;&amp; \hline Totals &amp;&amp;&amp;&amp;&amp; \hline
+                    </p>
+                  </answer></cell>
+              </row>
+            </tabular>
+          </p>
+        </li>
+        <li>
+          <p>
+            Find each state's standard lower quota.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the apportionment as described by Hamilton's method.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      \end{enumerate} { Worksheet for calculating Hamilton's Method:}
+      <ol>
+        <li>
+          <p>
+            What is the total population? \hrulefill
+          </p>
+        </li>
+        <li>
+          <p>
+            How many seats are you apportioning<fn>
+            If you aren't given this number,
+            it is the total of the Standard Quotas
+            </fn>? \hrulefill
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the Standard Divisor
+            (divide your population by the number of seats):
+            \hrulefill
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate all the Standard Quotas (Q.)
+            (divide the population of each state by your Standard Divisor).
+            The total of your standard quotas should be the same as the number of seats.
+            If that is not the case, you have rounded off too much.:
+            <tabular>
+              {l|c|c|c|p{36pt}|p{36pt}} \hline State &amp; Pop. &amp; Q. &amp; LQ &amp; Additional Seats &amp; Apportionment \\\hline [72pt][72pt]{\makebox[36pt]}&amp;\makebox[36pt]&amp;\makebox[36pt]&amp;\makebox[36pt]&amp;\makebox[36pt]&amp;\makebox[36pt]\\ \hlineTotals &amp;&amp;&amp;&amp;&amp;
+            </tabular>
+          </p>
+        </li>
+        <li>
+          <p>
+            Write down all the Lower Quotas (LQ) by cutting off the decimal places.
+            The total of your lower quotas should be less than the number of seats.
+            The difference between the two is the additional seats you get to give out.
+          </p>
+        </li>
+        <li>
+          <p>
+            Give out your additional seats by giving one seat to each state ranked by the stuff to the right of the decimal point on the standard quotas.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      \HOMEWORK
+    </p>
+    <p>
+      Show all your work.
+    </p>
+    <ol>
+      <li>
+        <p>
+          Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts:
+          <m>A</m> (7:00 AM to 1:00 PM), <m>B</m> (1:00 PM to 7:00 PM), <m>C</m> (7:00 PM to 1:00 AM), <m>D</m> (1:00 AM to 7:00 AM).
+          The number of nurses apportioned to each shift is based on the average number of patients treated in that shift,
+          given in the following table:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Shift</cell>
+              <cell>Patients</cell>
+              <cell>Standard Quota</cell>
+              <cell>Lower Quota</cell>
+              <cell>Additional</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    <m>A</m> &amp; 871 &amp; 56.4537 &amp; 56 &amp; &amp; 56 \hline <m>B</m> &amp; 1029 &amp; 66.69444 &amp; 66 &amp; 1 &amp; 67 \hline <m>C</m> &amp; 610 &amp; 39.53704 &amp; 39 &amp; 1 &amp; 40 \hline <m>D</m> &amp; 190 &amp; 12.31481 &amp; 12 &amp; &amp; 12 \hline Total &amp; 2700 &amp; 175 &amp; 173 &amp; &amp; 175 \hline \else <m>A</m> &amp; 871 &amp;&amp;&amp;&amp; \hline <m>B</m> &amp; 1029&amp;&amp;&amp;&amp; \hline <m>C</m>&amp; 610&amp;&amp;&amp;&amp; \hline <m>D</m> &amp; 190&amp;&amp;&amp;&amp; \hline Total &amp;&amp; 175 &amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+        </p>
+        <ol>
+          <li>
+            <p>
+              Find the standard divisor.
+              <answer>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Explain what the standard divisor represents in this problem.
+              <answer>
+                <p>
+                  One nurse will be assigned for each 15.4 patients.
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the standard quotas.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using Hamilton's Method, assign extra seats to the lower quotas,
+              one at a time, until you have apportioned all your nurses.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the apportionment based on Hamilton's method.
+              <answer>
+                <tabular>
+                  <row>
+                    <cell><m>A</m></cell>
+                    <cell>56</cell>
+                  </row>
+                  <row>
+                    <cell><m>B</m></cell>
+                    <cell>67</cell>
+                  </row>
+                  <row>
+                    <cell><m>C</m></cell>
+                    <cell>40</cell>
+                  </row>
+                  <row>
+                    <cell><m>D</m></cell>
+                    <cell>12</cell>
+                  </row>
+                </tabular>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM
+          (<m>A</m>, <m>B</m>, <m>E</m>,
+          <m>H</m>, and <m>S</m> for short).
+          The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.
+          The following table shows each school's enrollments:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>School</cell>
+              <cell>Enrollment</cell>
+              <cell>S Q</cell>
+              <cell>L Q</cell>
+              <cell>Additional</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    <m>A</m> &amp; 3292 &amp; 32.92 &amp; 32 &amp; 1 &amp; 33 \hline <m>B</m> &amp; 1524 &amp; 15.24 &amp; 15 &amp; &amp; 15 \hline <m>E</m> &amp; 4162 &amp; 41.62 &amp; 41 &amp; 1 &amp; 42 \hline <m>H</m> &amp; 2132 &amp; 21.32 &amp; 21 &amp; &amp; 21 \hline <m>S</m> &amp; 13890 &amp; 138.9 &amp; 138 &amp; 1 &amp; 139 \hline Total &amp; 25,000 &amp; 250 &amp; 247 &amp; 3 &amp; 250 \hline \else <m>A</m>&amp; 3292&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;1524&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;4162&amp;&amp;&amp;&amp; \hline <m>H</m> &amp;2132&amp;&amp;&amp;&amp; \hline <m>S</m> &amp; 13890 &amp;&amp;&amp;&amp; \hline Total &amp; 25,000 &amp; 250 &amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the standard divisor.
+                <answer>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain what the standard divisor represents in this problem.
+                <answer>
+                  <p>
+                    Each faculty member is responsible for 100 students,
+                    or the student to faculty ratio is 100.
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the standard quotas.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment based on Hamilton's method.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK
+    </p>
+  </subsection>
+  <subsection xml:id="sec_Paradoxes">
+    <title>Paradoxes</title>
+    <p>
+          <idx><h>paradoxes</h><h>Apportionment</h></idx>
+    </p>
+    <ol>
+      <li>
+        <p>
+          The small country of Amabala consists of three states: Eno, Owt,
+          and Eerht.
+          With a total population of 20,000 and 200 seats in the House of Representatives the apportionment of the 200 seats under Hamilton's method is shown below:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Quota</cell>
+              <cell>Lower quota</cell>
+              <cell>Additional</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Eno</cell>
+              <cell>940</cell>
+              <cell>9.4</cell>
+              <cell>9</cell>
+              <cell>1</cell>
+              <cell>10</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Owt</cell>
+              <cell>9030</cell>
+              <cell>90.3</cell>
+              <cell>90</cell>
+              <cell>0</cell>
+              <cell>90</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Eerht</cell>
+              <cell>10,030</cell>
+              <cell>100.3</cell>
+              <cell>100</cell>
+              <cell>0</cell>
+              <cell>100</cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell >Total</cell>
+              <cell>20,000</cell>
+              <cell>200.0</cell>
+              <cell>199</cell>
+              <cell>1</cell>
+              <cell>200</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          What was the Standard Divisor that was used to apportion Amabala's seats?
+          <answer>
+          </answer>
+          \hrulefill Now, imagine that the number of seats is suddenly
+          <em>increased to 201</em>,
+          but <em>nothing else changes</em>.
+          Since there is one more seat to give out,
+          the apportionment has to be recomputed.
+        </p>
+        <ol>
+          <li>
+            <p>
+              What is the new Standard Divisor?
+              It has to change because the number of seats has changed.
+              <answer>
+              </answer>
+              \hrulefill
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>State</cell>
+                  <cell>Population</cell>
+                  <cell>SQ</cell>
+                  <cell>LQ</cell>
+                  <cell>Additional</cell>
+                  <cell>Apportionment</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><answer>
+                      <p>
+                        Eno &amp; 940 &amp; 9.447 &amp; 9 &amp; &amp; 9 \hline Owt &amp; 9030 &amp; 90.7515 &amp; 90 &amp; 1 &amp; 91 \hline Eerht &amp; 10,030 &amp; 100.8015 &amp; 100 &amp; 1 &amp; 101 \hline \hline Total &amp; 20,000 &amp; 201 &amp; 199 &amp; 2 &amp; 201 \hline \else Eno &amp; 940 &amp; &amp; &amp; &amp; \hline Owt &amp; 9030 &amp; &amp; &amp; &amp; \hline Eerht &amp; 10,030 &amp; &amp; &amp; &amp; \hline \hline Total &amp; 20,000 &amp; 201 &amp; &amp; &amp; \hline
+                      </p>
+                    </answer></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+          <li>
+            <p>
+              Which state received an extra seat?\hrulefill
+            </p>
+          </li>
+          <li>
+            <p>
+              Which state lost a seat?\hrulefill
+            </p>
+          </li>
+          <li>
+            <p>
+              What do you find odd about this situation? \hrulefill
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          <em>Alabama Paradox:</em>
+            <idx><h>paradox</h><h>Alabama</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          Consider the following apportionment made using Hamilton's method.
+          Populations are given in millions:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Quota</cell>
+              <cell>Lower quota</cell>
+              <cell>Additional</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Alpha</cell>
+              <cell>150</cell>
+              <cell><m>8.\overline{3}</m></cell>
+              <cell>8</cell>
+              <cell>0</cell>
+              <cell>8</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Beta</cell>
+              <cell>78</cell>
+              <cell><m>4.\overline{3}</m></cell>
+              <cell>4</cell>
+              <cell>0</cell>
+              <cell>4</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Gamma</cell>
+              <cell>173</cell>
+              <cell><m>9.6\overline{1}</m></cell>
+              <cell>9</cell>
+              <cell>1</cell>
+              <cell>10</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Delta</cell>
+              <cell>204</cell>
+              <cell><m>11.3\overline{3}</m></cell>
+              <cell>11</cell>
+              <cell>0</cell>
+              <cell>11</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Epsilon</cell>
+              <cell>295</cell>
+              <cell><m>16.3\overline{8}</m></cell>
+              <cell>16</cell>
+              <cell>1</cell>
+              <cell>17</cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell  >Total</cell>
+              <cell>900</cell>
+              <cell>50</cell>
+              <cell>48</cell>
+              <cell>2</cell>
+              <cell>50</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          Ten years later a new census was taken which showed only a few changes in state populations <mdash/> an 8 million increase in the population of Gamma and a 1 million increase in the population of Epsilon.
+          <em>The populations of the other states remained unchanged.</em>
+          Use Hamilton's method to calculate the new apportionment.
+          <ol>
+            <li>
+              <p>
+                What is the new Standard Divisor?
+                It has to change because your total population has changed.
+                <answer>
+                  <p>
+                    18.18 people/seat
+                  </p>
+                </answer>
+                \hrulefill
+                <answer>
+                  <p>
+                    \else
+                  </p>
+                </answer>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>State</cell>
+                    <cell>Population</cell>
+                    <cell>Q</cell>
+                    <cell>LQ</cell>
+                    <cell>Additional</cell>
+                    <cell>Apportionment</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          Alpha &amp; 150 &amp; 8.250825083 &amp; 8 &amp; &amp; 8 \hline Beta &amp; 78 &amp; 4.290429043 &amp; 4 &amp; 1 &amp; 5 \hline Gamma &amp; 181 &amp; 9.9559956 &amp; 9 &amp; 1 &amp; 10 \hline Delta &amp; 204 &amp; 11.22112211 &amp; 11 &amp; &amp; 11 \hline Epsilon &amp; 296 &amp; 16.28162816 &amp; 16 &amp; &amp; 16 \hline \hline Total &amp; 909 &amp; 50 &amp; 48 &amp; 2 &amp; 50 \hline \else Alpha &amp; 150 &amp;&amp;&amp;&amp; \hline Beta &amp; 78 &amp;&amp;&amp;&amp; \hline Gamma &amp; 181 &amp;&amp;&amp;&amp; \hline Delta &amp; 204 &amp;&amp;&amp;&amp; \hline Epsilon &amp; 296 &amp;&amp;&amp;&amp; \hline \hline Total &amp;
+                          <em>909</em> &amp; 50.00 &amp; &amp; &amp; 50 \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                Which state received an extra seat?\hrulefill
+              </p>
+            </li>
+            <li>
+              <p>
+                Which state lost a seat?\hrulefill
+              </p>
+            </li>
+            <li>
+              <p>
+                What do you find odd about this situation?\hrulefill
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Population Paradox:</em> <idx><h>paradox</h><h>population</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          The W-CF Garbage Company has a contract to provide garbage collection and recycling services to the two towns of Waterloo (with 89,550 homes) and Cedar Falls
+          (with 10,450 homes).
+          The company runs 100 little garbage trucks,
+          which are apportioned under Hamilton's method according to the number of homes in the district.
+          A quick calculation shows that the standard divisor is <m>SD=1000</m> homes,
+          a nice, round number which makes the rest of the calculations easy.
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Q</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Waterloo</cell>
+              <cell>89,550</cell>
+              <cell>89.55</cell>
+              <cell>90</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Cedar Falls</cell>
+              <cell>10,450</cell>
+              <cell>10.45</cell>
+              <cell>10</cell>
+            </row>
+            <row bottom="medium">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell >Total</cell>
+              <cell>100,000</cell>
+              <cell>100.00</cell>
+              <cell>100</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          Now, the W-CF Garbage Company is bidding to expand its territory by adding the town of Evansdale (5250 homes) to its service area.
+          In the bid, the company promises to buy five additional garbage trucks for the Evansdale run so that its service to the other two towns is not affected.
+          Calculate the new apportionment.
+          <ol>
+            <li>
+              <p>
+                What is your new Standard Divisor?
+                It will probably change because you have changed both your total population and the number of seats.
+                <answer>
+                </answer>
+                \hrulefill
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>State</cell>
+                    <cell>Population</cell>
+                    <cell>Q</cell>
+                    <cell>Apportionment</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          Waterloo &amp; 89550 &amp; 89.33729216 &amp; 89 \hline Cedar Falls &amp; 10450 &amp; 10.42517815 &amp; 11 \hline Evansdale &amp; 5250 &amp; 5.237529691 &amp; 5 \hline\hline \else Waterloo &amp; 89,550 &amp;&amp; \hline Cedar Falls &amp; 10,450 &amp;&amp; \hline Evansdale &amp; 5250 &amp;&amp; \hline\hline
+                        </p>
+                      </answer>
+                      Total</cell>
+                    <cell>105,250</cell>
+                    <cell>105.00</cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                Which city received an extra garbage truck?\hrulefill
+              </p>
+            </li>
+            <li>
+              <p>
+                Which state lost a garbage truck?\hrulefill
+              </p>
+            </li>
+            <li>
+              <p>
+                What do you find odd about this situation?\hrulefill
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>New-States Paradox</em> <idx><h>paradox</h><h>new-states</h></idx>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \HOMEWORK The following problems are based on the following story: Your professor found a stash of fun,
+      math toys in her office.
+      She decides to apportion the toys among her three first-year advisees according to the number of minutes each student spent doing homework during the week.
+    </p>
+    <ol>
+      <li>
+        <ol>
+          <li xml:id="AppPar1">
+            <p>
+              Suppose that there were 11 toys in the office.
+              Given that Ben did homework for a total of 54 minutes, Paul did homework for a total of 243 minutes and Ryan did homework for a total of 703 minutes,
+              apportion the 11 toys among the students using Hamilton's method.
+              <answer>
+                <p>
+                  Ben - 0
+                </p>
+                <p>
+                  Paul - 3
+                </p>
+                <p>
+                  Ryan - 8
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that before the professor hands out the toys,
+              each student decides to spend a
+              <q>little</q>
+              extra time on homework.
+              Ben puts in an extra 2 minutes
+              (for a total of 56 minutes),
+              Paul put in an extra 12 minutes
+              (for a total of 255 minutes),
+              and Ryan an extra 86 minutes
+              (for a total of 789 minutes).
+              Using these new totals,
+              apportion the 11 toys among the students using Hamilton's method.
+              <answer>
+                <p>
+                  Ben - 1
+                </p>
+                <p>
+                  Paul - 2
+                </p>
+                <p>
+                  Ryan - 8
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              These results illustrate one of the paradoxes of Hamilton's method.
+              Which one?
+              Explain?
+              <answer>
+                <p>
+                  This is the Population Paradox.
+                  Be sure to explain how you know.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>
+            <p>
+              Suppose there were only 10 toys in the office Given that Ben did homework for a total of 54 minutes, Paul did homework for a total of 243 minutes and Ryan did homework for a total of 703 minutes,
+              apportion the 10 toys among the students using Hamilton's method.
+              <answer>
+                <p>
+                  Ben - 1, Paul - 2, Ryan - 7
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that, just before she hands out the toys,
+              the professor finds one additional math toy.
+              Using the same total minutes as above,
+              apportion now the 11 math toys among the students using Hamilton's method. [This is a repeat of <xref ref="AppPar1">Homework</xref>.]
+              <answer>
+                <p>
+                  Ben - 0, Paul - 3, Ryan - 8
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              These results illustrate one of the paradoxes of Hamilton's method.
+              Which one?
+              Explain?
+              <answer>
+                <p>
+                  Alabama Paradox
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>
+            <p>
+              Suppose that there were 11 toys in the office.
+              Given that Ben did homework for a total of 54 minutes, Paul did homework for a total of 243 minutes and Ryan did homework for a total of 703 minutes,
+              apportion the 11 toys among the students using Hamilton's method. [This is a repeat of <xref ref="AppPar1">Homework</xref>.]
+              <answer>
+                <p>
+                  Ben - 0, Paul - 3, Ryan - 8
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose that before the 11 toys are given out,
+              a frantic student, Jon, shows up at the office with a new
+              <q>Declaration of Major</q>
+              form.
+              Jon wants to be included in the game.
+              Jon did homework for 580 minutes during the previous week.
+              To be fair, the professor goes to the next office and finds 6 more math toys to be added to the original 11.
+              Apportion now the 17 toys among the four students using Hamilton's method.
+              <answer>
+                <p>
+                  Ben - 1, Paul - 3, Ryan - 7, Jon - 6
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              These results illustrate one of the paradoxes of Hamilton's method.
+              Which one?
+              Explain?
+              <answer>
+                <p>
+                  New States
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          A professor wants to apportion 15 math toys among her three second-year advisees, Kathryn, Lacey,
+          and Jill based on the number of minutes each student spent studying.
+          The only information we have is that the professor will use Hamilton's method and that Kathryn's standard quota is 6.53
+          <ol>
+            <li>
+              <p>
+                Explain why it is impossible for all three students to end up with five toys each.
+                <answer>
+                  <p>
+                    Kathryn must have at least 6 toys, her lower quota.
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain why it is impossible for Kathryn to end up with nine toys.
+                <answer>
+                  <p>
+                    Kathryn must have no more than 7 toys, her upper quota.
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain why it is impossible for Lacey to end up with nine toys.
+                <answer>
+                  <p>
+                    Consider closely who will have the largest fractional part.\ifgradersolns Because Kathryn's fractional part is .53,
+                    and all the standard quotas must sum to exactly 15,
+                    the other fractional parts must sum to .47.
+                    Therefore, if there are any extra toys, Kathryn will get at least her upper quota because she has the largest fractional part \fi
+                  </p>
+                </answer>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK
+    </p>
+  </subsection>
+  <subsection xml:id="sec_AlternativeMethods">
+    <title>Jefferson's Method</title>
+    <p>
+          <idx><h>apportionment method</h><h>Jefferson</h></idx>
+    </p>
+    <ol>
+      <li>
+        <p>
+          <em>Modified Divisor:</em>
+          <answer>
+            <p>
+              The Modified Divisor is, for Jefferson's Method,
+              a divisor slightly smaller than the Standard Divisor.
+            </p>
+          </answer>
+            <idx><h>divisor</h><h>modified</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Modified Lower Quota:</em>
+          <answer>
+            <p>
+              The Modified Lower Quota is where the population is divided by the Modified Divisor and then rounded down.
+              The hope is that you will get exactly the correct apportionment at this point.\else
+            </p>
+          </answer>
+            <idx><h>quota</h><h>modified lower</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          Consider the Republic of Awoi with 160 seats:
+        </p>
+        <ol>
+          <li>
+            <p>
+              Find the standard divisor (SD).
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell>Pop.</cell>
+                  <cell>LQ</cell>
+                  <cell>\hspace{.75cm}</cell>
+                  <cell>\hspace{.75cm}</cell>
+                  <cell>\hspace{.75cm}</cell>
+                  <cell>\hspace{.75cm}</cell>
+                  <cell>Apportionment</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><answer>
+                      <p>
+                        Divisor&amp;<ndash/> &amp; 5000 &amp; 4900 &amp; 4950 &amp; 4930 \hline NW &amp; 69000 &amp; 13 &amp; 14 &amp; 13 &amp; 13&amp;&amp;13 \hline SW &amp; 267000 &amp; 53 &amp; 54 &amp; 53 &amp; 54&amp;&amp;54 \hline SE &amp; 133000 &amp; 26 &amp; 27 &amp; 26 &amp; 26&amp;&amp;26 \hline NE &amp; 331000 &amp; 66 &amp; 67 &amp; 66 &amp; 67&amp;&amp;67 \hline\hline Total &amp; 800,000 &amp; 158 &amp; 162 &amp; 158 &amp; 160&amp;&amp;160 \hline \else MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline NW &amp; 69,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline SW &amp; 267,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline SE &amp; 133,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline NE &amp; 331,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline\hline Total &amp; &amp;160&amp;&amp;&amp;&amp;&amp; \hline
+                      </p>
+                    </answer></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find each state's standard lower quota.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.
+              If you want to raise the LQ you should make your divisor a bit smaller.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the apportionment as described by Jefferson's Method.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          The Republic of Bananarama is a small country consisting of five states
+          (<m>A, B, C, D</m>, and <m>E</m>).
+          The total population of Bananarama is 23.8 million.
+          According to the Bananarama constitution,
+          the seats in the legislature are apportioned to the states according to their populations.
+          The following table shows each state's standard quota:
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell><m>A</m></cell>
+              <cell><m>B</m></cell>
+              <cell><m>C</m></cell>
+              <cell><m>D</m></cell>
+              <cell><m>E</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Standard quota</cell>
+              <cell>40.50</cell>
+              <cell>29.70</cell>
+              <cell>23.65</cell>
+              <cell>14.60</cell>
+              <cell>10.55</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          Since we have seen this Republic before,
+          you may want to find the information you have already calculated.
+          <ol>
+            <li>
+              <p>
+                Find the number of seats in the Bananarama legislature.
+                <answer>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the Standard Divisor.
+                <answer>
+                  <p>
+                    0.2 million
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the population of each state.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each state's standard lower quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.
+                If you want to raise the LQ you should make your divisor a bit smaller.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Jefferson's method.
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>State</cell>
+                    <cell>Pop.</cell>
+                    <cell>LQ</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>Apportionment</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          MD &amp; &amp; SQ &amp; LQ &amp; 0.19 &amp; &amp;0.195 \hline <m>A</m> &amp; 8.1 &amp; 40.5 &amp; 40 &amp; 42 &amp; &amp;41 \hline <m>B</m> &amp; 5.94 &amp; 29.7 &amp; 29 &amp; 31 &amp; &amp;30 \hline <m>C</m> &amp; 4.73 &amp; 23.65 &amp; 23 &amp; 24 &amp; &amp;24 \hline <m>D</m> &amp; 2.92 &amp; 14.6 &amp; 14 &amp; 15 &amp; &amp;14 \hline <m>E</m> &amp; 2.11 &amp; 10.55 &amp; 10 &amp; 11 &amp; &amp;10 \hline\hline Totals &amp; 23.8 &amp; 119 &amp; 116 &amp; 123 &amp;&amp; 119 \hline \else Divisor &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>C</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline Totals &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      { Worksheet for calculating Jefferson's Method:}
+      <ol>
+        <li xml:id="parta">
+          <p>
+            What is the total population? \hrulefill
+          </p>
+        </li>
+        <li xml:id="partb">
+          <p>
+            How many seats are you apportioning<fn>
+            If you aren't given this number,
+            it is the total of the Standard Quotas
+            </fn>? \hrulefill
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the Standard Divisor
+            (divide your population by the number of seats):
+            \hrulefill
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate all the Standard Quotas (Q.)
+            (divide the population of each state by your Standard Divisor).
+            The total of your standard quotas should be the same as the number of seats.
+            If that is not the case, you have rounded off too much.:
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>State</cell>
+                <cell>Pop.</cell>
+                <cell>Q.</cell>
+                <cell>LQ</cell>
+                <cell>MLQ</cell>
+                <cell>MLQ</cell>
+                <cell>MLQ</cell>
+                <cell>MLQ</cell>
+                <cell>Apportionment</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Divisor</cell>
+                <cell><ndash/></cell>
+                <cell></cell>
+                <cell><ndash/></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>[72pt][72pt]{\makebox[36pt]}</cell>
+                <cell>\makebox[36pt]</cell>
+                <cell>\makebox[36pt]</cell>
+                <cell>\makebox[36pt]</cell>
+                <cell>\makebox[36pt]</cell>
+                <cell>\makebox[36pt]</cell>
+                <cell>\makebox[36pt]</cell>
+                <cell>\makebox[36pt]</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Totals</cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+        </li>
+        <li>
+          <p>
+            Write down all the Lower Quotas (LQ) by cutting off the decimal places.
+            The total of your lower quotas should be less than the number of seats.
+          </p>
+        </li>
+        <li>
+          <p>
+            Guess a new, Modified Divisor which is less than,
+            but close to, your Standard Divisor.
+            Use that to calculate new Modified Lower Quotas.
+            If the total of your MLQ is the same as the number of seats,
+            you are finished.
+            Otherwise, you need to repeat this process until you find a MD that gives you the correct number of seats.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      \HOMEWORK
+    </p>
+    <ol>
+      <li>
+        <p>
+          Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts:
+          <m>A</m> (7:00 AM to 1:00 PM), <m>B</m> (1:00 PM to 7:00 PM), <m>C</m> (7:00 PM to 1:00 AM), <m>D</m> (1:00 AM to 7:00 AM).
+          The number of nurses apportioned to each shift is based on the average number of patients treated in that shift,
+          given in the following table:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Shift</cell>
+              <cell>Patients</cell>
+              <cell>LQ</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    &amp; &amp; SQ &amp; LQ &amp; 15 &amp; 15.2 &amp; 15.25 &amp; 15.27 \hline <m>A</m> &amp; 871 &amp; 56.45 &amp; 56 &amp; 58 &amp; 56 &amp; 57 &amp; 57 \hline <m>B</m> &amp; 1029 &amp; 66.69 &amp; 66 &amp; 68 &amp; 67 &amp; 67 &amp; 67 \hline <m>C</m> &amp; 610 &amp; 39.53 &amp; 39 &amp; 40 &amp; 40 &amp; 40 &amp; 39 \hline <m>D</m> &amp; 190 &amp; 12.31 &amp; 12 &amp; 12 &amp; 12 &amp; 12 &amp; 12 \hline\hline Totals &amp; 2700 &amp; 174.98 &amp; 173 &amp; 178 &amp; 175 &amp; 176 &amp; 175 \hline \else Divisor &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                  <p>
+                    <m>A</m> &amp; 871 &amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp; 1029&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>C</m>&amp; 610&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp; 190&amp;&amp;&amp;&amp;&amp;&amp; \hline Total &amp; &amp; 175 &amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+        </p>
+        <ol>
+          <li>
+            <p>
+              Find the standard divisor.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find each shift's standard lower quota.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.
+              If you want to raise the LQ you should make your divisor a bit smaller.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the apportionment as described by Jefferson's Method.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM
+          (<m>A</m>, <m>B</m>, <m>E</m>,
+          <m>H</m>, and <m>S</m> for short).
+          The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.
+          The following table shows each school's enrollments:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>School</cell>
+              <cell>Enrollment</cell>
+              <cell>LQ</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>\hspace{.75cm}</cell>
+              <cell>Apportionment</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    State &amp; Population &amp; SQ &amp; LQ &amp; 99 &amp; 99.5 &amp; 99.25 &amp; 99.2 \hline <m>A</m> &amp; 3292 &amp; 32.92 &amp; 32 &amp; 33 &amp; 33 &amp; 33 &amp; 33 \hline <m>B</m> &amp; 1524 &amp; 15.24 &amp; 15 &amp; 15 &amp; 15 &amp; 15 &amp; 15 \hline <m>E</m> &amp; 4162 &amp; 41.62 &amp; 41 &amp; 42 &amp; 41 &amp; 41 &amp; 41 \hline <m>H</m> &amp; 2132 &amp; 21.32 &amp; 21 &amp; 21 &amp; 21 &amp; 21 &amp; 21 \hline <m>S</m> &amp; 13890 &amp; 138.9 &amp; 138 &amp; 140 &amp; 139 &amp; 139 &amp; 140 \hline Totals &amp; 25000 &amp; 250 &amp; 247 &amp; 251 &amp; 249 &amp; 249 &amp; 250 \hline \else Divisor &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m>&amp; 3292&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;1524&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;4162&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>H</m> &amp;2132&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>S</m> &amp; 13890 &amp;&amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                  <p>
+                    Total &amp; &amp;&amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the standard divisor.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each school's standard lower quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.
+                If you want to raise the LQ you should make your divisor a bit smaller.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Jefferson's Method.
+              </p>
+            </li>
+            <li>
+              <p>
+                Which state violates the Upper Quota.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK \cleartooddpage
+    </p>
+  </subsection>
+  <subsection>
+    <title>Adam's Method</title>
+    <ol>
+      <li>
+        <p>
+          <em>Adam's Method:</em>
+          <answer>
+            <p>
+              Adam's Method is essentially the same as Jefferson's Method,
+              except that you round up.\else
+            </p>
+          </answer>
+            <idx><h>apportionment method</h><h>Adam</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Modified Upper Quota:</em>
+          <answer>
+            <p>
+              Because we will have too many seats apportioned with Adam's Method,
+              you need to choose a Modified Upper Quota that is a bit LARGER than the Standard Quota.\else
+            </p>
+          </answer>
+            <idx><h>quota</h><h>modified upper</h></idx>
+        </p>
+      </li>
+      <li>
+        <p>
+          Consider the Republic of Awoi with 160 seats:
+          <ol>
+            <li>
+              <p>
+                Find the standard divisor (SD).
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          &amp; Population &amp; SQ &amp; UQ &amp; 5100 &amp; 5050 \hline NW &amp; 69,000 &amp; 13.8 &amp; 14 &amp; 14 &amp; 14 \hline SW &amp; 267,000 &amp; 53.4 &amp; 54 &amp; 53 &amp; 53 \hline SE &amp; 133,000 &amp; 26.6 &amp; 27 &amp; 27 &amp; 27 \hline NE &amp; 331,000 &amp; 66.2 &amp; 67 &amp; 65 &amp; 66 \hline Total &amp; 800000 &amp; 160 &amp; 162 &amp; 159 &amp; 160 \hline \else &amp; Pop. &amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline NW &amp; 69,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline SW &amp; 267,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline SE &amp; 133,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline NE &amp; 331,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline Total &amp; &amp;160&amp;&amp;&amp;&amp;&amp; \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each state's standard upper quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will lower the UQ by enough so that you have exactly enough seats.
+                If you want to lower the UQ you should make your divisor a bit larger.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Adam's Method.
+              </p>
+            </li>
+            <li>
+              <p>
+                Compare this apportionment with that of Jefferson's Method.
+                What stayed the same?
+                What changed?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Republic of Bananarama is a small country consisting of five states
+          (<m>A, B, C, D</m>, and <m>E</m>).
+          The total population of Bananarama is 23.8 million.
+          According to the Bananarama constitution,
+          the seats in the legislature are apportioned to the states according to their populations.
+          The following table shows each state's standard quota:
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell><m>A</m></cell>
+              <cell><m>B</m></cell>
+              <cell><m>C</m></cell>
+              <cell><m>D</m></cell>
+              <cell><m>E</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Standard quota</cell>
+              <cell>40.50</cell>
+              <cell>29.70</cell>
+              <cell>23.65</cell>
+              <cell>14.60</cell>
+              <cell>10.55</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the number of seats in the Bananarama legislature.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the Standard Divisor.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the population of each state.
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>State</cell>
+                    <cell>Pop.</cell>
+                    <cell>UQ</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>\hspace{.75cm}</cell>
+                    <cell>Apportionment</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>MD</cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          &amp; Population &amp; SQ &amp; UQ &amp; 0.21 &amp; 0.205 \hline <m>A</m> &amp; 8.1 &amp; 40.5 &amp; 41 &amp; 39 &amp; 40 \hline <m>B</m> &amp; 5.94 &amp; 29.7 &amp; 30 &amp; 29 &amp; 29 \hline <m>C</m> &amp; 4.73 &amp; 23.65 &amp; 24 &amp; 23 &amp; 24 \hline <m>D</m> &amp; 2.92 &amp; 14.6 &amp; 15 &amp; 14 &amp; 15 \hline <m>E</m> &amp; 2.11 &amp; 10.55 &amp; 11 &amp; 11 &amp; 11 \hline Total &amp; 23.8 &amp; 119 &amp; 121 &amp; 116 &amp; 119 \hline \else <m>A</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>C</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline Totals &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each state's standard upper quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will lower the UQ by enough so that you have exactly enough seats.
+                If you want to lower the UQ you should make your divisor a bit larger.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Adam's method.
+              </p>
+            </li>
+            <li>
+              <p>
+                Compare this apportionment with that of Jefferson's Method.
+                What stayed the same?
+                What changed?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection>
+    <title>Webster's Method</title>
+    <p>
+          <idx><h>apportionment method</h><h>Webster</h></idx>
+    </p>
+    <ol>
+      <li>
+        <p>
+          <em>Webster's Method:</em>
+        </p>
+      </li>
+      <li>
+        <p>
+          Consider the Republic of Awoi with 160 seats:
+        </p>
+        <ol>
+          <li>
+            <p>
+              Find the standard divisor (SD).
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><answer>
+                      <p>
+                        &amp; Population &amp; SQ &amp; Q \hline NW &amp; 69,000 &amp; 13.8 &amp; 14 \hline SW &amp; 267,000 &amp; 53.4 &amp; 53 \hline SE &amp; 133,000 &amp; 26.6 &amp; 27 \hline NE &amp; 331,000 &amp; 66.2 &amp; 66 \hline &amp; &amp; &amp; \hline Total &amp; 800000 &amp; 160 &amp; 160 \hline \else &amp; Pop. &amp; Q&amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline NW &amp; 69,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline SW &amp; 267,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline SE &amp; 133,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline NE &amp; 331,000 &amp;&amp;&amp;&amp;&amp;&amp; \hline Total &amp; &amp;&amp;&amp;&amp;&amp;&amp; \hline
+                      </p>
+                    </answer></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find each state's standard rounded quota.
+            <idx><h>quota</h><h>standard rounded</h></idx>
+        </p>
+          </li>
+          <li>
+            <p>
+              Find a modified divisor that will change the Quota by enough so that you have exactly enough seats.
+              If you want to raise Q, you should make your divisor a bit smaller.
+              If you want to lower Q, you should make your divisor a bit larger.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the apportionment as described by Webster's Method.
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare this apportionment with that of Jefferson's and Adam's Methods from the earlier sections.
+              What stayed the same?
+              What changed?
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          The Republic of Bananarama is a small country consisting of five states
+          (<m>A, B, C, D</m>, and <m>E</m>).
+          The total population of Bananarama is 23.8 million.
+          According to the Bananarama constitution,
+          the seats in the legislature are apportioned to the states according to their populations.
+          The following table shows each state's standard quota:
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell><m>A</m></cell>
+              <cell><m>B</m></cell>
+              <cell><m>C</m></cell>
+              <cell><m>D</m></cell>
+              <cell><m>E</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>Standard quota</cell>
+              <cell>40.50</cell>
+              <cell>29.70</cell>
+              <cell>23.65</cell>
+              <cell>14.60</cell>
+              <cell>10.55</cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the number of seats in the Bananarama legislature.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the Standard Divisor.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the population of each state.
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell><answer>
+                        <p>
+                          &amp; Population &amp; SQ &amp; Q &amp; 0.201 \hline <m>A</m> &amp; 8.1 &amp; 40.5 &amp; 41 &amp; 40 \hline <m>B</m> &amp; 5.94 &amp; 29.7 &amp; 30 &amp; 30 \hline <m>C</m> &amp; 4.73 &amp; 23.65 &amp; 24 &amp; 24 \hline <m>D</m> &amp; 2.92 &amp; 14.6 &amp; 15 &amp; 15 \hline <m>E</m> &amp; 2.11 &amp; 10.55 &amp; 11 &amp; 10 \hline Total &amp; 23.8 &amp; 119 &amp; 121 &amp; 119 \hline \else State &amp; Pop. &amp; Q &amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>C</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline Totals &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline
+                        </p>
+                      </answer></cell>
+                  </row>
+                </tabular>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each state's standard rounded quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will change the Quota by enough so that you have exactly enough seats.
+                If you want to raise Q, you should make your divisor a bit smaller.
+                If you want to lower Q, you should make your divisor a bit larger.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Webster's Method.
+              </p>
+            </li>
+            <li>
+              <p>
+                Compare this apportionment with that of Jefferson's and Adam's Methods from the earlier sections.
+                What stayed the same?
+                What changed?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \HOMEWORK
+    </p>
+    <ol>
+      <li>
+        <p>
+          Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts:
+          <m>A</m> (7:00 AM to 1:00 PM), <m>B</m> (1:00 PM to 7:00 PM), <m>C</m> (7:00 PM to 1:00 AM), <m>D</m> (1:00 AM to 7:00 AM).
+          The number of nurses apportioned to each shift is based on the average number of patients treated in that shift,
+          given in the following table:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    <em>Adam's Method</em> &amp; Population &amp; SQ &amp; UQ &amp; 16 &amp; 15.6 \hline <m>A</m> &amp; 871 &amp; 56.4537037 &amp; 57 &amp; 55 &amp; 56 \hline <m>B</m> &amp; 1029 &amp; 66.69444444 &amp; 67 &amp; 65 &amp; 66 \hline <m>C</m> &amp; 610 &amp; 39.53703704 &amp; 40 &amp; 39 &amp; 40 \hline <m>D</m> &amp; 190 &amp; 12.31481481 &amp; 13 &amp; 12 &amp; 13 \hline Total &amp; 2700 &amp; 175 &amp; 177 &amp; 171 &amp; 175 \hline\hline
+                  </p>
+                  <p>
+                    <em>Webster's Method</em> &amp; Population &amp; SQ &amp; Q \hline <m>A</m> &amp; 871 &amp; 56.4537037 &amp; 56 \hline <m>B</m> &amp; 1029 &amp; 66.69444444 &amp; 67 \hline <m>C</m> &amp; 610 &amp; 39.53703704 &amp; 40 \hline <m>D</m> &amp; 190 &amp; 12.31481481 &amp; 12 \hline Total &amp; 2700 &amp; 175 &amp; 175 \hline \else &amp;&amp;&amp;&amp;&amp;&amp;&amp; Adam's Method
+                  </p>
+                  <p>
+                    Shift &amp; Patients &amp; SQ &amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m> &amp; 871 &amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp; 1029&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>C</m>&amp; 610&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp; 190&amp;&amp;&amp;&amp;&amp;&amp; \hline Total &amp; &amp; 175 &amp;&amp;&amp;&amp;&amp; \hline\hline &amp;&amp;&amp;&amp;&amp;&amp;&amp; Webster's Method
+                  </p>
+                  <p>
+                    Shift &amp; Patients &amp; SQ &amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m> &amp; 871 &amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp; 1029&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>C</m>&amp; 610&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>D</m> &amp; 190&amp;&amp;&amp;&amp;&amp;&amp; \hline Total &amp; &amp; 175 &amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+        </p>
+        <ol>
+          <li>
+            <p>
+              Find the standard divisor.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find each shift's standard upper quota.
+              <answer>
+                <p>
+                  <m>A</m> 57
+                </p>
+                <p>
+                  <m>B</m> 67
+                </p>
+                <p>
+                  <m>C</m> 40
+                </p>
+                <p>
+                  <m>D</m> 13
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find each shift's standard rounded quota.
+              <answer>
+                <p>
+                  <m>A</m> 56
+                </p>
+                <p>
+                  <m>B</m> 67
+                </p>
+                <p>
+                  <m>C</m> 40
+                </p>
+                <p>
+                  <m>D</m> 12
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a modified divisor that will lower the Upper Quota by enough so that you have exactly enough seats.
+              If your UQ is too big, you should make your divisor a bit larger.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the apportionment as described by Adam's Method.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a modified divisor that will change the Rounded Quota by enough so that you have exactly enough seats.
+              If your SQ is too small, you should make your divisor a bit smaller.
+              If your SQ is too large, you should make your divisor a bit larger.
+              If your SQ works, leave it be.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the apportionment as described by Webster's Method.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM
+          (<m>A</m>, <m>B</m>, <m>E</m>,
+          <m>H</m>, and <m>S</m> for short).
+          The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.
+          The following table shows each school's enrollments:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    &amp; Population &amp; SQ &amp; UQ &amp; 101 &amp; 102 &amp; 101.5 \hline <m>A</m> &amp; 3292 &amp; 32.92 &amp; 33 &amp; 33 &amp; 33 &amp; 33 \hline <m>B</m> &amp; 1524 &amp; 15.24 &amp; 16 &amp; 16 &amp; 15 &amp; 16 \hline <m>E</m> &amp; 4162 &amp; 41.62 &amp; 42 &amp; 42 &amp; 41 &amp; 42 \hline <m>H</m> &amp; 2132 &amp; 21.32 &amp; 22 &amp; 22 &amp; 21 &amp; 22 \hline <m>S</m> &amp; 13890 &amp; 138.9 &amp; 139 &amp; 138 &amp; 137 &amp; 137 \hline Total &amp; 25000 &amp; 250 &amp; 252 &amp; 251 &amp; 247 &amp; 250 \hline \else School &amp; Enrollment &amp; SUQ &amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m>&amp; 3292&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;1524&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;4162&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>H</m> &amp;2132&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>S</m> &amp; 13890 &amp;&amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                  <p>
+                    Total &amp; &amp;&amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the standard divisor.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each school's standard upper quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will lower the UQ by enough so that you have exactly enough seats.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Adam's Method.
+              </p>
+            </li>
+            <li>
+              <p>
+                Which state violates the Lower Quota?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          Western Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM
+          (<m>A</m>, <m>B</m>, <m>E</m>,
+          <m>H</m>, and <m>S</m> for short).
+          The 200 faculty positions at WIU are apportioned to the various schools based on the schools' representative enrollments.
+          The following table shows each school's enrollments:
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><answer>
+                  <p>
+                    &amp; Population &amp; SQ &amp; Q &amp; 128 \hline <m>A</m> &amp; 2100 &amp; 16.28411911 &amp; 16 &amp; 16 \hline <m>B</m> &amp; 952 &amp; 7.382133995 &amp; 7 &amp; 7 \hline <m>E</m> &amp; 2601 &amp; 20.16904467 &amp; 20 &amp; 20 \hline <m>H</m> &amp; 1458 &amp; 11.30583127 &amp; 11 &amp; 11 \hline <m>S</m> &amp; 18681 &amp; 144.858871 &amp; 145 &amp; 146 \hline Total &amp; 25792 &amp; 200 &amp; 199 &amp; 200 \hline \else School &amp; Enrollment &amp; SQ &amp; &amp; &amp; &amp; &amp; Apportionment \hline MD &amp;&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>A</m>&amp; 2100&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>B</m> &amp;952 &amp;&amp;&amp;&amp;&amp;&amp; \hline <m>E</m> &amp;2601&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>H</m> &amp;1458&amp;&amp;&amp;&amp;&amp;&amp; \hline <m>S</m> &amp; 18681 &amp;&amp;&amp;&amp;&amp;&amp; \hline Total &amp; &amp;&amp;&amp;&amp;&amp;&amp; \hline
+                  </p>
+                </answer></cell>
+            </row>
+          </tabular>
+          <ol>
+            <li>
+              <p>
+                Find the standard divisor.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find each school's standard rounded quota.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a modified divisor that will change the Quota by enough so that you have exactly enough seats.
+                If your SQ is too small, you should make your divisor a bit smaller.
+                If your SQ is too large, you should make your divisor a bit larger.
+                If your SQ works, leave it be.
+                <answer>
+                  <p>
+                    Regular rounding gives one too few seats,
+                    so the MD must be just a bit smaller.
+                  </p>
+                </answer>
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the apportionment as described by Webster's Method.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+    <p>
+      \ENDHOMEWORK
+    </p>
+  </subsection>
+</section>

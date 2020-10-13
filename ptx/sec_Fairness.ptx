@@ -1,0 +1,1017 @@
+<section xml:id="sec_Fairness">
+  <title>Fairness</title>
+  <introduction>
+    <p>
+      The big question of the day is
+    </p>
+    <blockquote>
+      Justice Kennedy suggested, as he did in another redistricting case 13 years ago, that courts perhaps could be involved in placing limits on extremely partisan electoral maps.  13 years ago he wrote "If courts refuse to entertain any claims of partisan gerrymandering, the temptation to use partisan favoritism in districting in an unconstitutional manner will grow,"
+    </blockquote>
+  </introduction>
+  <subsection>
+    <title>Geometric Measures</title>
+    <introduction>
+      <p>
+            <idx><h>redistricting:geometric measures of fairness</h></idx>
+        Although most states have a requirement that their districts be compact, there is no good definition for how compact a set of districts would be.
+        We will look at two different ways of measuring compactness.
+        To make measurement easier,
+        we will be using our example districts from before.
+      </p>
+    </introduction>
+    <subsubsection>
+      <title>Area vs. Perimeter</title>
+      <p>
+        One way of measuring how compact a district is comes from dividing the area of the district by its perimeter squared and then multiplying by 16<fn>
+        You multiply by 16 because the Isoperimetric measure for a square is
+        <m>\frac{1}{16}</m> and we would like our ratio to be about 1.
+        </fn>.
+        In general, this type of calculation is known as an Isoperimetric measure.
+            <idx><h>redistricting</h><h>isoperimetric measure</h></idx>
+      </p>
+      <p>
+        \begin{enumerate} \item Example:
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}begin{scope}
+\draw[orange, fill=orange] (0,0) rectangle (.8,.8);
+\draw[orange, fill=orange] (0,1) rectangle (.8,1+.8);
+\draw[orange, fill=orange] (0,2) rectangle (.8,2+.8);
+\draw[teal, opacity = .2, fill=teal] (1,0) rectangle (1+.8, .8);
+\draw[teal, opacity = .2, fill=teal] (1,1) rectangle (1+.8, 1+.8);
+\begin{scope}[shift = {(-.1, -.1)}]
+\draw[very thick] (0,0) -- (2,0) -- (2,2) -- (1,2) -- (1, 3) -- (0,3) -- cycle;
+\node at (6,2) {Area = 5};
+\node at (6,1) {Perimeter = 10 };
+\node at (14,2) {Ratio \(= \frac{16\cdot5}{10^2} = 0.8\)};
+\end{scope}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        <em>Notes.</em>
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{scope}
+\district
+\begin{scope}[shift = {(-.1,-.1)}]
+\draw[very thick] (0,0 ) -- (10, 0 );
+\draw[very thick] (0,1 ) -- (10, 1 );
+\draw[very thick] (0,2 ) -- (10, 2 );
+\draw[very thick] (0,3 ) -- (10, 3 );
+\draw[very thick] (0,4 ) -- (10, 4 );
+\end{scope}
+\begin{scope}[shift = {(.4,.4)}]
+\node at (0,0) {\textbf{E}};
+\node at (0,1) {\textbf{D}};
+\node at (0,2) {\textbf{C}};
+\node at (0,3) {\textbf{B}};
+\node at (0,4) {\textbf{A}};
+\end{scope}
+\node at (5,-2) {\textbf{Redistricting Plan 1}};
+\end{scope}
+\begin{scope}[shift = {(4.5in,0)}]
+\district
+\begin{scope}[shift={(-.1,-.1)}]
+\foreach \x in {0,2,4,6,8}
+\draw[very thick] (\x,0) -- (\x, 5);
+\end{scope}
+\begin{scope}[shift={(.4,.4)}]
+\node at (0,0) {\textbf{A}};
+\node at (2,0) {\textbf{B}};
+\node at (4,0) {\textbf{C}};
+\node at (6,0) {\textbf{D}};
+\node at (8,0) {\textbf{E}};
+\end{scope}
+\node at (5,-2) {\textbf{Redistricting Plan 2}};
+\end{scope}
+\begin{scope}[shift = {(9in,0)}]
+\district
+\begin{scope}[shift = {(-.1, -.1)}]
+\draw[very thick] (0,0) -- (0,1) -- (1,1) -- (1,4) -- (3,4) -- (3,1) -- (4,1) -- (4,0);
+\draw[very thick] (3,4) -- (4,4) -- (4,2) -- (5, 2) -- (5,5);
+\draw[very thick] (5, 2) -- (6,2) -- (6,4) -- (9,4) -- (9, 1) -- (10, 1);
+\draw[very thick] (7,4) -- (7,1) -- (6,1) -- (6,0);
+\end{scope}
+\begin{scope}[shift = {(.4,.4)}]
+\node at (0,1) {\textbf{A}};
+\node at (0,0) {\textbf{B}};
+\node at (4,0) {\textbf{C}};
+\node at (5,2) {\textbf{D}};
+\node at (6,0) {\textbf{E}};
+\end{scope}
+\node at (5,-2) {\textbf{Redistricting Plan 3}};
+\end{scope}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        \item Calculate the area and perimeter of each district for each plan.
+        Fill in the table below.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Plan 1</cell>
+          <cell><m>16\frac{\text{ Area } }{\text{ Perimeter } ^2}</m></cell>
+          <cell>Plan 2</cell>
+          <cell><m>16\frac{\text{ Area } }{\text{ Perimeter } ^2}</m></cell>
+          <cell>Plan 3</cell>
+          <cell><m>16\frac{\text{ Area } }{\text{ Perimeter } ^2}</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District A</cell>
+          <cell></cell>
+          <cell>District A</cell>
+          <cell></cell>
+          <cell>District A</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District B</cell>
+          <cell></cell>
+          <cell>District B</cell>
+          <cell></cell>
+          <cell>District B</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District C</cell>
+          <cell></cell>
+          <cell>District C</cell>
+          <cell></cell>
+          <cell>District C</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District D</cell>
+          <cell></cell>
+          <cell>District D</cell>
+          <cell></cell>
+          <cell>District D</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District E</cell>
+          <cell></cell>
+          <cell>District E</cell>
+          <cell></cell>
+          <cell>District E</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Average</cell>
+          <cell></cell>
+          <cell>Average</cell>
+          <cell></cell>
+          <cell>Average</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <p>
+        \item Does the calculation differentiate between the plans?
+        Does it show one plan as being
+        <q>better</q>
+        than the others?
+      </p>
+    </subsubsection>
+    <subsubsection>
+      <title>Enclosing Square</title>
+      <p>
+        Another way of measuring how compact a district is comes from thinking of placing the district into the smallest square that contains the district.
+        Then you calculate the area of the district and its' enclosing square and divide the first by the second.
+        Generally, this type of calculation is known as a Reock measure.
+            <idx><h>redistricting</h><h>Reock measure</h></idx>
+        For example:
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{scope}
+\draw[orange, fill=orange] (0,0) rectangle (.8,.8);
+\draw[orange, fill=orange] (0,1) rectangle (.8,1.8);
+\draw[orange, fill=orange] (0,2) rectangle (.8,2.8);
+\draw[teal, opacity = .2, fill=teal] (1,0) rectangle (1.8,.8);
+\draw[teal, opacity = .2, fill=teal] (1,1) rectangle (1.8,1.8);
+\begin{scope}[shift = {(-.1, -.1)}]
+\draw[very thick] (0,0) -- (2,0) -- (2,2) -- (1,2) -- (1, 3) -- (0,3) -- cycle;
+\node at (6,2) {Area = 5};
+\end{scope}
+\end{scope}
+\node at (4in,0) {Ratio = \(\frac{5}{9}=0.56\)};
+\begin{scope}[shift = {(6in,0)}]
+\draw[orange, fill=orange] (0,0) rectangle (.8,.8);
+\draw[orange, fill=orange] (0,1) rectangle (.8,1.8);
+\draw[orange, fill=orange] (0,2) rectangle (.8,2.8);
+\draw[teal, opacity = .2, fill=teal] (1,0) rectangle (1.8,.8);
+\draw[teal, opacity = .2, fill=teal] (1,1) rectangle (1.8,1.8);
+\begin{scope}[shift = {(-.1, -.1)}]
+\draw[very thick] (0,0) -- (3,0) -- (3,3) -- (0,3) -- cycle;
+\node at (6,2) {Area = 9};
+\end{scope}
+\end{scope}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        \item <em>Notes.</em>
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{scope}
+\district
+\begin{scope}[shift = {(-.1,-.1)}]
+\draw[very thick] (0,0 ) -- (10, 0 );
+\draw[very thick] (0,1 ) -- (10, 1 );
+\draw[very thick] (0,2 ) -- (10, 2 );
+\draw[very thick] (0,3 ) -- (10, 3 );
+\draw[very thick] (0,4 ) -- (10, 4 );
+\end{scope}
+\begin{scope}[shift = {(.4,.4)}]
+\node at (0,0) {\textbf{E}};
+\node at (0,1) {\textbf{D}};
+\node at (0,2) {\textbf{C}};
+\node at (0,3) {\textbf{B}};
+\node at (0,4) {\textbf{A}};
+\end{scope}
+\node at (5,-2) {\textbf{Redistricting Plan 1}};
+\end{scope}
+\begin{scope}[shift = {(4.5in,0)}]
+\district
+\begin{scope}[shift={(-.1,-.1)}]
+\foreach \x in {0,2,4,6,8}
+\draw[very thick] (\x,0) -- (\x, 5);
+\end{scope}
+\begin{scope}[shift={(.4,.4)}]
+\node at (0,0) {\textbf{A}};
+\node at (2,0) {\textbf{B}};
+\node at (4,0) {\textbf{C}};
+\node at (6,0) {\textbf{D}};
+\node at (8,0) {\textbf{E}};
+\end{scope}
+\node at (5,-2) {\textbf{Redistricting Plan 2}};
+\end{scope}
+\begin{scope}[shift = {(9in,0)}]
+\district
+\begin{scope}[shift = {(-.1, -.1)}]
+\draw[very thick] (0,0) -- (0,1) -- (1,1) -- (1,4) -- (3,4) -- (3,1) -- (4,1) -- (4,0);
+\draw[very thick] (3,4) -- (4,4) -- (4,2) -- (5, 2) -- (5,5);
+\draw[very thick] (5, 2) -- (6,2) -- (6,4) -- (9,4) -- (9, 1) -- (10, 1);
+\draw[very thick] (7,4) -- (7,1) -- (6,1) -- (6,0);
+\end{scope}
+\begin{scope}[shift = {(.4,.4)}]
+\node at (0,1) {\textbf{A}};
+\node at (0,0) {\textbf{B}};
+\node at (4,0) {\textbf{C}};
+\node at (5,2) {\textbf{D}};
+\node at (6,0) {\textbf{E}};
+\end{scope}
+\node at (5,-2) {\textbf{Redistricting Plan 3}};
+\end{scope}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        \item Calculate the area and perimeter of each district for each plan.
+        Fill in the table below.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Plan 1</cell>
+          <cell><m>\frac{\text{ Area District } }{\text{ Area square } }</m></cell>
+          <cell>Plan 2</cell>
+          <cell><m>\frac{\text{ Area District } }{\text{ Area square } }</m></cell>
+          <cell>Plan 3</cell>
+          <cell><m>\frac{\text{ Area District } }{\text{ Area square } }</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District A</cell>
+          <cell></cell>
+          <cell>District A</cell>
+          <cell></cell>
+          <cell>District A</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District B</cell>
+          <cell></cell>
+          <cell>District B</cell>
+          <cell></cell>
+          <cell>District B</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District C</cell>
+          <cell></cell>
+          <cell>District C</cell>
+          <cell></cell>
+          <cell>District C</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District D</cell>
+          <cell></cell>
+          <cell>District D</cell>
+          <cell></cell>
+          <cell>District D</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District E</cell>
+          <cell></cell>
+          <cell>District E</cell>
+          <cell></cell>
+          <cell>District E</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Average</cell>
+          <cell></cell>
+          <cell>Average</cell>
+          <cell></cell>
+          <cell>Average</cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <p>
+        \item Does the calculation differentiate between the plans?
+        Does it show one plan as being
+        <q>better</q>
+        than the others?
+      </p>
+      <p>
+        \item If you were asked to chose which method better differentiates your notion of compact,
+        which would you use and why?
+      </p>
+      <p>
+        \HOMEWORK
+        <ol>
+          <li>
+            <p>
+              Go back to the 5 districts you drew on the map
+              (or draw new ones)
+              so that orange receives the most seats.
+              What is your average calculation for <m>\frac{16\text{ area } }{\text{ perimeter } ^2}</m>?
+              What is your average calculation for <m>\frac{\text{ area of district } }{\text{ area of enclosing square } }</m>?
+              <image>
+                 <latex-image> <![CDATA[\begin{tikzpicture}\homeworkone  \begin{scope} \draw[very thick] (0,0) -- (0,5) -- (5,5) -- (5,0)  --cycle; \end{scope}\end{tikzpicture}]]> </latex-image>
+              </image>
+            </p>
+          </li>
+          <li>
+            <p>
+              Go back to the 5 districts you drew on the map
+              (or draw new ones)
+              so that teal receives the most seats.
+              What is your average calculation for <m>\frac{16\text{ area } }{\text{ perimeter } ^2}</m>?
+              What is your average calculation for <m>\frac{\text{ area of district } }{\text{ area of enclosing square } }</m>?
+              <image>
+                 <latex-image> <![CDATA[\begin{tikzpicture}\homeworkone  \begin{scope} \draw[very thick] (0,0) -- (0,5) -- (5,5) -- (5,0)  --cycle; \end{scope}\end{tikzpicture}]]> </latex-image>
+              </image>
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the average of <m>\frac{16\text{ area } }{\text{ perimeter } ^2}</m> demonstrate unfairness in either of your plans?
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the average of <m>\frac{\text{ area of enclosing square } }{\text{ area of district } }</m> demonstrate unfairness in either of your plans?
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        \ENDHOMEWORK
+      </p>
+    </subsubsection>
+  </subsection>
+  <subsection>
+    <title>Arithmetic Measures</title>
+    <introduction>
+      <p>
+            <idx><h>redistricting</h><h>arithmetic measures of fairness</h></idx>
+        Okay, so maybe just looking geometrically at how the districts are drawn is not a good way of testing how fair a redistricting is.
+        Maybe there is something about the election and where the people who live in the district are placed that would help us measure the fairness of the redistricting plan.
+      </p>
+    </introduction>
+    <subsubsection>
+      <title>Efficiency Gap</title>
+      <p>
+            <idx><h>redistricting</h><h>efficiency gap</h></idx>
+            <idx><h>gerrymander</h><h>efficiency gap</h></idx>
+        A state has been divided into 5 districts of 100 voters each.
+        Each district votes to elect a representative from one of two parties,
+        <m>A</m> or <m>B</m>.
+        In any election,
+        many voters will end up feeling that voting was a waste of their time.
+        A voter could feel this way for two reasons:
+        <ul>
+          <li>
+            <p>
+              Her party lost, so what was the point of showing up to vote?
+            </p>
+          </li>
+          <li>
+            <p>
+              Her party won by a landslide,
+              so what was the point of showing up to vote?
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        Corresponding to this, we will count:
+        <ul>
+          <li>
+            <p>
+              All of the votes for party <m>A</m> as wasted if party <m>A</m> looses.
+            </p>
+          </li>
+          <li>
+            <p>
+              All of the votes above 50% for party <m>A</m> as wasted if party <m>A</m> wins.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        \item Complete the following table (we will use <m>W_A</m> as a short cut for the votes wasted by party <m>A</m>.):
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District</cell>
+          <cell>A votes</cell>
+          <cell>B votes</cell>
+          <cell>Winner</cell>
+          <cell><m>W_A</m></cell>
+          <cell><m>W_B</m></cell>
+          <cell><m>W_A+W_B</m></cell>
+          <cell><m>W_A-W_B</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  ><answer>
+              <p>
+                1 &amp; 95 &amp; 5 &amp; A &amp; 45 &amp; 5 &amp; 50 &amp; 40
+              </p>
+              <p>
+                \hline 2 &amp; 40 &amp; 60 &amp; B &amp; 40 &amp; 10 &amp; 50 &amp; 30
+              </p>
+              <p>
+                \hline 3 &amp; 75 &amp; 25 &amp; A &amp; 25 &amp; 25 &amp; 50 &amp; 0
+              </p>
+              <p>
+                \hline 4 &amp; 45 &amp; 55 &amp; B &amp; 45 &amp; 5 &amp; 50 &amp; 40
+              </p>
+              <p>
+                \hline 5 &amp; 45 &amp; 55 &amp; B &amp; 45 &amp; 5 &amp; 50 &amp; 40
+              </p>
+              <p>
+                \hline \hline TOTAL &amp; 300 &amp; 200 &amp;
+                <m>A</m>: 2 <m>B</m>:3 &amp; 200 &amp; 50 &amp; 250 &amp; 150 \hline \else 1 &amp; 95 &amp; 5 &amp;
+                <m>A</m> &amp; 45 &amp; 5 &amp; 50 &amp; 40 \hline 2 &amp; 40 &amp; 60 &amp; &amp; &amp; &amp; &amp; \hline 3 &amp; 75 &amp; 25 &amp; &amp; &amp; &amp; &amp; \hline 4 &amp; 45 &amp; 55 &amp; &amp; &amp; &amp; &amp; \hline 5 &amp; 45 &amp; 55 &amp; &amp; &amp; &amp; &amp; \hline \hline TOTAL &amp; 300 &amp; 200 &amp;
+                <m>A</m>:
+                <m>B</m>: &amp; &amp; &amp; &amp; \hline
+              </p>
+            </answer></cell>
+        </row>
+      </tabular>
+      <p>
+        The <em>Efficiency Gap</em> is defined to be the fraction of the difference of wasted votes divided by the total number of votes:
+            <idx><h>Efficiency Gap</h></idx>
+        <me>
+          \text{ EG }  = \frac{W_A-W_B}{\text{ Votes } } =
+        </me>
+      </p>
+      <p>
+        The <m>V</m> in the denominator normalized EG, so that its magnitude does not depend on the population of the state.
+        The idea is that when EG is much larger than 0, the districting plan may be unfair to party <m>A</m>,
+        because <m>A</m> is wasting more votes.
+        When EG is much smaller than 0, then <m>B</m> is wasting more votes,
+        so the plan may be unfair to <m>B</m>.
+        We do have to be careful because if a candidate is running unopposed,
+        the efficiency gap for that election is meaningless.
+        We can either throw out that district in our calculations or use data from other elections to estimate what the election would look like if the seat were contested.
+      </p>
+      <p>
+        \item Consider the following election
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>District</cell>
+          <cell>A votes</cell>
+          <cell>B votes</cell>
+          <cell>Winner</cell>
+          <cell><m>W_A</m></cell>
+          <cell><m>W_B</m></cell>
+          <cell><m>W_A+W_B</m></cell>
+          <cell><m>W_A-W_B</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  ><answer>
+              <p>
+                1 &amp; 81 &amp; 19 &amp; A &amp; 31 &amp; 19 &amp; 50 &amp; 12
+              </p>
+              <p>
+                \hline 2 &amp; 45 &amp; 55 &amp; B &amp; 45 &amp; 5 &amp; 50 &amp; 40
+              </p>
+              <p>
+                \hline 3 &amp; 80 &amp; 20 &amp; A &amp; 30 &amp; 20 &amp; 50 &amp; 10
+              </p>
+              <p>
+                \hline 4 &amp; 49 &amp; 51 &amp; B &amp; 49 &amp; 1 &amp; 50 &amp; 48
+              </p>
+              <p>
+                \hline 5 &amp; 45 &amp; 55 &amp; B &amp; 45 &amp; 5 &amp; 50 &amp; 40
+              </p>
+              <p>
+                \hline \hline TOTAL &amp; 300 &amp; 200 &amp;
+                <m>A</m>: 2 <m>B</m>:3 &amp; 200 &amp; 50 &amp; 250 &amp; 150 \hline \else 1 &amp; 81 &amp; 19 &amp; &amp; &amp; &amp; &amp;
+              </p>
+              <p>
+                \hline 2 &amp; 45 &amp; 55 &amp; &amp; &amp; &amp; &amp;
+              </p>
+              <p>
+                \hline 3 &amp; 80 &amp; 20 &amp; &amp; &amp; &amp; &amp;
+              </p>
+              <p>
+                \hline 4 &amp; 49 &amp; 51 &amp; &amp; &amp; &amp; &amp;
+              </p>
+              <p>
+                \hline 5 &amp; 45 &amp; 55 &amp; &amp; &amp; &amp; &amp;
+              </p>
+              <p>
+                \hline \hline TOTAL &amp; 300 &amp; 200 &amp; <m>A</m>:
+                <m>B</m>: &amp; &amp; &amp; &amp; \hline
+              </p>
+            </answer></cell>
+        </row>
+      </tabular>
+      <p>
+        Fill out the table.
+      </p>
+      <p>
+        Which districts show signs of <em>packing</em>,
+        that is putting all the voters of one party together so that,
+        although they win the district,
+        they have a lot of wasted votes.
+      </p>
+      <p>
+        Which districts show signs of <em>cracking</em>,
+        that is putting just enough voters of the opposing party in the district so that they are confident of winning the election and therefore the first party has a lot of wasted votes?
+      </p>
+      <p>
+        \HOMEWORK
+        <ol>
+          <li>
+            <p>
+              Go back to the 5 districts you drew on the map
+              (or draw new ones)
+              so that orange receives the most seats.
+              Assuming that each square represents 100 voters,
+              what is the efficiency gap for your plan?
+              <image>
+                 <latex-image> <![CDATA[\begin{tikzpicture}\homeworkone  \begin{scope} \draw[very thick] (0,0) -- (0,5) -- (5,5) -- (5,0)  --cycle; \end{scope}\end{tikzpicture}]]> </latex-image>
+              </image>
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>District</cell>
+                  <cell>O votes</cell>
+                  <cell>T votes</cell>
+                  <cell><m>W_O</m></cell>
+                  <cell><m>W_T</m></cell>
+                  <cell><m>W_O-W_T</m></cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell >1</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>2</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>3</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>4</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>5</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell >TOTAL</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+          <li>
+            <p>
+              Go back to the 5 districts you drew on the map
+              (or draw new ones)
+              so that teal receives the most seats.
+              Assuming that each square represents 100 voters,
+              what is the efficiency gap for your plan?
+              <image>
+                 <latex-image> <![CDATA[\begin{tikzpicture}\homeworkone  \begin{scope} \draw[very thick] (0,0) -- (0,5) -- (5,5) -- (5,0)  --cycle; \end{scope}\end{tikzpicture}]]> </latex-image>
+              </image>
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>District</cell>
+                  <cell>O votes</cell>
+                  <cell>T votes</cell>
+                  <cell><m>W_O</m></cell>
+                  <cell><m>W_T</m></cell>
+                  <cell><m>W_O-W_T</m></cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell >1</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>2</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>3</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>4</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>5</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell >TOTAL</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the efficiency gap calculation demonstrate unfairness in either of your plans?
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        \ENDHOMEWORK
+      </p>
+      <p>
+        \end{enumerate}
+      </p>
+      <p>
+        \declareproblemlettering{D} \cleartooddpage
+      </p>
+    </subsubsection>
+  </subsection>
+</section>
