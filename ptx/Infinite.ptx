@@ -1,0 +1,102 @@
+<section xml:id="Infinite">
+  <title>Familiar, but Infinite</title>
+  <p>
+    What is familiar and concrete to one person may be foreign and abstract to another,
+    but as far as numbers are concerned we probably all agree on which are the most familiar.
+    In 1886 Leopold Kronecker, a number theorist,
+    made a statement about what is basic in the world of mathematics:
+    <q>God created the positive integers;
+    all the rest is human creation.</q>
+  </p>
+  <p>
+    One, two, three, .. . these are the positive integers.
+    For every positive integer there is a next bigger one.
+    Although we may think of these positive integers successively,
+    we may also think of all of them at once, that is,
+    think about the collection of all positive integers.
+    The collection
+    (also referred to as the set)
+    of positive integers is so basic and natural to our way of thinking that it is called the set of natural numbers.
+  </p>
+  <p>
+    The set of all natural numbers is our first infinite set,
+    and it has a comfortable feel about it.
+    Among infinite sets, the natural numbers seem the most natural.
+    By examining this and related collections of numbers,
+    we will begin to develop a better and more precise idea of infinity.
+  </p>
+  <p>
+    <em>Question:</em> Are there as many natural numbers as there are integers starting with 2, 3, 4, .. . , we are asking neither more nor less than the question: Is there a one-to-one correspondence between the elements of the set
+    <me>
+      2, 3, 4, ..
+    </me>.
+    and the set of natural numbers
+    <me>
+      1, 2, 3, .. . ?
+    </me>
+    <ol>
+      <li>
+        <p>
+          <em>Naturally even</em>.
+          Let <m>E</m> stand for the set of all even natural numbers (so <m>E = (2, 4, 6, 8, .... )</m>).
+          Show that the set <m>E</m> and the set of all natural numbers have the same cardinality by describing an explicit one-to-one correspondence between the two sets.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>5's take over</em>.
+          Let <em>EIF</em> be the set of all natural numbers ending in 5
+          (<em>EIF</em> stands for "ends in five").
+          That is,
+          <me>
+            \mathbf{EIF} = (5, 15, 25, 35, 45, 55, 65, 75, . . . )
+          </me>.
+          Describe a one-to-one correspondence between the set of natural numbers and the set <em>EIF</em>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>6 times as much</em>.
+          If we let <m>\mathbb{N}</m> stand for the set of all natural numbers,
+          then we write <m>6\mathbb{N}</m> for the set of natural numbers all multiplied by 6 (so <m>6\mathbb{N} = (6, 12, 18, 24, . .. )</m>).
+          Show that the sets <m>\mathbb{N}</m> and
+          <m>6\mathbb{N}</m> have the same cardinality by describing an explicit one-to-one correspondence between the two sets.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Any times as much</em>.
+          If we let <m>\mathbb{N}</m> stand for the set of all natural numbers,
+          and <m>a</m> stand for any particular natural number,
+          then we write <m>a\mathbb{N}</m> for the set of natural numbers all multiplied by <m>a</m>.
+          Do the sets <m>\mathbb{N}</m> and
+          <m>a\mathbb{N}</m> have the same cardinality?
+          If so, describe an explicit one-to-one correspondence between the two sets.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Reciprocals</em>.
+          Suppose <m>R</m> is the set defined by
+          <me>
+            R = 1/1, 1/2, 1/3, 1/4, 1/5, 1/6, ...
+          </me>.
+          Describe the set <m>R</m> in words.
+          Show that it has the same cardinality as the set of natural numbers.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Half way</em>.
+          Suppose you take the line below, \hrulefill cut it in half,
+          and then take the left piece and cut it in half,
+          and then take the leftmost piece and cut it in half,
+          and so on, without ever stopping.
+          How many different pieces of the line would you have?
+          Does the set of all pieces have the same cardinality as the set of all natural numbers?
+          Justify your answer.
+        </p>
+      </li>
+    </ol>
+  </p>
+</section>

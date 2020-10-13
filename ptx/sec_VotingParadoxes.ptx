@@ -1,0 +1,1309 @@
+<section xml:id="sec_VotingParadoxes">
+  <title>Voting Paradoxes and Problems</title>
+  <ol>
+    <li>
+      <p>
+        Of the four voting systems we've studied, which is best?
+        Why?
+      </p>
+    </li>
+    <li>
+      <p>
+        The Des Moines Running Club is electing a new team captain.
+        There are three candidates: Irving, Joseph, and Karl.
+        The preference table is the following.
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell># of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>4</cell>
+            <cell>3</cell>
+            <cell>2</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>J</cell>
+            <cell>I</cell>
+            <cell>K</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>I</cell>
+            <cell>J</cell>
+            <cell>I</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>K</cell>
+            <cell>K</cell>
+            <cell>J</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              If the club uses the plurality method,
+              who will win the election?
+              <answer>
+                <p>
+                  J
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If it were a head-to-head race between Irving and Joseph,
+              who would win?
+              <answer>
+                <p>
+                  I
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If it were a head-to-head race between Irving and Karl,
+              who would win?
+              <answer>
+                <p>
+                  \fbox I
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              If it were a head-to-head race between Joseph and Karl,
+              who would win?
+              <answer>
+                <p>
+                  \fbox J
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Why does the plurality method's result seem unfair in this election?
+              <answer>
+                <p>
+                  Irving defeats Joseph and Karl in head-to-head matches,
+                  but Joseph wins via plurality.
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Head-to-Head Criterion:</em>
+        <answer>
+          <p>
+            A candidate who beats all the other candidates head to head should win the election.
+          </p>
+        </answer>
+          <idx><h>criterion</h><h>head to head</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        The school board is voting whether to award the contract for building a new elementary school to Aardvark Architects,
+        to Bob's Builders,
+        to the Confident Construction Company,
+        or to Davenfield Developers.
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell># of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>5</cell>
+            <cell>3</cell>
+            <cell>3</cell>
+            <cell>1</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>B</cell>
+            <cell>B</cell>
+            <cell>C</cell>
+            <cell>A</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>C</cell>
+            <cell>C</cell>
+            <cell>A</cell>
+            <cell>D</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>D</cell>
+            <cell>A</cell>
+            <cell>D</cell>
+            <cell>C</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>A</cell>
+            <cell>D</cell>
+            <cell>B</cell>
+            <cell>B</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              The school board votes using a Borda count.
+              Which company will get the contract?
+              <answer>
+                <p>
+                  <m>\begin{array}{clcr} A \amp 4+9+6+5 \amp =\amp 24 \\ B \amp 32+4 \amp =\amp 36 \\ C \amp 24+12+2 \amp =\amp 38 \\ D \amp 3+16+3 \amp =\amp 25 \end{array}</m> so C wins
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Does this seem fair?
+              Why or why not?
+              <answer>
+                <p>
+                  No; two-thirds of the voters picked B as their first choice! \else
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Majority Criterion:</em>
+        <answer>
+          <p>
+            A candidate that wins a majority of first place votes should win the election.
+          </p>
+        </answer>
+          <idx><h>criterion</h><h>majority</h></idx> \ifodd\fi
+      </p>
+    </li>
+    <li>
+      <p>
+        The board of regents of Western Iowa State at Sema will be voting tomorrow for the University's new president from four candidates: Zehnpfennig, Gersbach, Haider,
+        and Rentmeester.
+        As of this moment, the voters' preferences are as follows:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell># of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>7</cell>
+            <cell>5</cell>
+            <cell>4</cell>
+            <cell>1</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell  >1st choice</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        The WIS regents use the plurality with elimination method.
+        <ol>
+          <li>
+            <p>
+              If the vote were held today, who would be chosen as university president?
+              <answer>
+                <p>
+                  <me>
+                    \begin{array}{cc}Z\amp  7 \\ R\amp 1 \\ G\amp 4 \\ H\amp 5 \end{array} \leadsto \begin{array}{cc}Z\amp 7 \\ G\amp 5 \\ H\amp 5 \end{array} \leadsto Z
+                  </me>
+                  <p>
+                    \else
+                  </p>
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              After thinking it over in bed tonight,
+              the single voter in the last column decides that \AA<nbsp/>really is the best candidate after all,
+              and so his preferences change to Z,\D,\B,H. Thus when the election is held tomorrow,
+              the preference table is
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell># of Ballots</cell>
+                </row>
+                <row>
+                  <cell>Ranking</cell>
+                  <cell>7</cell>
+                  <cell>5</cell>
+                  <cell>4</cell>
+                  <cell>1</cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell  >1st choice</cell>
+                  <cell>\A</cell>
+                  <cell>\C</cell>
+                  <cell>\B</cell>
+                  <cell>\no{\D}  \A</cell>
+                </row>
+                <row>
+                  <cell>2nd choice</cell>
+                  <cell>\D</cell>
+                  <cell>\A</cell>
+                  <cell>\C</cell>
+                  <cell>\no{\B}  \D</cell>
+                </row>
+                <row>
+                  <cell>3rd choice</cell>
+                  <cell>\B</cell>
+                  <cell>\B</cell>
+                  <cell>\D</cell>
+                  <cell>\no{\A}  \B</cell>
+                </row>
+                <row>
+                  <cell>4th choice</cell>
+                  <cell>\C</cell>
+                  <cell>\D</cell>
+                  <cell>\A</cell>
+                  <cell>\no{\C}  \C</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+              Who will be elected president?
+              <answer>
+                <p>
+                  <me>
+                    \begin{array}{cc}Z\amp  8 \\ R\amp 0 \\ G\amp 4 \\ H\amp 5 \end{array} \leadsto \begin{array}{cc}Z\amp  8 \\ G\amp 4 \\ H\amp 5 \end{array} \leadsto \begin{array}{cc}Z\amp 8 \\ H\amp 9 \end{array} \leadsto H
+                  </me>
+                  <p>
+                    \else
+                  </p>
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              What is odd about your answers to (a) and (b)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Monotonicity Criterion:</em>
+        <answer>
+          <p>
+            If the only changes in voting are in favor of the winning candidate,
+            that candidate should still win the election.
+          </p>
+        </answer>
+          <idx><h>criterion</h><h>monotonicity</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        Voters are trying to decide what to do with a $50 million surplus in the state budget.
+        Their options are:
+        <ul>
+          <li>
+            <title>(T)</title>
+            <p>
+              Give the money back to taxpayers as property tax relief.
+            </p>
+          </li>
+          <li>
+            <title>(R)</title>
+            <p>
+              Spend it on road construction and other infrastructure.
+            </p>
+          </li>
+          <li>
+            <title>(H)</title>
+            <p>
+              Build a new state historical building.
+            </p>
+          </li>
+        </ul>
+      </p>
+      Here is the preference table:
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Number of Ballots</cell>
+        </row>
+        <row>
+          <cell>Ranking</cell>
+          <cell>70,000</cell>
+          <cell>50,000</cell>
+          <cell>40,000</cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell >1st choice</cell>
+          <cell>T</cell>
+          <cell>R</cell>
+          <cell>H</cell>
+        </row>
+        <row>
+          <cell>2nd choice</cell>
+          <cell>R</cell>
+          <cell>H</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>3rd choice</cell>
+          <cell>H</cell>
+          <cell>T</cell>
+          <cell>R</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            The election is run by pairwise comparison.
+            What is the result?
+            <answer>
+              <p>
+                <m>R>H>T>R</m>.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            What is odd about your results from part (a)?
+            <answer>
+              <p>
+                Try having candidate <m>R</m> drop out of the race.
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        <em>Irrelevant Alternatives Criterion:</em>
+        <answer>
+          <p>
+            If a non-winning candidate leaves the election,
+            the winner should not change,
+          </p>
+        </answer>
+          <idx><h>criterion</h><h>irrelevant alternatives</h></idx>
+      </p>
+    </li>
+    <li>
+      <p>
+        Approval Voting:
+          <idx><h>approval voting</h></idx>
+        <answer>
+          <p>
+            Vote for all candidates you approve of.
+          </p>
+        </answer>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Arrow's Impossibility Theorem:</em>
+        <answer>
+          <p>
+            There is no way of counting votes that does not violate at least one of the criteria except for a Dictator.
+          </p>
+        </answer>
+          <idx><h>Arrow's Impossibility Theorem</h></idx>
+      </p>
+    </li>
+  </ol>
+  <p>
+    \cleartooddpage \HOMEWORK
+  </p>
+  <ol>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Number of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>4</cell>
+            <cell>10</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>5</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\B</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\A</cell>
+            <cell>\D</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </p>
+      <ol>
+        <li>
+          <p>
+            Does the Borda Count violate the Majority Criterion for this particular preference matrix?
+            <answer>
+              <p>
+                The Borda count tally is
+              </p>
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>A</cell>
+                  <cell>58</cell>
+                </row>
+                <row>
+                  <cell>B</cell>
+                  <cell>46</cell>
+                </row>
+                <row>
+                  <cell>C</cell>
+                  <cell>69</cell>
+                </row>
+                <row>
+                  <cell>D</cell>
+                  <cell>67</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+              <p>
+                while a plurality vote yields
+              </p>
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>A</cell>
+                  <cell>7</cell>
+                </row>
+                <row>
+                  <cell>B</cell>
+                  <cell>0</cell>
+                </row>
+                <row>
+                  <cell>C</cell>
+                  <cell>7</cell>
+                </row>
+                <row>
+                  <cell>D</cell>
+                  <cell>10</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>total</cell>
+                  <cell>24</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+              <p>
+                Thus \fbox{no,} the majority criterion is not violated since no candidate had a majority of the 24 votes.
+                The majority criterion would only be violated if <em>both</em>
+                (a) some candidate had a majority,
+                and (b) the Borda count elected someone different.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Does the Borda Count violate the Head-to-Head Criterion for this particular preference matrix?
+            <answer>
+              <p>
+                \fbox{Yes.} Candidate D would beat each of A, B, and C in head-to-head contests,
+                but the Borda count elects someone else.
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Number of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>11</cell>
+            <cell>2</cell>
+            <cell>5</cell>
+            <cell>1</cell>
+            <cell>8</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+            <cell>\D</cell>
+            <cell>\A</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\D</cell>
+            <cell>\D</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\C</cell>
+            <cell>\C</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\C</cell>
+            <cell>\B</cell>
+            <cell>\A</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Does the Borda Count violate the Majority Criterion for this particular preference matrix?
+              <answer>
+                <p>
+                  The Borda count tally is
+                </p>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>A</cell>
+                    <cell>93</cell>
+                  </row>
+                  <row>
+                    <cell>B</cell>
+                    <cell>49</cell>
+                  </row>
+                  <row>
+                    <cell>C</cell>
+                    <cell>93</cell>
+                  </row>
+                  <row>
+                    <cell>D</cell>
+                    <cell>75</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+                <p>
+                  while a plurality vote yields
+                </p>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>A</cell>
+                    <cell>8</cell>
+                  </row>
+                  <row>
+                    <cell>B</cell>
+                    <cell>4</cell>
+                  </row>
+                  <row>
+                    <cell>C</cell>
+                    <cell>16</cell>
+                  </row>
+                  <row>
+                    <cell>D</cell>
+                    <cell>3</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>total</cell>
+                    <cell>31</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+                <p>
+                  Thus \fbox{yes,} the majority criterion is violated,
+                  since candidate C has a majority of the 31 votes,
+                  but the Borda Count does not elect him;
+                  instead, the Borda count has C tying with A. \else
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the Borda Count violate the Head-to-Head Criterion for this particular preference matrix?
+              <answer>
+                <p>
+                  \fbox{Yes,} since C beats A, B, and D in head-to-head contests but the Borda Count does not elect him. \else
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the following preference matrix:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell># of Ballots</cell>
+          </row>
+          <row>
+            <cell>Ranking</cell>
+            <cell>9</cell>
+            <cell>6</cell>
+            <cell>8</cell>
+            <cell>5</cell>
+          </row>
+          <row bottom="medium">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell >1st choice</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+            <cell>\D</cell>
+            <cell>\D</cell>
+          </row>
+          <row>
+            <cell>2nd choice</cell>
+            <cell>\D</cell>
+            <cell>\D</cell>
+            <cell>\B</cell>
+            <cell>\B</cell>
+          </row>
+          <row>
+            <cell>3rd choice</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+          </row>
+          <row>
+            <cell>4th choice</cell>
+            <cell>\A</cell>
+            <cell>\C</cell>
+            <cell>\C</cell>
+            <cell>\A</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              How many points will each candidate receive in a Borda count?
+              Who will win?
+              <answer>
+                <p>
+                  The point tallies are
+                </p>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>A</cell>
+                    <cell>42</cell>
+                  </row>
+                  <row>
+                    <cell>B</cell>
+                    <cell>99</cell>
+                  </row>
+                  <row>
+                    <cell>C</cell>
+                    <cell>42</cell>
+                  </row>
+                  <row>
+                    <cell>D</cell>
+                    <cell>97</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+                <p>
+                  so \fbox{B wins.} \else
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              The five voters in the last column really do think \D<nbsp/>is the best candidate and \B<nbsp/>is the second-best.
+              However, they decide to be sneaky and lie on their Borda count ballots,
+              claiming they think \B<nbsp/>is the worst candidate;
+              in other words,
+              they say they prefer \D, H, Z, and \B<nbsp/>in that order.
+              Now how many points will each candidate receive in a Borda count?
+              Who will win?
+              <answer>
+                <p>
+                  Now the point tallies become
+                </p>
+                <tabular>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                  <row>
+                    <cell>A</cell>
+                    <cell>47</cell>
+                  </row>
+                  <row>
+                    <cell>B</cell>
+                    <cell>89</cell>
+                  </row>
+                  <row>
+                    <cell>C</cell>
+                    <cell>47</cell>
+                  </row>
+                  <row>
+                    <cell>D</cell>
+                    <cell>97</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell></cell>
+                    <cell></cell>
+                  </row>
+                </tabular>
+                <p>
+                  so \fbox{D wins.} \else
+                </p>
+              </answer>
+            </p>
+          </li>
+          <li>
+            <p>
+              Explain in a few complete sentences how these voters manipulated the Borda count and why it is unfair.
+              <answer>
+                <p>
+                  These voters filled out their ballots deceptively,
+                  downgrading the candidate they opposed in order to make their own candidate do well by comparison.
+                  This is unfair because it gives dishonest voters more power than honest ones. (Graders,
+                  be generous with students' explanations!) \else
+                </p>
+              </answer>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Voters go to the polls to vote on three propositions simultaneously:
+        <ul>
+          <li>
+            <title>Proposition~1.</title>
+            <p>
+              Spend $200,000 to plant new flowers and trees at the zoo.
+            </p>
+          </li>
+          <li>
+            <title>Proposition~2.</title>
+            <p>
+              Spend $400,000 to build a children's playground at the zoo.
+            </p>
+          </li>
+          <li>
+            <title>Proposition~3.</title>
+            <p>
+              Spend $500,000 to add a panda exhibit to the zoo.
+            </p>
+          </li>
+        </ul>
+      </p>
+      All the voters love the zoo, plants, children, and pandas.
+      They're all fiscally responsible,
+      and only differ in how much money they want to spend.
+      <ol>
+        <li>
+          <p>
+            Alice is one of a thousand voters who want to improve the zoo,
+            but don't want to spend more than $1,000,000 total.
+            She wants to spend as close that limit as possible, without going over.
+            Which propositions will Alice and her bloc vote for?
+            <answer>
+              <p>
+                Alice et al.<nbsp/>will vote for \fbox{Propositions 2 and 3.}
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Zeke is one of a thousand voters who want to improve the zoo,
+            but don't want to spend more than $800,000 total.
+            He wants to spend as close that limit as possible, without going over.
+            Which propositions will Zeke and his bloc vote for?
+            <answer>
+              <p>
+                Zeke et al.<nbsp/>will vote for \fbox{Propositions 1 and 3.}
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Shadrach is one of a thousand voters who want to improve the zoo,
+            but don't want to spend more than $600,000 total.
+            He wants to spend as close that limit as possible, without going over.
+            Which propositions will Shadrach and his bloc vote for?
+            <answer>
+              <p>
+                Shadrach et al.<nbsp/>will vote for \fbox{Propositions 1 and 2.}
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Fill out the following table with the votes<mdash/>either
+            <q>Yes</q>
+            or
+            <q>No.</q>
+            <tabular>
+              <row>
+                <cell>Voters</cell>
+                <cell>Alice et al.</cell>
+                <cell>Zeke et al.</cell>
+                <cell>Shadrach et al.</cell>
+              </row>
+              <row>
+                <cell>Number of votes</cell>
+                <cell>1000</cell>
+                <cell>1000</cell>
+                <cell>1000</cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell  >Proposition 1</cell>
+                <cell>N</cell>
+                <cell>Y</cell>
+                <cell>Y</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Proposition 2</cell>
+                <cell>Y</cell>
+                <cell>N</cell>
+                <cell>Y</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>Proposition 3</cell>
+                <cell>Y</cell>
+                <cell>Y</cell>
+                <cell>N</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </p>
+        </li>
+        <li>
+          <p>
+            Which of the three propositions will pass? (Only a majority vote is needed for each proposition.)
+            <answer>
+              <p>
+                \fbox{All three} propositions will pass with 2000 of the 3000 votes.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            How many of the 3,000 voters are happy with the result?
+            <answer>
+              <p>
+                Since this will cost taxpayers $1,100,000, \fbox{none of the voters} will be happy.
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            Explain in a few complete sentences what is odd or paradoxical about this situation.
+            <answer>
+              <p>
+                Each of the voters deliberately voted to limit spending,
+                yet they collectively ended up spending more than any of them wanted. \ifgradersolns (Graders,
+                please be generous with their explanations.) \fi
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  <p>
+    \ENDHOMEWORK
+  </p>
+  <p>
+    \cleartooddpage
+  </p>
+</section>
